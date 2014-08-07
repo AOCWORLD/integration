@@ -20,14 +20,20 @@ body {
     padding-left:0;
     padding-right:0;
 }
-#header,
-#footer,
 #wrap{
     position: relative;
-    z-index: 2;
+    .ex {
+        min-height: 2000px;
+        background-color: #ebebee;
+    }
 }
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
-.home {}
+.home {
+    .bg-wrap-top {
+        background: url(../images/bg-wrap-top.jpg) no-repeat 50% 50%;
+        min-height: 400px;
+    }
+}
