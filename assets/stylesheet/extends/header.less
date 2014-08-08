@@ -28,7 +28,7 @@
         			a {
         				display: block;
         				color: #a3a9c3;
-						font-family: "Roboto";
+						font-family: "Roboto Condensed";
 						font-size: 11px;
 						font-weight: bold;
 						&.active {
@@ -86,7 +86,7 @@
                     }
 	        		.title {
 	        			color: #575757;
-						font-family: "Roboto";
+						font-family: "Roboto Condensed";
 						font-size: 14px;
 						font-weight: bold;
                         border-bottom: 1px solid #a5a5a5;
@@ -95,8 +95,13 @@
                         padding-bottom: 15px;
 	        		}
 	        		> li {
-	        			width: 25%;
+	        			width: 23%;
+                        margin-right: 2%;
                         float: left;
+                        &:last-child {
+                            width: 25%;
+                            margin-right: 0;
+                        }
                         ul {
                             list-style: none;
                             .title {
@@ -107,7 +112,15 @@
                                 color: #343434;
                                 font-family: "Roboto";
                                 font-size: 13px;
+                                font-weight: normal;
                                 padding-bottom: 15px;
+                                label {
+                                    color: #343434;
+                                    font-family: "Roboto";
+                                    font-size: 13px;
+                                    font-weight: normal;
+                                    padding-bottom: 15px;   
+                                }
                             }
                         }
 	        		}
@@ -133,5 +146,84 @@
     		opacity: 1;
     	}
 
+    }
+    .nav-bar {
+        nav {
+            color: #a3a9c3;
+            font-family: "Roboto Condensed";
+            font-size: 16px;
+            min-height: 113px;
+            text-align: center;
+            /*&:hover {
+                color: #fff;
+                background-color: #00bf79;
+                .dropdown {
+                    .dropdown-toggle {
+                        background-image: url(../images/nav-row-over.png);
+                    }
+                }
+            }*/
+            .dropdown {
+                &.open {
+                    .dropdown-toggle {
+                        color: #fff;
+                        background-color: #00bf79;
+                        background-image: url(../images/nav-row-over.png);
+                    }
+                }
+                .dropdown-toggle {
+                    padding: 66px 0 23px 0;
+                    background-image: url(../images/nav-row.png);
+                    background-position: 80% 71%;
+                    background-repeat: no-repeat;
+                    display: block;
+                    cursor: pointer;
+                    &:hover {
+                        color: #fff;
+                        background-color: #00bf79;
+                        background-image: url(../images/nav-row-over.png);
+                    }
+                }
+                .dropdown-body {
+                    position: relative;
+                    display: none;
+                    list-style: none;
+                    background-color: #1d213c;
+                    padding: 15px 0;
+                    text-align: left;
+                    min-width: 235px;
+                    max-height: 315px;
+                    /*overflow-y: scroll;
+                    overflow: auto;*/
+                    &:before {
+                        background: url(../images/row-top-nav.png) no-repeat 50% 50%;
+                        content: ' ';
+                        display: inline-block;
+                        width: 23px;
+                        height: 10px;
+                        position: absolute;
+                        right: 125px;
+                        top: -9px;
+                    }
+                    li {
+                        color: #939bbd;
+                        font-family: "Roboto";
+                        font-size: 12px;
+                        padding-left: 15px;                                                 
+                        &:hover {
+                            color: #fff;
+                            background-color: #00bf79;
+                        }
+                    }
+                }
+            }
+        }
+        .sep {
+            background: url(../images/sep.png) no-repeat 50% 50%;
+            width: 1px;
+            height: 42px;
+            float: left;
+            margin-top: 43px;
+        }
     }
 }
