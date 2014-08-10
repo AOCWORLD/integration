@@ -272,5 +272,36 @@
                 }
             }
         }
+        .connexion {
+            .dropdown {
+                .dropdown-toggle {
+                    background-image: url(../images/big-row-bottom.png);
+                    background-position: 50% 50%;
+                    &:hover {
+                        background-color: #4288dd;
+                        background-image: url(../images/big-row-bottom-over.png);
+                    }
+                }
+                &.open {
+                    .dropdown-toggle {
+                        background-color: #4288dd;
+                        background-image: url(../images/big-row-top.png);
+                    }
+                }
+                .dropdown-body {
+                    position: absolute;
+                    right: 0;
+                    min-width: 734px;
+                    min-height: 430px;
+                    background-color: #fff;
+                    padding: 23px 33px 33px 33px;
+                    &:before {
+                        background: url(../images/row-top.png) no-repeat 50% 50%;
+                        top: -10px;
+                        right: 83px;
+                    }
+                }
+            }
+        }
     }
 }
