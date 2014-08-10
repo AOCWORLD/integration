@@ -21,12 +21,57 @@ body {
     padding-left:0;
     padding-right:0;
 }
+.comment {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 11px;
+    background: url(../images/comment.png) no-repeat 0 50%;
+    height: 12px;
+    width: 35px;
+    float: left;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.view {
+    display: block;
+    font-family: 'Roboto';
+    font-size: 11px;
+    background: url(../images/view.png) no-repeat 0 50%;
+    height: 12px;
+    width: 35px;
+    float: left;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.note {
+    list-style: none;
+    width: 100%;
+    height: 15px;
+    margin: 15px 0 10px 0;
+    li {
+        float: left;
+        margin-left: 3px;
+        &:last-child {
+            margin-left: 0;
+        }
+        &.note-active {
+            background: url(../images/note-active.png) no-repeat 0 50%;
+            height: 12px;
+            width: 12px;
+        }
+        &.note-not-active {
+            background: url(../images/note-not-active.png) no-repeat 0 50%;
+            height: 12px;
+            width: 12px;
+        }
+    }
+}
 #wrap{
     position: relative;
-    margin-top: 15px;
     .bg-gray {
         min-height: 885px;
         background-color: #ebebee;
+        padding-top: 15px;
     }
     .share {
         margin-bottom: 12px;
@@ -127,6 +172,11 @@ body {
                     img {
                         margin: 10px 0 0 0;
                     }
+                    .name {
+                        font-family: "Roboto";
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
                 }
                 .status {
                     float: right;
@@ -203,6 +253,52 @@ body {
             }
         }
     }
+    .carrousel-videos {
+        .carousel {
+            .carousel-inner {
+                min-height: 320px;
+                .item {
+                    .carousel-caption {
+                        min-height: 65px;
+                        bottom: -64px;
+                        padding: 0;
+                        right: 0;
+                        left: 0;
+                        background-color: #1d213c;
+                        .video-title {
+                            font-family: "Roboto Condensed";
+                            font-size: 20px;
+                            color: #fff;
+                            float: left;
+                            margin: 15px 0 0 22px;
+                        }
+                        &:after {
+                            background: url(../images/carousel/row-bottom-carousel.png) no-repeat 50% 50%;
+                            content: ' ';
+                            display: inline-block;
+                            width: 23px;
+                            height: 11px;
+                            position: absolute;
+                            left: 50%;
+                            bottom: -11px;
+                        }
+                        .info {
+                            float: right;
+                            margin: 25px 25px 0 0;
+                            .date {
+                                font-family: "Roboto Condensed";
+                                font-size: 11px;
+                                color: #00bf79;
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel-indicators {
+                bottom: -25px;
+            }
+        }
+    }
     .videos {
         .title {
             display: block;
@@ -211,6 +307,66 @@ body {
             min-height: 178px;
             background: url(../images/videos.png) no-repeat 50% 50%;
             margin-bottom: 35px;
+        }
+        .mCustomScrollbar {
+            border-top: 0;
+            border-bottom: 2px solid #00bf79;
+            height: 525px;
+            width: 95%;
+            list-style: none;
+            margin-bottom: 35px;
+            .mCSB_scrollTools {
+                .mCSB_draggerRail {
+                    background-color: #d8d8de;
+                    margin-right: 0;
+                    border-radius: 0;
+                }
+                .mCSB_dragger {
+                    .mCSB_dragger_bar {
+                        background-color: #00bf79;
+                        margin-right: 0;
+                        border-radius: 0;
+                    }
+                }
+            }
+            .profil {
+                min-height: 110px;
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                img {
+                    float: left;
+                    width: 42%;
+                    margin-right: 3%;
+                }
+                .infos {
+                    float: left;
+                    width: 52%;
+                    margin-right: 3%;
+                    .info-title {
+                        float: left;
+                        font-family: "Roboto";
+                        font-size: 18px;
+                        font-weight: 300;
+                    }
+                    .flag {
+                        float: right;
+                        width: initial;
+                    }
+                }
+                .video-title {
+                    font-family: "Roboto Condensed";
+                    font-size: 14px;
+                    margin-right: 3%;
+                }
+                .comment {
+                    padding-left: 20px;
+                }
+                .view {
+                    padding-left: 20px;
+                }
+            }
         }
     }
 }
