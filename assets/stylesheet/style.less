@@ -126,7 +126,7 @@ body {
     .chat {
         .title {
             display: block;
-            min-width: 203px;
+            width: 100%;
             min-height: 178px;
             background: url(../images/tchat.png) no-repeat 50% 50%;
             margin-bottom: 15px
@@ -261,15 +261,16 @@ body {
                 .item {
                     .carousel-caption {
                         min-height: 65px;
-                        bottom: -64px;
+                        bottom: 2px;
                         padding: 0;
                         right: 0;
                         left: 0;
                         background-color: #1d213c;
+                        z-index: inherit;
                         .video-title {
                             font-family: "Roboto Condensed";
-                            font-size: 20px;
-                            color: #fff;
+                            color: #dadae5;
+                            font-size: 19px;
                             float: left;
                             margin: 15px 0 0 22px;
                         }
@@ -292,21 +293,34 @@ body {
                 width: 25px;
                 height: 25px;
                 &.left {
-                    left: 35%;
+                    left: 30%;
                     background: url(../images/carousel/control-left.png) no-repeat 50% 50%;
                 }
                 &.right {
-                    right: 35%;
+                    right: 30%;
                     background: url(../images/carousel/control-right.png) no-repeat 50% 50%;
                 }
             }
             .carousel-indicators {
-                bottom: -35px;
+                bottom: -31px;
+                left: 41%;
+                list-style-type: none;
+                margin-left: 0;
+                width: auto;
                 li {
                     width: 25px;
                     height: 25px;
+                    line-height: 25px;
+                    background-color: transparent;
+                    border-radius: 0;
+                    border: 0;
+                    text-indent: inherit;
+                    color: #8f9092;
+                    font-family: "Roboto";
+                    font-size: 14px;
                     &.active {
                         background: url(../images/carousel/indicator-active.png) no-repeat 50% 50%;
+                        color: #fff;
                     }
                 }
             }
@@ -339,7 +353,7 @@ body {
                                 height: 11px;
                                 position: absolute;
                                 left: 35%;
-                                top: -17px;
+                                top: -27px;
                             }
                         }
                     }
@@ -350,8 +364,7 @@ body {
     .videos {
         .title {
             display: block;
-            float: right;
-            min-width: 383px;
+            width: 100%;
             min-height: 178px;
             background: url(../images/videos.png) no-repeat 50% 50%;
             margin-bottom: 35px;

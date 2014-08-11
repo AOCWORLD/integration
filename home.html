@@ -85,7 +85,7 @@
       <div class="container">
         <div class="row">
           <div class="container-fluid">
-            <!--<div class="logo-img col-md-1 col-sm-1 pdlr-0"><a href="#"><img src="assets/images/logo-img.png" alt="logo AOCWORLD.com"/></a></div>-->
+            <div class="logo-img"><a href="#"><img src="assets/images/logo-img.png" alt="logo AOCWORLD.com"/></a></div>
             <!-- country -->
             <nav class="col-md-2 col-sm-2 pdlr-0">
               <div class="dropdown">
@@ -159,7 +159,45 @@
               <div class="dropdown">
                 <div class="dropdown-toggle">Connexion / S’inscrire</div>
                 <div class="dropdown-body">
-                  *****formulaire inscription + connexion*******
+                  <form class="left" method="Get" action="#">
+                    <h2 class="title">Connexion</h2>
+                    <div class="form-groupe">
+                      <label for="pseudo">Pseudo</label>
+                      <input type="text" id="pseudo">
+                    </div>
+                    <div class="form-groupe">
+                      <label for="password">Mot de passe</label>
+                      <input type="password" id="password">
+                    </div>
+                    <div class="form-action clearfix">
+                      <input type="submit" class="btn btn-white" value="Connexion">
+                    </div>
+                    <div class="reset-password clearfix"><a href="#">Mot de passe oubliée ?</a></div>
+                  </form>
+                  <form class="right" method="Get" action="#">
+                    <h2 class="title">Créez-votre-compte</h2>
+                    <div class="form-groupe">
+                      <label for="mail">Pseudo ou Adresse mail</label>
+                      <input type="text" id="mail">
+                    </div>
+                    <div class="form-groupe">
+                      <label for="pass">Mot de passe</label>
+                      <input type="password" id="pass">
+                    </div>
+                    <div class="form-groupe">
+                      <label for="repass">Entrer de nouveau votre mot de passe</label>
+                      <input type="password" id="repass">
+                    </div>
+                    <div class="form-action clearfix">
+                      <input type="submit" class="btn btn-bleu" value="Inscription">
+                    </div>
+                    <div class="social clearfix">
+                      <span class="title">Inscrivez-vous avec votre compte: </span>
+                      <a class="facebook" href="#"></a>
+                      <a class="twitter" href="#"></a>
+                      <a class="googleplus" href="#"></a>
+                    </div>
+                  </form>
                 </div>
               </div>
             </nav><!-- /.connexion -->
@@ -192,9 +230,11 @@
           <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
             <!-- chat -->
             <div class="chat col-md-3 col-sm-3 pdlr-0">
-              <a class="title" href="#">
-                <!--<img src="assets/images/tchat.png" alt="tchat" />-->
-              </a>
+              <div class="clearfix">
+                <a class="title" href="#">
+                  <!--<img src="assets/images/tchat.png" alt="tchat" />-->
+                </a>
+              </div>
               <input class="search" type="text" placeholder="Chercher des contacts">
               <ul class="mCustomScrollbar">
                 <li class="profil clearfix">
@@ -289,7 +329,7 @@
             </div>
             <!-- /.chat -->
             <!-- carousel -->
-            <div class="carrousel-videos col-md-5 col-sm-5" id="slider">
+            <div class="carrousel-videos col-md-6 col-sm-6" id="slider">
               <!-- galerie-->
               <div id="myCarousel" class="carousel slide">
                 <!-- Carousel items -->
@@ -333,9 +373,9 @@
                 <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">1</li>
+                    <li data-target="#myCarousel" data-slide-to="1">2</li>
+                    <li data-target="#myCarousel" data-slide-to="2">3</li>
                 </ol>
                 <!-- thumbnail-->
                 <div class="thumbs clearfix" id="slider-thumbs">
@@ -352,7 +392,7 @@
             </div>
             <!-- /.carousel -->
             <!-- videos -->
-            <div class="videos col-md-4 col-sm-4 pdlr-0">
+            <div class="videos col-md-3 col-sm-3 pdlr-0">
               <div class="clearfix"><a class="title" href="#">
                 <!--<img src="assets/images/videos.png" alt="tchat" />-->
               </a></div>
