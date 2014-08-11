@@ -176,6 +176,7 @@ body {
                         font-family: "Roboto";
                         font-size: 18px;
                         font-weight: 300;
+                        color: #737981;
                     }
                 }
                 .status {
@@ -272,16 +273,6 @@ body {
                             float: left;
                             margin: 15px 0 0 22px;
                         }
-                        &:after {
-                            background: url(../images/carousel/row-bottom-carousel.png) no-repeat 50% 50%;
-                            content: ' ';
-                            display: inline-block;
-                            width: 23px;
-                            height: 11px;
-                            position: absolute;
-                            left: 50%;
-                            bottom: -11px;
-                        }
                         .info {
                             float: right;
                             margin: 25px 25px 0 0;
@@ -294,8 +285,65 @@ body {
                     }
                 }
             }
+            .carousel-control {
+                top: inherit;
+                bottom: -30px;
+                background-image: none;
+                width: 25px;
+                height: 25px;
+                &.left {
+                    left: 35%;
+                    background: url(../images/carousel/control-left.png) no-repeat 50% 50%;
+                }
+                &.right {
+                    right: 35%;
+                    background: url(../images/carousel/control-right.png) no-repeat 50% 50%;
+                }
+            }
             .carousel-indicators {
-                bottom: -25px;
+                bottom: -35px;
+                li {
+                    width: 25px;
+                    height: 25px;
+                    &.active {
+                        background: url(../images/carousel/indicator-active.png) no-repeat 50% 50%;
+                    }
+                }
+            }
+        }
+        .thumbs {
+            margin-top: 15px;
+            ul {
+                list-style: none;
+                li {
+                    float: left;
+                    width: 20%;
+                    a {
+                        display: block;
+                        background-color: transparent;
+                        border-radius: 0;
+                        margin: 0;
+                        border: 2px solid transparent;
+                        padding: 5px;
+                        img {
+                            width: 100%;
+                        }
+                        &.selected {
+                            border: 2px solid #fb2929;
+                            position: relative;
+                            &:before {
+                                background: url(../images/carousel/row-bottom-carousel.png) no-repeat 50% 50%;
+                                content: ' ';
+                                display: inline-block;
+                                width: 23px;
+                                height: 11px;
+                                position: absolute;
+                                left: 35%;
+                                top: -17px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -312,9 +360,9 @@ body {
             border-top: 0;
             border-bottom: 2px solid #00bf79;
             height: 525px;
-            width: 95%;
+            width: 100%;
             list-style: none;
-            margin-bottom: 35px;
+            padding-bottom: 35px;
             .mCSB_scrollTools {
                 .mCSB_draggerRail {
                     background-color: #d8d8de;
@@ -349,6 +397,7 @@ body {
                         font-family: "Roboto";
                         font-size: 18px;
                         font-weight: 300;
+                        color: #737981;
                     }
                     .flag {
                         float: right;
@@ -359,6 +408,7 @@ body {
                     font-family: "Roboto Condensed";
                     font-size: 14px;
                     margin-right: 3%;
+                    color: #131729;
                 }
                 .comment {
                     padding-left: 20px;
@@ -416,7 +466,10 @@ body {
         width: 100%;
         display: table;
         p{
+
+            font-family: "Roboto";
             font-size: 36px;
+            font-weight: 100;
             color: #fff;
             vertical-align: middle;
             overflow: hidden;

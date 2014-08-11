@@ -120,8 +120,8 @@
             <!--<div class="sep"></div>-->
             <!-- categorie -->
             <nav class="col-md-2 col-sm-2 pdlr-0">
-              <div class="dropdown">
-                <div class="dropdown-toggle">Tous les Pays</div>
+              <div class="cat dropdown">
+                <div class="dropdown-toggle">Tous les Catégories</div>
                 <ul class="dropdown-body mCustomScrollbar">
                   <li>Bar</li>
                   <li>Bar à vin</li>
@@ -192,7 +192,9 @@
           <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
             <!-- chat -->
             <div class="chat col-md-3 col-sm-3 pdlr-0">
-              <a class="title" href="#"></a>
+              <a class="title" href="#">
+                <!--<img src="assets/images/tchat.png" alt="tchat" />-->
+              </a>
               <input class="search" type="text" placeholder="Chercher des contacts">
               <ul class="mCustomScrollbar">
                 <li class="profil clearfix">
@@ -287,11 +289,34 @@
             </div>
             <!-- /.chat -->
             <!-- carousel -->
-            <div class="carrousel-videos col-md-5 col-sm-5">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carrousel-videos col-md-5 col-sm-5" id="slider">
+              <!-- galerie-->
+              <div id="myCarousel" class="carousel slide">
                 <!-- Carousel items -->
                 <div class="carousel-inner">
-                    <div class="item active">
+                    <div class="item active" data-slide-number="0">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="1">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="2">
                         <img src="assets/images/carousel/video.jpg" alt="video" />
                         <div class="carousel-caption">
                           <span class="video-title">Titre de la sécance vidéo</span>
@@ -304,24 +329,33 @@
                     </div>
                 </div>
                 <!-- Carousel nav -->
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol> 
+                </ol>
+                <!-- thumbnail-->
+                <div class="thumbs clearfix" id="slider-thumbs">
+                  <ul class="thumbnails list-inline clearfix">
+                    <li><a id="carousel-selector-0" class="selected"><img src="assets/images/carousel/video-small.jpg" alt="video small" /></a></li>
+                    <li><a id="carousel-selector-1"><img src="assets/images/carousel/video-small.jpg" alt="video small" /></a></li>
+                    <li><a id="carousel-selector-2"><img src="assets/images/carousel/video-small.jpg" alt="video small" /></a></li>
+                  </ul>
+                </div>
+                <!-- /.thumbnail-->
               </div>
+              <!-- /.galerie-->
+                
             </div>
             <!-- /.carousel -->
             <!-- videos -->
             <div class="videos col-md-4 col-sm-4 pdlr-0">
-              <div class="clearfix"><a class="title" href="#"></a></div>
+              <div class="clearfix"><a class="title" href="#">
+                <!--<img src="assets/images/videos.png" alt="tchat" />-->
+              </a></div>
               <ul class="mCustomScrollbar">
                 <li class="profil clearfix">
                   <img src="assets/images/video-1.png" alt="image de video" />
@@ -545,7 +579,7 @@
                   <img src="assets/images/decouver-1.png" alt="decouvrir"/>
                 </div>
                 <div class="bottom-visit">
-                  <p>A decouvir</p>
+                  <p>A découvir</p>
                 </div>
               </div>
             </div>
