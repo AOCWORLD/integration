@@ -11,6 +11,9 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+.container {
+    width: 1400px;
+}
 .pdr-0 {
     padding-right:0;
 }
@@ -128,8 +131,18 @@ body {
             display: block;
             width: 100%;
             min-height: 178px;
-            background: url(../images/tchat.png) no-repeat 50% 50%;
-            margin-bottom: 15px
+            background: #4187dd url(../images/ico-tchat.png) no-repeat 50% 15%;
+            margin-bottom: 15px;
+            text-align: center;
+            text-decoration: none;
+            p {
+                color: #fff;
+                font-family: "Roboto";
+                font-size: 24px;
+                font-weight: 300;
+                padding-top: 35%;
+                text-transform: uppercase;
+            }
         }
         .search {
             padding: 10px 15px;
@@ -353,7 +366,7 @@ body {
                                 height: 11px;
                                 position: absolute;
                                 left: 35%;
-                                top: -27px;
+                                top: -19px;
                             }
                         }
                     }
@@ -366,8 +379,18 @@ body {
             display: block;
             width: 100%;
             min-height: 178px;
-            background: url(../images/videos.png) no-repeat 50% 50%;
+            background: #00bf79 url(../images/ico-videos.png) no-repeat 50% 15%;
             margin-bottom: 35px;
+            text-align: center;
+            text-decoration: none;
+            p {
+                color: #fff;
+                font-family: "Roboto";
+                font-size: 24px;
+                font-weight: 300;
+                padding-top: 25%;
+                text-transform: uppercase;
+            }
         }
         .mCustomScrollbar {
             border-top: 0;
@@ -455,7 +478,7 @@ body {
 }
 .home {
     .bg-wrap-top {
-        background: url(../images/bg-header-top.jpg) no-repeat 50% 50%;
+        background: url(../images/bg-header-top-v2.jpg) no-repeat 50% 50%;
         min-height: 400px;
     }
 }
@@ -500,6 +523,7 @@ body {
         border-top : 1px solid #fff;
         background-color: #f0f2f3;
         position: relative;
+        width: 100%;
         &:first-child {
             border-top: 0;
         }
