@@ -155,7 +155,7 @@
                 min-height: 85px;
                 .dropdown {
                     .dropdown-toggle {
-                        padding: 46px 0 15px 0;
+                        padding: 46px 0 15px 12%;
                     }
                 }
                 &.col-md-2, .col-sm-2 {
@@ -216,14 +216,14 @@
                     .dropdown-toggle {
                         background-position: 75% 71%;
                     }
-                    .dropdown-body {
-                        min-width: inherit;
-                    }
+                    /*.dropdown-body {
+                        min-width: 210px;;
+                    }*/
                 }
                 .dropdown-toggle {
                     padding: 66px 0 23px 12%;
                     background-image: url(../images/nav-row.png);
-                    background-position: 60% 71%;
+                    background-position: 70% 71%;
                     background-repeat: no-repeat;
                     display: block;
                     cursor: pointer;
@@ -234,15 +234,17 @@
                     }
                 }
                 .dropdown-body {
-                    position: relative;
+                    position: absolute;
                     display: none;
                     list-style: none;
                     background-color: #1d213c;
                     padding: 15px 0;
                     text-align: left;
-                    min-width: 235px;
+                    /*min-width: 235px;*/
                     max-height: 315px;
                     z-index: 1000;
+                    left: 0;
+                    right: 0;
                     /*overflow-y: scroll;
                     overflow: auto;*/
                     &:before {
@@ -252,7 +254,7 @@
                         width: 23px;
                         height: 10px;
                         position: absolute;
-                        right: 125px;
+                        right: 50%;
                         top: -9px;
                     }
                     li {
@@ -275,8 +277,16 @@
             float: left;
             margin-top: 43px;
         }
+        .region {
+            width: 13%;
+            float: left;
+        }
+        .categorie {
+            width: 15%;
+            float: left;
+        }
         .search {
-            margin: 30px 0;
+            margin: 30px 4% 30px 10%;
             form {
                 input[type="text"] {
                     border: 1px solid #01ba77;
@@ -301,6 +311,8 @@
             }
         }
         .connexion {
+            width: 15%;
+            float: right;
             .dropdown {
                 .dropdown-toggle {
                     background-image: url(../images/big-row-bottom.png);
@@ -319,6 +331,7 @@
                 .dropdown-body {
                     position: absolute;
                     right: 0;
+                    left: inherit;
                     min-width: 734px;
                     min-height: 555px;
                     background-color: #fff;
