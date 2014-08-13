@@ -3,19 +3,18 @@
     top: -1px;
     left: 0;
     right: 0;
-    min-height: 122px;
     z-index: 5;
     .bg-fixed-wrap-top {
         /*opacity: .65;*/
         /*background-color: #070a1c;*/
-        background: url(../images/bg-fixed-wrap-top.jpg) no-repeat 50% 50%;
-        min-height: 36px;
+        background: url(../images/bg-fixed-wrap-top-v2.jpg) no-repeat 50% 50%;
+        min-height: 30px;
         .nav-menu {
-        	min-height: 37px;
+        	min-height: 30px;
         	.menu-left {
         		list-style: none;
         		float: left;
-        		margin: 10px 0;
+        		margin: 7px 0;
         		li {
         			display: inline-block;
         			float: left;
@@ -39,7 +38,7 @@
         	}
         	.dropdown {
         		float: right;
-        		min-height: 36px;
+        		min-height: 30px;
 				min-width: 50px;
                 &.open {
                     .menu-right {
@@ -55,7 +54,7 @@
         				width: 25px;
         				height: 14px;
         				display: block;
-        				margin: 11px 0;
+        				margin: 8px 0;
         			}
         		}
 	        	.menu-right {
@@ -131,10 +130,10 @@
     .bg-fixed-wrap-bottom {
         opacity: .65;
         background-color: #010776;
-        min-height: 86px;
+        min-height: 70px;
         .logo {
             display: block;
-            margin: 19px 0;
+            margin: 11px 0;
             max-width: 332px;
         }
     }
@@ -153,10 +152,24 @@
             }
             nav {
                 min-height: 85px;
+                &.connexion {
+                    .dropdown {
+                        .dropdown-toggle {
+                            background-position: 53% 40%;
+                        }
+                    }
+                }
                 .dropdown {
                     .dropdown-toggle {
                         padding: 46px 0 15px 12%;
+                        background-position: 80% 72%;
                     }
+                    &.cat {
+                        .dropdown-toggle {
+                            background-position: 95% 72%;
+                        }
+                    }
+                
                 }
                 &.col-md-2, .col-sm-2 {
                     width: 15%;
@@ -166,7 +179,7 @@
                 }
             }
             .search {
-                margin: 16px 0;
+                margin: 21px 0 21px 5%;
             }
             .page-title {
                 display: none;
@@ -185,7 +198,7 @@
             color: #a3a9c3;
             font-family: "Roboto Condensed";
             font-size: 16px;
-            min-height: 113px;
+            min-height: 70px;
             /*text-align: center;*/
             &.connexion {
                 text-align: center;
@@ -214,16 +227,16 @@
                 }
                 &.cat {
                     .dropdown-toggle {
-                        background-position: 95% 71%;
+                        background-position: 95% 55%;
                     }
                     /*.dropdown-body {
                         min-width: 210px;;
                     }*/
                 }
                 .dropdown-toggle {
-                    padding: 66px 0 23px 12%;
+                    padding: 23px 0 23px 12%;
                     background-image: url(../images/nav-row.png);
-                    background-position: 80% 71%;
+                    background-position: 80% 55%;
                     background-repeat: no-repeat;
                     display: block;
                     cursor: pointer;
@@ -275,7 +288,7 @@
             width: 1px;
             height: 42px;
             float: left;
-            margin-top: 43px;
+            margin-top: 14px;
         }
         .region {
             width: 13%;
@@ -286,11 +299,11 @@
             float: left;
         }
         .search {
-            margin: 30px 4% 30px 10%;
+            margin: 14px 4% 13px 10%;
             form {
                 input[type="text"] {
                     border: 1px solid #01ba77;
-                    padding: 15px;
+                    padding: 10px 15px;
                     color: #a3a9c3;
                     font-family: "Roboto";
                     font-size: 14px; 
@@ -300,7 +313,7 @@
                 }
                 input[type="submit"] {
                     width: 20%;
-                    min-height: 53px;
+                    min-height: 43px;
                     background-color: #01ba77;
                     color: #fbfbfb;
                     font-family: "Roboto";
@@ -316,7 +329,7 @@
             .dropdown {
                 .dropdown-toggle {
                     background-image: url(../images/big-row-bottom.png);
-                    background-position: 50% 50%;
+                    background-position: 53% 20%;
                     &:hover {
                         background-color: #4288dd;
                         background-image: url(../images/big-row-bottom-over.png);
@@ -340,7 +353,7 @@
                     &:before {
                         background: url(../images/row-top.png) no-repeat 50% 50%;
                         top: -10px;
-                        right: 83px;
+                        right: 74px;
                     }
                     form {
                         width: 50%;
@@ -464,6 +477,7 @@
             p {
                 font-family: "Roboto";
                 font-size: 25px;
+                line-height: 30px;
                 color: #fff;
                 font-weight: 300;
             }
