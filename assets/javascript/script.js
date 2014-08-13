@@ -1,14 +1,27 @@
 $(document).ready(function() {
 	
 	//toggle menu
-	$('.dropdown-toggle').click(function(){
+	$('.nav-bar .dropdown .dropdown-toggle').click( function(e){
+		e.stopPropagation();
 		if($(this).parent('.dropdown').hasClass('open')) {
 			$(this).parent('.dropdown').removeClass('open');
 			$(this).parent('.dropdown').find('.dropdown-body').hide();
 		}else {
+			$(this).parents('.nav-bar').find('.open').children('.dropdown-body').hide();
+			$(this).parents('.nav-bar').find('.open').removeClass('open');
 			$(this).parent('.dropdown').addClass('open');
 			$(this).parent('.dropdown').find('.dropdown-body').show();
 		}
+	});
+	// If an event gets to the body
+	$("body").click(function(){
+	  $(".nav-bar .dropdown .dropdown-body").fadeOut();
+	  $(".nav-bar .dropdown").removeClass('open');
+	});
+
+	// Prevent events from getting pass .popup
+	$(".popup").click(function(e){
+	  e.stopPropagation();
 	});
 
 	//carousel
