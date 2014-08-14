@@ -1,8 +1,7 @@
 $(document).ready(function() {
-	
+
 	//toggle menu
-	$('.nav-bar .dropdown .dropdown-toggle').click( function(e){
-		e.stopPropagation();
+	$('.dropdown .dropdown-toggle').click( function(e){
 		if($(this).parent('.dropdown').hasClass('open')) {
 			$(this).parent('.dropdown').removeClass('open');
 			$(this).parent('.dropdown').find('.dropdown-body').hide();
@@ -13,15 +12,18 @@ $(document).ready(function() {
 			$(this).parent('.dropdown').find('.dropdown-body').show();
 		}
 	});
-	// If an event gets to the body
-	$("body").click(function(){
-	  $(".nav-bar .dropdown .dropdown-body").fadeOut();
-	  $(".nav-bar .dropdown").removeClass('open');
+	// stop propagation click dropdown body
+	$('.dropdown .dropdown-body').click( function(e){
+		e.stopPropagation();
 	});
-
-	// Prevent events from getting pass .popup
-	$(".popup").click(function(e){
-	  e.stopPropagation();
+	// stop propagation click dropdown bouton
+	$('.dropdown .dropdown-toggle').click( function(e){
+		e.stopPropagation();
+	});
+	// click body to hide dropdown body
+	$("body").click(function(){
+	  $(".dropdown .dropdown-body").fadeOut();
+	  $(".dropdown").removeClass('open');
 	});
 
 	//carousel
