@@ -11,6 +11,26 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+//custom scroll
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #4a638d;
+    width: 5px;
+    border-radius: 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #10132c;
+    width: 5px;
+}
+.mCSB_inside > .mCSB_container {
+    margin-right: 11px;
+}
 .pdr-0 {
     padding-right:0;
 }
@@ -63,6 +83,105 @@ body {
             background: url(../images/note-not-active.png) no-repeat 0 50%;
             height: 12px;
             width: 12px;
+        }
+    }
+}
+.home {
+    .bg-wrap-top {
+        background: url(../images/bg-header-top-v3.jpg) no-repeat 50% 50%;
+        min-height: 300px;
+    }
+}
+.no-home {
+    .bg-wrap-top {
+        background: url(../images/bg-header-top-v4.jpg) no-repeat 50% 50%;
+        min-height: 120px;
+    }
+    #header {
+        .bg-fixed-wrap-top {
+            background: none;
+            min-height: 37px;
+            .nav-menu {
+                min-height: 37px;
+                .menu-left {
+                    margin: 5px 0;
+                    .ico-acc {
+                        background: url(../images/logo-acceuil.png) no-repeat 50% 50%;
+                        display: block;
+                        width: 28px;
+                        height: 28px;
+                    }
+                    .no-ico {
+                        margin-top: 7px;
+                    }
+                }
+                .dropdown {
+                    min-height: 37px;
+                    .dropdown-toggle {
+                        .flag {
+                            margin: 11px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .bg-fixed-wrap-bottom {
+            background-color: inherit;
+            opacity: 1;
+            min-height: 84px;
+            .title {
+                color: #fff;
+                font-family: "Roboto Condensed";
+                font-size: 38px;
+                font-weight: bold;
+                float: left;
+                text-transform: uppercase;
+                margin: 21px 0;
+            }
+            .profil {
+                float: right;
+                color: #898d9d;
+                font-family: "Roboto";
+                font-size: 18px;
+                font-weight: 300;
+                margin: 28px 10% 0 0;
+                .sexe {
+                    padding-left: 3px;
+                }
+                .name {
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+    #wrap {
+        background-color: #ebebee;
+        padding-top: 45px;
+    }
+    #footer {
+        margin: 0;
+        padding: 45px 0;
+        .bottom-footer {
+            color: #9f9f9f;
+            text-align: center;
+            ul {
+                list-style: none;
+                width: 30%;
+                margin: 0 auto;
+                li {
+                    float: left;
+                    padding: 0 10px;
+                    border-right: 1px solid #b4bdce;
+                    &:last-child {
+                        border-right: none;
+                    }
+                    a {
+                        color: #9f9f9f;
+                        font-family: "Roboto Condensed";
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
@@ -466,32 +585,6 @@ body {
                 }
             }
         }
-    }
-}
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-//custom scroll
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
-.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
-    background-color: #4a638d;
-    width: 5px;
-    border-radius: 0;
-}
-.mCSB_scrollTools .mCSB_draggerRail {
-    background-color: #10132c;
-    width: 5px;
-}
-.mCSB_inside > .mCSB_container {
-    margin-right: 11px;
-}
-.home {
-    .bg-wrap-top {
-        background: url(../images/bg-header-top-v3.jpg) no-repeat 50% 50%;
-        min-height: 300px;
     }
 }
 .list-bloc {
