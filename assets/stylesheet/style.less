@@ -157,35 +157,10 @@ body {
         }
     }
     #wrap {
-        background-color: #ebebee;
+        background-color: #fff;
         padding-top: 45px;
     }
-    #footer {
-        margin: 0;
-        padding: 45px 0;
-        .bottom-footer {
-            color: #9f9f9f;
-            text-align: center;
-            ul {
-                list-style: none;
-                width: 30%;
-                margin: 0 auto;
-                li {
-                    float: left;
-                    padding: 0 10px;
-                    border-right: 1px solid #b4bdce;
-                    &:last-child {
-                        border-right: none;
-                    }
-                    a {
-                        color: #9f9f9f;
-                        font-family: "Roboto Condensed";
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
+
 }
 #wrap{
     position: relative;
@@ -804,22 +779,66 @@ body {
 			}
 			p {
 				float: left;
+				span {
+					color: #eb4738;
+				}
 			}
 		}
 		.adr-adr {
 			border-bottom: 1px solid #d5d9d9;
 			border-top: 1px solid #d5d9d9;
 			margin-top:55px;
-			padding:30px 0;
+			padding: 25px 0;
 			width: 80%;
+			font-size: 16px;
+			color: #808d8e;
 		}
 	}
 }
 
-
 /********** inscrit ***********/
-.form-horizontal {
-	.control-label {
-		text-align:left;
+.contact-bloc {
+	.img-inscrit {
+		padding: 35% 35% 18%;
+	}
+	.inscrit-ins {
+		color: #555555;
+		text-align: center;
+		font-size: 31px;
+		font-weight: 200;
+		line-height: 43px;
+	}
+	.sign_in {
+		background-color: #f3f3f3;
+		.form-horizontal {
+			padding: 30px 20px;
+			.control-label {
+				text-align:left;
+				color: #5d5d5d;
+				font-size: 14px;
+				font-weight: 500;
+			}
+			.second-select {
+				padding: 0;
+			}
+			.checkbox {
+				label {
+					font-size: 14px;
+					color: #5d5d5d;
+					span {
+						color: #0161d6;
+					}
+				}
+			}
+			.form-group-bttn {
+				float: right;
+				margin: 25px 10px;
+				button {
+					color: #fcfcfc;
+					font-size: 12px;
+					background-color: #4b8efa;
+				}
+			}
+		}
 	}
 }

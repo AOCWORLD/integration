@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="no-home">
+
+  <div class="bg-wrap-top"></div>
+  
+  <!-- Debut header -->
+  <header id="header">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+                <li><a class="no-ico" href="#">Contact</a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <h1 class="title">inscription</h1>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+        	<div class="contact-bloc">
+                  <div class="middle">
+                      <div class="row">
+                        <div class="container-fluid">
+                        	<div class="col-md-6 col-sm-6">
+                                <img src="assets/images/inscrit.png" class="img-inscrit">
+                                <div class="inscrit-ins">
+                                    <p>Compléter le formulaire ci-présent pour achever la procédure d’inscription</p>
+                                </div> 
+                            </div>
+                            <div class="col-md-6 col-sm-6 sign_in">
+                            	<form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                  	<label for="nom" class="col-sm-12 control-label">Nom</label>
+                                    <div class="col-sm-6">
+                                      <input type="text" class="form-control" id="nom" placeholder="Nom">
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <input type="text" class="form-control" id="prenom" placeholder="Prenom">
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="form-group">
+                                  	<label for="pw" class="col-sm-12 control-label">Créez un mot de passe</label>
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control" id="pw">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<label for="user" class="col-sm-12 control-label">Choisissez votre nom d’utilisateur</label>
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control" id="user">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<label for="cpw" class="col-sm-12 control-label">Confirmez votre mot de passe</label>
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control" id="cpw">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<label for="dte" class="col-sm-12 control-label">Date de naissance</label>
+                                    <div class="col-sm-4">
+                                      <select class="form-control">
+                                          <option>Jour</option>
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                          <option>4</option>
+                                          <option>5</option>
+                                          <option>6</option>
+                                          <option>7</option>
+                                          <option>8</option>
+                                          <option>9</option>
+                                          <option>10</option>
+                                          <option>11</option>
+                                          <option>12</option>
+                                          <option>13</option>
+                                          <option>14</option>
+                                          <option>15</option>
+                                          <option>16</option>
+                                          <option>17</option>
+                                          <option>18</option>
+                                          <option>19</option>
+                                          <option>20</option>
+                                          <option>21</option>
+                                          <option>22</option>
+                                          <option>23</option>
+                                          <option>24</option>
+                                          <option>25</option>
+                                          <option>26</option>
+                                          <option>27</option>
+                                          <option>28</option>
+                                          <option>29</option>
+                                          <option>30</option>
+                                          <option>31</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-4 second-select">
+                                      <select class="form-control">
+                                          <option>Mois</option>
+                                          <option>Janvier</option>
+                                          <option>Fevrier</option>
+                                          <option>Mars</option>
+                                          <option>April</option>
+                                          <option>Mai</option>
+                                          <option>Juin</option>
+                                          <option>Juillet</option>
+                                          <option>Aout</option>
+                                          <option>Septemre</option>
+                                          <option>Octobre</option>
+                                          <option>Nov</option>
+                                          <option>Decem</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <select class="form-control">
+                                          <option>Annee</option>
+                                          <option>2</option>
+                                       </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<label for="sexe" class="col-sm-12 control-label">Sexe</label>
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control" id="sexe">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<label for="num" class="col-sm-12 control-label">Numéro de téléphone mobile</label>
+                                    <div class="col-sm-12">
+                                      <input type="text" class="form-control" id="num">
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                  	<label for="pays" class="col-sm-12 control-label">Pays</label>
+                                    <div class="col-sm-12">
+                                      <select class="form-control">
+                                          <option>Selectionnez votre pays</option>
+                                          <option>2</option>
+                                       </select>
+                                    </div>
+                                  </div>
+                                  <div class="checkbox">
+                                      <label>
+                                        <input type="checkbox"> J’accepte les <span>Conditions d’utilisation</span> et les
+<span>Règles de confidentialité </span>de AOCWORLD
+                                      </label>
+                                    </div>
+                                  <div class="form-group-bttn">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                      <button type="submit" class="btn btn-default">étape suivante</button>
+                                    </div>
+                                  </div>
+                                </form>
+                            </div>
+                        </div>
+                      </div>
+          
+                  </div>
+                </div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <!-- footer top -->
+          <div class="top-footer">
+            <div class="container">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/globe.png" alt="globe"/>
+                  </div>
+                  <div class="col-md-6 col-sm-6 pdlr-0">
+                      <img src="assets/images/video.png" alt="video"/>
+                  </div>
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/vin.png" alt="vin"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer top-->
+          <!-- footer bottom-->
+          <div class="bottom-footer">
+            <div class="first f-b txt-h4">
+              <h4 class="header-list">Nous contacter</h4>
+            </div>
+            <div class="s-sep-footer"></div>
+            <div class="second txt-h4">
+              <h4 class="header-list">Annonceur pros</h4>
+            </div>
+            <div class="s-sep-footer"></div>
+            <div class="col-md-4 col-sm-4 pdlr-0">
+              <h4 class="header-list">Conditions générale</h4>
+            </div>
+
+			</div>
+          <!-- /.footer bottom-->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>

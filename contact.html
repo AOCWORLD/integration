@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>AOCWORLD</title>
@@ -15,20 +16,20 @@
   <!--/ END JAVASCRIPT SECTION -->
 </head>
 
-<body class="home">
-  
-  <div class="bg-wrap-top affix-top" data-spy="affix" data-offset-top="10"></div>
+<body class="no-home">
+
+  <div class="bg-wrap-top"></div>
   
   <!-- Debut header -->
-  <header id="header" class="affix-top" data-spy="affix" data-offset-top="10">
+  <header id="header">
     <div class="bg-fixed-wrap-top">
       <div class="container">
         <div class="row">
           <div class="container-fluid">
             <nav class="nav-menu">
               <ul class="menu-left">
-                <li><a class="active" href="#">Accueil</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+                <li><a class="no-ico" href="#">Contact</a></li>
               </ul>
               <div class="dropdown">
                 <div class="dropdown-toggle">
@@ -75,138 +76,7 @@
       <div class="container">
         <div class="row">
           <div class="container-fluid">
-            <a class="logo" href="#"><img src="assets/images/logo.png" alt="logo AOCWORLD.com"/></a>
-          </div><!-- /.container-fluid -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </div>
-    <div class="nav-bar">
-      <div class="container">
-        <div class="row">
-          <div class="container-fluid">
-            <div class="logo-img"><a href="#"><img src="assets/images/logo-img.png" alt="logo AOCWORLD.com"/></a></div>
-            <!-- country -->
-            <nav class="region">
-              <div class="dropdown">
-                <div class="dropdown-toggle">Tous les Pays</div>
-                <ul class="dropdown-body mCustomScrollbar">
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                  <li>Afghanistan</li>
-                  <li>Afrique du sud</li>
-                </ul>
-              </div>
-            </nav><!-- /.country -->
-            <div class="sep"></div>
-            <!-- categorie -->
-            <nav class="categorie">
-              <div class="cat dropdown">
-                <div class="dropdown-toggle">Tous les Catégories</div>
-                <ul class="dropdown-body mCustomScrollbar">
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                  <li>Bar</li>
-                  <li>Bar à vin</li>
-                </ul>
-              </div>
-            </nav><!-- /.categorie -->
-            <div class="search col-md-5 col-sm-5 pdlr-0">
-              <form action="#" method="GET">
-                <input type="text" placeholder="Rechercher par ville, nom, téléphone, mail">
-                <input type="submit" value="Je trouve">
-              </form>
-            </div>
-            <!-- connexion -->
-            <nav class="connexion">
-              <div class="dropdown">
-                <div class="dropdown-toggle">Connexion / S’inscrire</div>
-                <div class="dropdown-body">
-                  <form class="left" method="Get" action="#">
-                    <h2 class="title">Connexion</h2>
-                    <div class="form-groupe">
-                      <label for="pseudo">Pseudo</label>
-                      <input type="text" id="pseudo">
-                    </div>
-                    <div class="form-groupe">
-                      <label for="password">Mot de passe</label>
-                      <input type="password" id="password">
-                    </div>
-                    <div class="form-action clearfix">
-                      <input type="submit" class="btn btn-white" value="Connexion">
-                    </div>
-                    <div class="reset-password clearfix"><a href="#">Mot de passe oubliée ?</a></div>
-                  </form>
-                  <form class="right" method="Get" action="#">
-                    <h2 class="title">Créez-votre-compte</h2>
-                    <div class="form-groupe">
-                      <label for="mail">Pseudo ou Adresse mail</label>
-                      <input type="text" id="mail">
-                    </div>
-                    <div class="form-groupe">
-                      <label for="pass">Mot de passe</label>
-                      <input type="password" id="pass">
-                    </div>
-                    <div class="form-groupe">
-                      <label for="repass">Entrer de nouveau votre mot de passe</label>
-                      <input type="password" id="repass">
-                    </div>
-                    <div class="form-action clearfix">
-                      <input type="submit" class="btn btn-bleu" value="Inscription">
-                    </div>
-                    <div class="social clearfix">
-                      <span class="title">Inscrivez-vous avec votre compte: </span>
-                      <a class="facebook" href="#"></a>
-                      <a class="twitter" href="#"></a>
-                      <a class="googleplus" href="#"></a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </nav><!-- /.connexion -->
-            <!-- title -->
-            <div class="page-title">
-              <h1>Bienvenue sur AOCWORLD</h1>
-              <p>De la vigne à la table</p>
-              <p>Dans toutes les régions il y a un PeopleWine à votre goût</p>
-            </div>
-            <!-- /.title -->
+            <h1 class="title">contact</h1>
           </div><!-- /.container-fluid -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -215,13 +85,11 @@
   <!-- Fin header -->
   
   <!-- Debut wrap -->
-  <div id="wrap" class="affix-top" data-spy="affix" data-offset-top="10">
-      <div class="container">
-          <div class="row">
-            <div class="container-fluid">
-              <!-- bloc bottom -->
-              <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
-                <div class="contact-bloc">
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+        	<div class="contact-bloc">
                   <div class="middle">
                       <div class="row">
                         <div class="container-fluid">
@@ -229,31 +97,31 @@
                             	<form class="form-horizontal" role="form">
                                   <div class="form-group">
                                     <div class="col-sm-11">
-                                      <input type="email" class="form-control" id="inputEmail3" placeholder="Nom *">
+                                      <input type="email" class="form-control" id="nom" placeholder="Nom *">
                                     </div>
                                   </div>
                                   <div class="form-group">
                                     <div class="col-sm-11">
-                                      <input type="email" class="form-control" id="inputPassword3" placeholder="Prenom *">
+                                      <input type="text" class="form-control" id="prenom" placeholder="Prenom *">
                                     </div>
                                   </div>
                                   <div class="form-group">
                                     <div class="col-sm-11">
-                                      <input type="email" class="form-control" id="inputPassword3" placeholder="E-mail">
+                                      <input type="text" class="form-control" id="mail" placeholder="E-mail">
                                     </div>
                                   </div>
                                   <div class="form-group">
                                     <div class="col-sm-11">
-                                      <input type="email" class="form-control" id="inputPassword3" placeholder="Tel *">
+                                      <input type="text" class="form-control" id="Tel" placeholder="Tel *">
                                     </div>
                                   </div>
                                   <div class="form-group">
                                     <div class="col-sm-11">
-                                      <input type="email" class="form-control form-control-sujet" id="inputPassword3" placeholder="Sujet">
+                                      <input type="text" class="form-control form-control-sujet" id="Sujet" placeholder="Sujet">
                                     </div>
                                   </div>
                                   <textarea class="form-control-txt" rows="9" placeholder="Message *"></textarea>
-                                  <p>*  Champs obligatoires</p>
+                                  <p><span>*</span>  Champs obligatoires</p>
                                   <div class="form-group-btnn">
                                     <div class="col-sm-offset-2 col-sm-10">
                                       <button type="submit" class="btn btn-default">Envoyer</button>
@@ -275,11 +143,9 @@
           
                   </div>
                 </div>
-              </div>
-              <!-- /.bloc bottom -->
-            </div><!-- /.container-fluid -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
   </div>
   <!-- Fin wrap -->
   
@@ -360,4 +226,5 @@
   <script type="text/javascript" src="assets/javascript/script.js"></script>
 
 </body>
+
 </html>
