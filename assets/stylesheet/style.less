@@ -380,6 +380,99 @@ body {
             .right-top {
                 width: 100%;
                 margin-bottom: 10px;
+                .title-video {
+                    display: block;
+                    width: 100%;
+                    min-height:70px;
+                    line-height: 70px;
+                    color: #fff;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0 30px;
+                    background: #00bf79 url(../images/ico-video.png) no-repeat 90% 50%;
+                    text-transform: uppercase;
+                }
+                .carrousel-videos {
+                    width: 100%;
+                    padding: 0;
+                    float: none;
+                    min-height: 449px;
+                    border-bottom: 2px solid #00bf79;
+                    .carousel {
+                        .carousel-inner {
+                            min-height: inherit;
+                            .item {
+                                > img {
+                                    min-height: 280px;
+                                }
+                                .carousel-caption {
+                                    min-height: 60px;
+                                    bottom: 0px;
+                                    .video-title {
+                                        margin: 10px 0 0 15px;
+                                        font-size: 16px;
+                                        display: block;
+                                        float: none;
+                                        text-align: left;
+                                    }
+                                    .date {
+                                        float: left;
+                                        color: #00bf79;
+                                        font-family: "Roboto Condensed";
+                                        font-size: 11px;
+                                        margin-left: 15px;
+                                    }
+                                    .info {
+                                        margin: 0 15px 0 0;
+                                    }
+                                }
+                            }
+                        }
+                        .carousel-control {
+                            &.left {
+                                left: 25%;
+                            }
+                            &.right {
+                                right: 25%;
+                            }
+                        }
+                        .carousel-indicators {
+                            left: 45%;
+                            li {
+                                &.active {
+                                    background: url(../images/carousel/indicator-active-green.png) no-repeat 50% 50%;
+                                }
+                            }
+                        }
+                    }
+                    .thumbs {
+                        ul {
+                            li {
+                                a {
+                                    padding: 0;
+                                    &.selected {
+                                        border: 2px solid #00bf79;
+                                        position: relative;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .title-tchat {
+                    display: block;
+                    width: 100%;
+                    min-height:70px;
+                    line-height: 70px;
+                    color: #fff;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0 30px;
+                    background: #4288dd url(../images/ico-tchat-small.png) no-repeat 90% 50%;
+                    text-transform: uppercase;
+                }
             }
             .right-bottom {
                 width: 100%;
