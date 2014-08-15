@@ -483,6 +483,8 @@ body {
                 .chat {
                     .search {
                         margin-top: 15px;
+                        min-height: inherit;
+                        padding: 5px 15px;
                     }
                     .mCustomScrollbar {
                         height: 282px;
@@ -497,7 +499,7 @@ body {
                                 margin: 0 3% 0 3%;
                                 .name {
                                     float: left;
-                                    margin: 17px 15px 0 0;
+                                    margin: 17px 10px 0 0;
                                 }
                                 img {
                                     margin: 25px 0 0 0;
@@ -563,6 +565,125 @@ body {
                             padding: 0px 25px 0px 40px;
                             display: table-cell;
                             vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .search {
+                padding: 40px 5px 40px 20px;
+                form {
+                    width: 95%;
+                    margin-bottom: 45px;
+                    .form-control {
+                        width: 80%;
+                        float: left;
+                        min-height: 45px;
+                        padding: 12px 20px;
+                        color: #55575f;
+                        font-family: "Roboto";
+                        font-size: 18px;
+                        border-radius: 0;
+                        border: 1px solid #d5d5d5;
+                        -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.14);
+                        -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.14);
+                        box-shadow: inset 0 0 2px rgba(0,0,0,.14);
+                    }
+                    .btn-default {
+                        width: 20%;
+                        float: left;
+                        min-height: 45px;
+                        color: #fbfbfb;
+                        font-family: "Roboto Condensed";
+                        font-size: 18px;
+                        background-color: #c1c1c1;
+                        border: 0;
+                        border-radius: 0;
+                    }
+                }
+                .result-search {
+                    ul {
+                        list-style: none;
+                        &.mCustomScrollbar {
+                            width: 100%;
+                            height: 625px;
+                            li {
+                                min-height: 156px;
+                                margin-right: 20px;
+                                border-bottom: 1px solid #ccc;
+                                .search-left {
+                                    margin: 10px 3% 0px 0;
+                                    float: left;
+                                    width: 26%;
+                                }
+                                .search-middle {
+                                    float: left;
+                                    width: 45%;
+                                    .name {
+                                        color: #55575f;
+                                        font-family: "Roboto Condensed";
+                                        font-size: 24px;
+                                        text-transform: uppercase;
+                                    }
+                                    .ville {
+                                        color: #838387;
+                                        font-family: "Roboto";
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        margin-bottom: 20px;
+                                    }
+                                    .prop {
+                                        color: #838387;
+                                        font-family: "Roboto";
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                                .search-right {
+                                    float: left;
+                                    width: 26%;
+                                    .flag {
+                                        float: right;
+                                        margin-bottom: 15px;
+                                    }
+                                    .favoris {
+                                        float: right;
+                                        color: #818284;
+                                        font-family: "Roboto Condensed";
+                                        font-size: 13px;
+                                        border: 1px solid #d4d4d4;
+                                        -moz-border-radius: 2px;
+                                        -webkit-border-radius: 2px;
+                                        border-radius: 2px;
+                                        -moz-background-clip: padding;
+                                        -webkit-background-clip: padding-box;
+                                        background-clip: padding-box;
+                                        background-color: #f3f3f3;
+                                        margin-bottom: 10px;
+                                        padding: 10px 20px 10px 45px;
+                                        background-image: url(../images/ico-favoris.png);
+                                        background-position: 20px 50%;
+                                        background-repeat: no-repeat;
+                                    }
+                                    p {
+                                        float: right;
+                                        color: #00bf79;
+                                        font-family: "Roboto Condensed";
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .mCSB_scrollTools {
+                                .mCSB_draggerRail {
+                                    background-color: #f2f2f3;
+                                    border-radius: 0;
+                                }
+                                .mCSB_dragger {
+                                    .mCSB_dragger_bar {
+                                        background-color: #4288dd;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
