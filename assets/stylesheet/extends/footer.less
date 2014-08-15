@@ -59,50 +59,55 @@
 				border: 0;
 			}
 		}
-	}
-}
-
-/************ contact ************/
-.search-zone {
-	width: 100%;
-	padding-top: 65px;
-	.input-group {
-		margin: 0 auto;
-		width:48%;
-		.form-control {
-			background-color: #ebebee !important;
-		}
-		.input-group-btn {
-			.btn-default {
-				background-color: #ebebee;
-				border-radius: 0;
-				border-left: 0;		
-			}
-			.img-search {
-				background-image: url(../images/sprit-search.png);
-				height: 34px;
-				width: 40px;
-				background-repeat: no-repeat;
-				background-position: 50% 50%;
+		.search-zone {
+			margin-top: 65px;
+			.input-group {
+				margin: 0 auto;
+				width:40%;
+				position: relative;
+				.form-control {
+					background-color: transparent;
+					width: 100%;
+					padding: 12px 50px 12px 20px;
+					border-right: 1px solid #ccc;
+				}
+				.btn-default {
+					position: absolute;
+					min-width: 45px;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					border-radius: 0;
+					border: none;
+					background: url(../images/sprit-search.png) no-repeat 50% 50% ;
+				}
 			}
 		}
 	}
-}
-
-/************ inscrit ************/
-.bottom-footer {
-	.s-sep-footer {
-		float: left;
-		width: 1px;
-		height: 17px;
-		background: url(../images/s-sep-footer.png) no-repeat 50% 50%;
-		margin-right: 1%;
-		margin-left:1%;
-	}
-	.txt-h4 {
-		width: auto !important;
-	}
-	.f-b {
-		margin-left:30% !important;
+	&.small {
+		margin: 65px 0 0 0;
+		padding: 45px 0;
+		.bottom-footer {
+			color: #9f9f9f;
+			text-align: center;
+			ul {
+				list-style: none;
+				width: 30%;
+				margin: 0 auto;
+				li {
+					float: left;
+					padding: 0 10px;
+					border-right: 1px solid #b4bdce;
+					&:last-child {
+						border-right: none;
+					}
+					a {
+						color: #9f9f9f;
+						font-family: "Roboto Condensed";
+						font-size: 16px;
+					}
+				}
+			}
+		}
 	}
 }
