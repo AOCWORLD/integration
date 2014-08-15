@@ -198,7 +198,7 @@ body {
             padding-top: 95px;
             .contact-bloc {
                 .middle {
-                    width: 60%;
+                    width: 70%;
                     .form-horizontal {
                         max-width: 365px;
                         .form-group {
@@ -290,6 +290,7 @@ body {
             .article {
                 background-color: #fff;
                 padding: 30px;
+                min-height: 869px;
                 .title-article {
                     margin-bottom: 50px;
                     .date {
@@ -318,11 +319,11 @@ body {
                     }
                 }
                 .commentaire {
-                    padding-bottom: 45px;
+                    padding-bottom: 35px;
                     border-bottom: 2px solid #4288dd;
                 }
                 .add-comment {
-                    margin-top: 45px;
+                    margin-top: 35px;
                     .img-profil {
                         float: left;
                         width: 20%;
@@ -430,6 +431,7 @@ body {
                             }
                         }
                         .carousel-control {
+                            bottom: -60px;
                             &.left {
                                 left: 25%;
                             }
@@ -438,7 +440,8 @@ body {
                             }
                         }
                         .carousel-indicators {
-                            left: 45%;
+                            left: 38%;
+                            bottom: -60px;
                             li {
                                 &.active {
                                     background: url(../images/carousel/indicator-active-green.png) no-repeat 50% 50%;
@@ -447,6 +450,7 @@ body {
                         }
                     }
                     .thumbs {
+                        margin-top: 20px;
                         ul {
                             li {
                                 a {
@@ -454,6 +458,9 @@ body {
                                     &.selected {
                                         border: 2px solid #00bf79;
                                         position: relative;
+                                        &:before {
+                                            top: -22px;
+                                        }
                                     }
                                 }
                             }
@@ -472,6 +479,45 @@ body {
                     padding: 0 30px;
                     background: #4288dd url(../images/ico-tchat-small.png) no-repeat 90% 50%;
                     text-transform: uppercase;
+                }
+                .chat {
+                    .search {
+                        margin-top: 15px;
+                    }
+                    .mCustomScrollbar {
+                        height: 282px;
+                        .profil {
+                            img {
+                                margin: 4px 3% 4px 3%;
+                            }
+                            .infos {
+                                margin: 0 3% 0 3%;
+                                .name {
+                                    float: left;
+                                    margin: 17px 15px 0 0;
+                                }
+                                img {
+                                    margin: 25px 0 0 0;
+                                }
+                            }
+                            .status {
+                                .enligne, .horsligne {
+                                    margin: 20px 15px 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .module-chat {
+                        ul {
+                            background-position: 95% 50%;
+                            li {
+                                margin-right: 4%;
+                                &:first-child {
+                                    margin-left: 5%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .right-bottom {
@@ -687,9 +733,9 @@ body {
                 background-repeat: no-repeat;
                 li {
                     float: left;
-                    margin-right: 12%;
+                    margin-right: 8%;
                     &:first-child {
-                        margin-left: 10%;
+                        margin-left: 5%;
                     }
                     &:last-child {
                         margin-right: 0;
@@ -720,6 +766,18 @@ body {
                             width: 18px;
                             height: 25px;
                             background-image: url(../images/chat-audio.png);
+                            margin: 30px 0;
+                        }
+                        &.cam {
+                            width: 20px;
+                            height: 25px;
+                            background-image: url(../images/chat-cam.png);
+                            margin: 30px 0;
+                        }
+                        &.calendar {
+                            width: 21px;
+                            height: 25px;
+                            background-image: url(../images/chat-calendar.png);
                             margin: 30px 0;
                         }
                     }
