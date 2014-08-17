@@ -117,13 +117,13 @@
                                 font-family: "Roboto";
                                 font-size: 13px;
                                 font-weight: normal;
-                                padding-bottom: 15px;
+                                padding-bottom: 5px;
                                 label {
                                     color: #343434;
                                     font-family: "Roboto";
                                     font-size: 13px;
                                     font-weight: normal;
-                                    padding-bottom: 15px;   
+                                    /*padding-bottom: 15px;*/ 
                                 }
                             }
                         }
@@ -155,6 +155,9 @@
             .logo-img {
                 display: block;
             }
+            .sep {
+                margin-top: 35px;
+            }
             nav {
                 min-height: 85px;
                 &.connexion {
@@ -164,6 +167,32 @@
                         }
                     }
                 }
+                &.region {
+                    .select2-container {
+                        min-height: 85px;
+                        .select2-choice {
+                            padding: 46px 20px 15px 12%;
+                            .select2-arrow {
+                                b {
+                                    background-position: 0 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+                /*&.categorie {
+                    .select2-container {
+                        min-height: 85px;
+                        .select2-choice {
+                            padding: 46px 20px 15px 12%;
+                            .select2-arrow {
+                                b {
+                                    background-position: 0 70%;
+                                }
+                            }
+                        }
+                    }
+                }*/
                 .dropdown {
                     .dropdown-toggle {
                         padding: 46px 0 15px 12%;
@@ -205,6 +234,64 @@
             font-size: 16px;
             min-height: 70px;
             /*text-align: center;*/
+            .select2-container {
+                width: 100%;
+                min-height: 70px;
+                &.select2-container-active {
+                    box-shadow: none;
+                    .select2-choice {
+                        box-shadow: none;
+                    }
+                }
+                &.select2-dropdown-open {
+                    .select2-choice  {
+                        background-color: #00bf79;
+                        color: #fff;
+                        box-shadow: none;
+                        .select2-arrow {
+                            b {
+                                background: url(../images/nav-row-over.png) no-repeat 0 50%;
+                            }
+                        }
+                    }
+                }
+                .select2-choice {
+                    background-image: none;
+                    background-color: transparent;
+                    border: none;
+                    padding: 23px 20px 23px 12%;
+                    border-radius: 0;
+                    line-height: inherit;
+                    color: #a3a9c3;
+                    font-family: "Roboto Condensed";
+                    font-size: 16px;
+                    height: auto;
+                    /*abbr {
+                        display: block;
+                        background: url(../images/nav-row.png) no-repeat 100% 50%;
+                        width: 10px;
+                        height: 8px;
+                        top: 30px;
+                    }*/
+                    .select2-arrow {
+                        background-image: none;
+                        background-color: transparent;
+                        border: none;
+                        b {
+                            background: url(../images/nav-row.png) no-repeat 0 50%;
+                        }
+                    }
+                    &:hover {
+                        background-color: #00bf79;
+                        color: #fff;
+                        .select2-arrow {
+                            b {
+                                background: url(../images/nav-row-over.png) no-repeat 0 50%;
+                            }
+                        }
+                    }
+                }
+            }
             &.connexion {
                 text-align: center;
                 .dropdown {

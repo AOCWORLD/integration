@@ -26,6 +26,25 @@ $(document).ready(function() {
 	  $(".dropdown").removeClass('open');
 	});
 
+	//select 2
+	$('#select2').select2 ();
+
+	//scroll
+	/*$(window).load(function(){
+        $(".select2-results").mCustomScrollbar();
+    });*/
+	$("select.selectscroll").each(function(){
+        var ret     = $(this).select2();
+        // custom scrollbars
+        var s;
+        ret.on("select2-open", function () {
+            if (!s) {
+                s = $('.select2-drop-active > .select2-results');
+                s.niceScroll({autohidemode: false});
+            }
+        });
+    });
+
 	//carousel
 	$('#myCarousel').carousel({
 	    interval: 4000

@@ -1,6 +1,7 @@
 @import "extends/reset.less";
 @import "extends/functions.less";
 @import "extends/scroll.less";
+@import "extends/select2.less";
 @import "extends/form.less";
 @import "extends/header.less";
 @import "extends/footer.less";
@@ -14,6 +15,94 @@ body {
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
+}
+//custom select2
+.select2-drop {
+    border: 0 !important;
+    border-radius: 0;
+    margin: 0;
+    background: #1d213c;
+    padding: 15px 0;
+    text-align: left;
+    box-shadow: none;
+    &:before {
+        background: url(../images/row-top-nav.png) no-repeat 50% 50%;
+        content: ' ';
+        display: inline-block;
+        width: 23px;
+        height: 10px;
+        position: absolute;
+        right: 50%;
+        top: -9px;
+    }
+    &.select2-drop-active {
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        background-color: #1d213c;
+        padding: 15px 0;
+        text-align: left;
+        box-shadow: none;
+        &:before {
+            background: url(../images/row-top-nav.png) no-repeat 50% 50%;
+            content: ' ';
+            display: inline-block;
+            width: 23px;
+            height: 10px;
+            position: absolute;
+            right: 50%;
+            top: -9px;
+        }
+    }
+    &.select2-drop-above {
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        background-color: #1d213c;
+        padding: 15px 0;
+        text-align: left;
+        box-shadow: none;
+        &:before {
+            background: url(../images/row-top-nav.png) no-repeat 50% 50%;
+            content: ' ';
+            display: inline-block;
+            width: 23px;
+            height: 10px;
+            position: absolute;
+            right: 50%;
+            top: -9px;
+        }
+    }
+    .select2-search {
+        display: none;
+    }
+    .select2-results {
+        max-height: 315px;
+        padding: 0;
+        margin: 0;
+        /*overflow-x: inherit;
+        overflow-y: inherit;*/
+        li {
+            color: #939bbd;
+            font-family: "Roboto";
+            font-size: 12px;
+            padding-left: 15px;
+            margin-right: 7px;
+            &:hover, &.select2-highlighted {
+                color: #fff;
+                background-color: #00bf79;
+            }
+        }
+    }
+}
+.nicescroll-rails {
+    background-color: #10132c !important;
+    width: 5px !important;
+    >div {
+        background-color: #4a638d !important;
+        border-radius: 0 !important;
+        border: 0 !important;
+    }
 }
 //custom scroll
 .mCSB_scrollTools {
