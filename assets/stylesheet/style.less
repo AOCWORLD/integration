@@ -25,6 +25,21 @@ body {
     padding: 15px 0;
     text-align: left;
     box-shadow: none;
+    &:hover {
+        .nicescroll-rails {
+            opacity: 1 !important;
+        }
+    }
+    .nicescroll-rails {
+        background-color: #10132c !important;
+        width: 5px !important;
+        opacity: 0 !important;
+        >div {
+            background-color: #4a638d !important;
+            border-radius: 0 !important;
+            border: 0 !important;
+        }
+    }
     &:before {
         background: url(../images/row-top-nav.png) no-repeat 50% 50%;
         content: ' ';
@@ -74,7 +89,16 @@ body {
         }
     }
     .select2-search {
-        display: none;
+        /*display: none;*/
+        padding: 0;
+        input {
+            background: #fff;
+            min-height: 20px;
+            padding: 0 7px 0 20px;
+            color: #939bbd;
+            font-family: "Roboto";
+            font-size: 12px;
+        }
     }
     .select2-results {
         max-height: 315px;
@@ -93,15 +117,6 @@ body {
                 background-color: #00bf79;
             }
         }
-    }
-}
-.nicescroll-rails {
-    background-color: #10132c !important;
-    width: 5px !important;
-    >div {
-        background-color: #4a638d !important;
-        border-radius: 0 !important;
-        border: 0 !important;
     }
 }
 //custom scroll

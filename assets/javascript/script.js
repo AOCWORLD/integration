@@ -6,8 +6,8 @@ $(document).ready(function() {
 			$(this).parent('.dropdown').removeClass('open');
 			$(this).parent('.dropdown').find('.dropdown-body').hide();
 		}else {
-			$(this).parents('.nav-bar').find('.open').children('.dropdown-body').hide();
-			$(this).parents('.nav-bar').find('.open').removeClass('open');
+			$(this).parents('#header').find('.open').children('.dropdown-body').hide();
+			$(this).parents('#header').find('.open').removeClass('open');
 			$(this).parent('.dropdown').addClass('open');
 			$(this).parent('.dropdown').find('.dropdown-body').show();
 		}
@@ -21,9 +21,10 @@ $(document).ready(function() {
 		e.stopPropagation();
 	});
 	// click body to hide dropdown body
-	$("body").click(function(){
-	  $(".dropdown .dropdown-body").fadeOut();
-	  $(".dropdown").removeClass('open');
+	$('body').click(function(){
+	  $('.dropdown .dropdown-body').fadeOut();
+	  $('.dropdown').removeClass('open');
+	  $('.dropdown-body').hide();
 	});
 
 	//select 2
