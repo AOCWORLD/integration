@@ -28,12 +28,6 @@ $(document).ready(function() {
 	});
 
 	//select 2
-	$('#select2').select2 ();
-
-	//scroll
-	/*$(window).load(function(){
-        $(".select2-results").mCustomScrollbar();
-    });*/
 	$("select.selectscroll").each(function(){
         var ret     = $(this).select2();
         // custom scrollbars
@@ -68,6 +62,12 @@ $(document).ready(function() {
 	  id = parseInt(id);
 	  $('[id^=carousel-selector-]').removeClass('selected');
 	  $('[id^=carousel-selector-'+id+']').addClass('selected');
+	});
+
+	//view comment
+	$('.conversation .view-comment .discu .vu').click( function(){
+	  $(this).parents('.conversation').children('.add-comment').show();
+	  return false;
 	});
 
 }); //ready

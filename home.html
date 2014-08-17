@@ -88,7 +88,7 @@
             <div class="logo-img"><a href="#"><img src="assets/images/logo-img.png" alt="logo AOCWORLD.com"/></a></div>
             <!-- country -->
             <nav class="region">
-              <select id="select2" class="selectscroll">
+              <select class="selectscroll">
                 <option value="tous">Tous les Pays</option>
                 <option value="tn">Tunisie</option>
                 <option value="fr">France</option>
@@ -117,7 +117,7 @@
             <!-- categorie -->
             <nav class="categorie">
             <div class="cat">
-              <select id="select2" class="selectscroll">
+              <select class="selectscroll">
                 <option value="tous">Tous les Catégories</option>
                 <option value="bar">bar</option>
                 <option value="barvin">bar à vin</option>
@@ -379,9 +379,54 @@
                 <!-- thumbnail-->
                 <div class="thumbs clearfix" id="slider-thumbs">
                   <ul class="thumbnails list-inline clearfix">
-                    <li><a id="carousel-selector-0" class="selected"><img src="assets/images/carousel/video-small.jpg" alt="video small" /></a></li>
-                    <li><a id="carousel-selector-1"><img src="assets/images/carousel/video-small.jpg" alt="video small" /></a></li>
-                    <li><a id="carousel-selector-2"><img src="assets/images/carousel/video-small.jpg" alt="video small" /></a></li>
+                    <li>
+                      <a id="carousel-selector-0" class="selected">
+                        <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                        <div class="captions">
+                          <div class="top clearfix">
+                            <p class="name">Léa</p>
+                            <img src="assets/images/flag-small.png" alt="pays" />
+                          </div>
+                          <div class="bottom clearfix">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="ico-discu">04</span>
+                            <span class="ico-view">82</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a id="carousel-selector-1">
+                        <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                        <div class="captions">
+                          <div class="top clearfix">
+                            <p class="name">Léa</p>
+                            <img src="assets/images/flag-small.png" alt="pays" />
+                          </div>
+                          <div class="bottom clearfix">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="ico-discu">04</span>
+                            <span class="ico-view">82</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a id="carousel-selector-2">
+                        <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                        <div class="captions">
+                          <div class="top clearfix">
+                            <p class="name">Léa</p>
+                            <img src="assets/images/flag-small.png" alt="pays" />
+                          </div>
+                          <div class="bottom clearfix">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="ico-discu">04</span>
+                            <span class="ico-view">82</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <!-- /.thumbnail-->
@@ -393,7 +438,8 @@
             <!-- videos -->
             <div class="videos">
               <div class="clearfix"><a class="title" href="#">
-              <p>Les vidéos <br> du mois</p>
+              <p>AOCWORLD A LA UNE</p>
+              <p class="sub-title">Retrouvez-nous sur Myworld</p>
                 <!--<img src="assets/images/videos.png" alt="tchat" />-->
               </a></div>
               <ul class="mCustomScrollbar">
@@ -555,15 +601,28 @@
                   <div class="perso-txt">
                     <h3>Bienvenue à la communauté AOCWORLD !</h3>
                       <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
-                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. </p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
                   </div>
-                  <div class="txt-comm">
-                    <ul>
-                      <li><img src="assets/images/logo-msg.png" alt="msg"/></li>
-                      <li><img src="assets/images/logo-discu.png" alt="disc"/></li>
-                      <li>04 commentaire (s)</li>
-                    </ul>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
                   </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
                 </div>
                 <div class="conversation">
                   <div class="perso-picture">
@@ -575,13 +634,26 @@
                       <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
                       <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie.</p>
                   </div>
-                  <div class="txt-comm">
-                    <ul>
-                        <li><img src="assets/images/logo-msg.png" alt="msg"/></li>
-                        <li><img src="assets/images/logo-discu.png" alt="disc"/></li>
-                        <li>04 commentaire (s)</li>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
                       </ul>
+                    </div>
                   </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
                 </div>
                 <div class="conversation">
                   <div class="perso-picture">
@@ -593,13 +665,26 @@
                       <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
                       <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
                   </div>
-                  <div class="txt-comm">
-                    <ul>
-                        <li><img src="assets/images/logo-msg.png" alt="msg"/></li>
-                        <li><img src="assets/images/logo-discu.png" alt="disc"/></li>
-                        <li>04 commentaire (s)</li>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
                       </ul>
+                    </div>
                   </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
                 </div>
                 <ul class="pagination">
                   <li><a href="#">&lt;</a></li>
