@@ -5,7 +5,6 @@
 @import "extends/form.less";
 @import "extends/header.less";
 @import "extends/footer.less";
-@import "style.mq.less";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -507,6 +506,7 @@ body {
                     padding: 0 30px;
                     background: #00bf79 url(../images/ico-video.png) no-repeat 90% 50%;
                     text-transform: uppercase;
+					text-decoration: none;
                 }
                 .carrousel-videos {
                     width: 100%;
@@ -517,6 +517,7 @@ body {
                     .carousel {
                         .carousel-inner {
                             min-height: inherit;
+							max-height: 320px;
                             .item {
                                 > img {
                                     min-height: 280px;
@@ -565,6 +566,7 @@ body {
                     }
                     .thumbs {
                         margin-top: 20px;
+						max-height: 200px;
                         ul {
                             li {
                                 width: 33.333%;
@@ -669,7 +671,7 @@ body {
                         min-height: 140px;
                         width: 98%;
                         .perso-picture {
-                            padding: 0;
+                            padding: 20px 0 0 0;
                             &:after {
                                 top: 20px;
                                 left: 20%;
@@ -677,7 +679,7 @@ body {
                             }
                         }
                         .perso-txt {
-                            padding: 0px 25px 0px 40px;
+                            padding: 25px 25px 10px 40px;
                             display: table-cell;
                             vertical-align: middle;
                         }
@@ -1624,3 +1626,4 @@ body {
 		}
 	}
 }
+@import "style.mq.less";
