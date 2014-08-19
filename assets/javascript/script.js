@@ -56,7 +56,7 @@ $(document).ready(function() {
 	});
 
 	// when the carousel slides, auto update
-	$('#myCarousel').on('slid', function (e) {
+	$('#myCarousel').on('slid.bs.carousel', function (e) {
 	  var id = $('.item.active').data('slide-number');
 	  var id_selector = $(this).attr("id");
 	  id = parseInt(id);
