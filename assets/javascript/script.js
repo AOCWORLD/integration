@@ -50,6 +50,16 @@ $(document).ready(function() {
 	    interval: false
 	});
 
+	//slide photoleft
+	$('#myCarouselphotoleft').carousel({
+	    interval: false
+	});
+
+	//slide photoright
+	$('#myCarouselphotoright').carousel({
+	    interval: false
+	});
+
 	// handles the carousel thumbnails
 	$('[id^=carousel-selector-]').click( function(){
 	  var id_selector = $(this).attr("id");

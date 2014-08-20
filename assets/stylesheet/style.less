@@ -228,6 +228,7 @@ body {
 					}
 					.tooltip-inner {
 						background-color: #fff;
+                        /*border: 1px solid #000;*/
 						color: #000;
 						border-radius: 0;
 						padding: 5px;
@@ -259,6 +260,9 @@ body {
             }
         }
     }
+}
+.carousel-indicators {
+    z-index: inherit;
 }
 .home {
     .bg-wrap-top {
@@ -859,6 +863,109 @@ body {
 		}
 		#wrap {
 			padding-top: 45px;
+            .bloc-photo {
+                width: 100%;
+                margin-bottom: 10px;
+                .title-photo {
+                    display: block;
+                    width: 100%;
+                    min-height: 70px;
+                    line-height: 70px;
+                    color: #fff;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0 30px;
+                    background: #4288dd url(../images/ico-photo.png) no-repeat 90% 50%;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                .body-photo {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 40px 35px 70px 30px;
+                    .carousel-left {
+                        float: left;
+                        width: 38%;
+                        .carousel  {
+                            .carousel-control {
+                                top: inherit;
+                                bottom: -30px;
+                                background-image: none;
+                                width: 16px;
+                                height: 16px;
+                                &.left {
+                                    background: url(../images/slide-profil/control-left.png) no-repeat 50% 50%;
+                                    left: inherit;
+                                    right: 20px;
+                                }
+                                &.right {
+                                    background: url(../images/slide-profil/control-right.png) no-repeat 50% 50%;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                    .carousel-right {
+                        float: left;
+                        width: 57%;
+                        margin-left: 5%;
+                        .carousel  {
+                            .carousel-control {
+                                top: inherit;
+                                bottom: -30px;
+                                background-image: none;
+                                width: 16px;
+                                height: 16px;
+                                &.left {
+                                    background: url(../images/slide-profil/control-left.png) no-repeat 50% 50%;
+                                    left: inherit;
+                                    right: 20px;
+                                }
+                                &.right {
+                                    background: url(../images/slide-profil/control-right.png) no-repeat 50% 50%;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bloc-forum {
+                width: 100%;
+                margin-bottom: 10px;
+                .title-forum {
+                    display: block;
+                    width: 100%;
+                    min-height: 70px;
+                    line-height: 70px;
+                    color: #fff;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0 30px;
+                    background: #00bf79  url(../images/ico-forum.png) no-repeat 90% 50%;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+            .bloc-favoris {
+                width: 100%;
+                .title-favoris {
+                    display: block;
+                    width: 100%;
+                    min-height: 70px;
+                    line-height: 70px;
+                    color: #fff;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0 30px;
+                    background: #4288dd url(../images/ico-favori.png) no-repeat 90% 50%;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
 			.right-top {
 				.chat {
 					.mCustomScrollbar {
