@@ -206,15 +206,41 @@ body {
         li {
             float: left;
             min-height: 12px;
-            &:first-child {
+			border-right : 1px solid #55575d;
+			padding-right: 10px;
+			margin-right: 10px;
+            /*&:first-child {
                 border-right : 1px solid #55575d;
                 padding-right: 10px;
                 margin-right: 10px;
+            }*/
+			&:last-child {
+                border-right : 0;
+                padding-right: 0;
+                margin-right: 0;
             }
+			.tooltip {
+				&.bottom {
+					font-family: "Roboto Condensed";
+					margin-top: 5px;
+					.tooltip-arrow {
+						border-bottom-color: #fff;
+					}
+					.tooltip-inner {
+						background-color: #fff;
+						color: #000;
+						border-radius: 0;
+						padding: 5px;
+					}
+				}
+			}
             a {
                 display: block;
-                height: 12px;
-                width: 14px;
+                height: 13px;
+                width: 15px;
+				&.send {
+                    background: url(../images/logo-send.png) no-repeat 50% 50%;
+                }
                 &.msg {
                     background: url(../images/logo-msg.png) no-repeat 50% 50%;
                 }
@@ -619,9 +645,9 @@ body {
                                     float: left;
                                     margin: 17px 10px 0 0;
                                 }
-                                img {
+                                /*img {
                                     margin: 25px 0 0 0;
-                                }
+                                }*/
                             }
                             .status {
                                 .enligne, .horsligne {
@@ -827,8 +853,69 @@ body {
         }
     }
 	&.user {
+		background-color: #ebebee;
 		.bg-wrap-top {
 			min-height: 234px;
+		}
+		#wrap {
+			padding-top: 45px;
+			.right-top {
+				.chat {
+					.mCustomScrollbar {
+						height: 330px;
+					}
+				}
+				.carrousel-videos {
+					min-height: 496px;
+					.carousel {
+						.thumbs {
+							ul {
+								li {
+									a {
+										border: 0;
+										background-color: transparent;
+										padding: 0;
+										>img {
+											border: 2px solid transparent;
+										}
+										.captions {
+											min-height: inherit;
+										}
+									}
+									a.selected {
+										border: 0;
+										background-color: transparent;
+										>img {
+											border: 2px solid #00bf79;
+										}
+									}
+								}
+							}
+						}
+						.carousel-indicators {
+							bottom: -50px;
+						}
+						.carousel-control {
+							bottom: -50px;
+						}
+					}
+				}
+			}
+			.right-bottom {
+				.list-bloc {
+					height: inherit;
+					.conversation {
+						.perso-picture {
+							p {
+								text-align: center;
+								span {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

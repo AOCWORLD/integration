@@ -85,7 +85,32 @@
       <div class="container">
         <div class="row">
           <div class="container-fluid">
-            
+            <!-- carousel -->
+            <div class="carrousel-profil" id="slider">
+              <!-- galerie-->
+              <div id="myCarouselprofil" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active" data-slide-number="0">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                    </div>
+                    <div class="item" data-slide-number="1">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                    </div>
+                    <div class="item" data-slide-number="2">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarouselprofil" data-slide="prev"></a>
+                <a class="carousel-control right" href="#myCarouselprofil" data-slide="next"></a>
+              </div>
+              <!-- /.galerie-->
+            </div>
+            <!-- /.carousel -->
+			<img class="flag" src="assets/images/flag-profil.png" alt="image de drapeau" />
+			<div class="region">Suisse</div>
+			<a class="favoris" href="#">Ajouter à mes préférences</a>
           </div><!-- /.container-fluid -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -98,59 +123,20 @@
     <div class="container">
       <div class="row">
         <div class="container-fluid">
-          <div class="col-md-5 col-sm-5 pdlr-0 article">
-            <!-- share -->
-            <div class="share col-md-12 col-sm-12 pdlr-0 clearfix">
-              <div class="open-to-share">
-                <ul class="share-list">
-                  <li><a href="#" class="email" title="e-mail"></a></li>
-                  <li><a href="#" class="google" title="google+"></a></li>
-                  <li><a href="#" class="tw" title="twitter"></a></li>
-                  <li><a href="#" class="fb" title="facebook"></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.share -->
-            <!-- title-article -->
-            <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
-              <div class="title-article">
-                <p class="date">10 Juil.2014 - 04: 34 PM</p>
-                <p class="title">Bienvenue à la communauté AOCWORLD !</p>
-              </div>
-            </div>
-            <!-- /.title-article -->
-            <!-- body-article -->
-            <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
-              <div class="body-article">
-                <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
-                <p>Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
-                <p>Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans.</p>
-                <p class="last">On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard.</p>
-              </div>
-            </div>
-            <!-- /.body-article -->
-            <!-- view-comment -->
-            <div class="commentaire col-md-12 col-sm-12 pdlr-0 clearfix">
-              <div class="view-comment">
-                <ul class="clearfix">
-                  <li><a href="#" class="msg" title="message"></a></li>
-                  <li><a href="#" class="discu" title="commentaires"><span>04 commentaire (s)</span></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- /.view-comment -->
-            <!-- add-comment -->
-            <div class="add-comment col-md-12 col-sm-12 pdlr-0 clearfix">
-              <div class="img-profil">
-                <img src="assets/images/img-profil.png" alt="image de profil" />
-                <span>Patrick</span>
-              </div>
-              <div class="form-groupe">
-                <textarea placeholder="Ajouter commentaire"></textarea>
-                <button type="submit" class="btn btn-default">Envoyer</button>
-              </div>
-            </div>
-            <!-- /.add-comment -->
+		<!-- share -->
+		<div class="share col-md-12 col-sm-12 pdlr-0 clearfix">
+		  <div class="open-to-share">
+			<ul class="share-list">
+			  <li><a href="#" class="email" title="e-mail"></a></li>
+			  <li><a href="#" class="google" title="google+"></a></li>
+			  <li><a href="#" class="tw" title="twitter"></a></li>
+			  <li><a href="#" class="fb" title="facebook"></a></li>
+			</ul>
+		  </div>
+		</div>
+		<!-- /.share -->
+          <div class="col-md-5 col-sm-5 pdlr-0">
+            
           </div>
           <div class="col-md-7 col-sm-7 pdr-0">
             <div class="right-top clearfix">
@@ -217,11 +203,6 @@
                             <p class="name">Léa</p>
                             <img src="assets/images/flag-small.png" alt="pays" />
                           </div>
-                          <div class="bottom clearfix">
-                            <p class="date">10 Juil.2014</p>
-                            <span class="ico-discu">04</span>
-                            <span class="ico-view">82</span>
-                          </div>
                         </div>
                       </a>
                     </li>
@@ -233,11 +214,6 @@
                             <p class="name">Léa</p>
                             <img src="assets/images/flag-small.png" alt="pays" />
                           </div>
-                          <div class="bottom clearfix">
-                            <p class="date">10 Juil.2014</p>
-                            <span class="ico-discu">04</span>
-                            <span class="ico-view">82</span>
-                          </div>
                         </div>
                       </a>
                     </li>
@@ -248,11 +224,6 @@
                           <div class="top clearfix">
                             <p class="name">Léa</p>
                             <img src="assets/images/flag-small.png" alt="pays" />
-                          </div>
-                          <div class="bottom clearfix">
-                            <p class="date">10 Juil.2014</p>
-                            <span class="ico-discu">04</span>
-                            <span class="ico-view">82</span>
                           </div>
                         </div>
                       </a>
@@ -366,7 +337,7 @@
               </div>
             </div>
             <div class="right-bottom clearfix">
-              <div class="mCustomScrollbar list-bloc">
+              <div class="list-bloc">
                 <div class="conversation">
                   <div class="perso-picture">
                     <img src="assets/images/perso-pic.png" alt="perso"/>
@@ -375,21 +346,39 @@
                   <div class="perso-txt">
                     <h3>Bienvenue à la communauté AOCWORLD !</h3>
                       <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
-                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
                   </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+						<li>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send" title="envoyer"></a>
+							<div class="tooltip bottom" role="tooltip">
+							  <div class="tooltip-arrow"></div>
+							  <div class="tooltip-inner">
+								Envoyer l'article à l'administrateur
+							  </div>
+							</div>
+						</li>
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
                 </div>
-                <div class="conversation">
-                  <div class="perso-picture">
-                    <img src="assets/images/perso-pic.png" alt="perso"/>
-                      <p>Par <span>Tutu</span></p>
-                  </div>
-                  <div class="perso-txt">
-                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
-                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
-                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
-                  </div>
-                </div>
-                <div class="conversation">
+				<div class="conversation">
                   <div class="perso-picture">
                     <img src="assets/images/perso-pic.png" alt="perso"/>
                       <p>Par <span>Soso</span></p>
@@ -397,9 +386,50 @@
                   <div class="perso-txt">
                     <h3>Bienvenue à la communauté AOCWORLD !</h3>
                       <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
-                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
                   </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+						<li>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send" title="envoyer"></a>
+							<div class="tooltip bottom" role="tooltip">
+							  <div class="tooltip-arrow"></div>
+							  <div class="tooltip-inner">
+								Envoyer l'article à l'administrateur
+							  </div>
+							</div>
+						</li>
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
                 </div>
+				<ul class="pagination">
+                  <li><a href="#">&lt;</a></li>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -410,38 +440,23 @@
   <!-- Fin wrap -->
   
   <!-- Debut Footer -->
-  <footer id="footer" class="small">
+  <footer id="footer" class="white">
     <div class="container">
       <div class="row">
         <div class="container-fluid">
-          <!-- footer top -->
-          <div class="top-footer">
-            <div class="container">
-              <div class="row">
-                <div class="container-fluid">
-                  <div class="col-md-3 col-sm-3 pdlr-0">
-                      <img src="assets/images/globe.png" alt="globe"/>
-                  </div>
-                  <div class="col-md-6 col-sm-6 pdlr-0">
-                      <img src="assets/images/video.png" alt="video"/>
-                  </div>
-                  <div class="col-md-3 col-sm-3 pdlr-0">
-                      <img src="assets/images/vin.png" alt="vin"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.footer top-->
-          <!-- footer bottom-->
-          <div class="bottom-footer clearfix">
-            <ul>
-              <li><a href="#">Nous contacter</a></li>
-              <li><a href="#">Annonceur pro</a></li>
-              <li><a href="#">Conditions générales</a></li>
-            </ul>
-          </div>
-          <!-- /.footer bottom-->
+			<div class="col-md-4 col-sm-4 pdlr-0">
+				<img src="assets/images/footer-world.png" alt="world" />
+			</div>
+			<div class="col-md-8 col-sm-8 pdl-0">
+				<p><span>Aoc world </span>vous permet de découvrir des winesnote étonnant qui aime vivre profondément leur passion nous proposant des endroits de dégustation à visiter et à découvrir,  publiant articles ,préférences et coup de cœur.</p>
+				<p>Etant détenteur de cette espace vous êtes un winesnote, à chacun son niveau et sa vision le maitre mot  est l'objectivité de vos expériences  vis à vis de votre niveau. Car vous serez lu , suivi et probablement un guide pour des internautes (clients) sensible à votre message.</p>
+				<p>L’esprit Winesnote, c’est avant tout le gout du partage, de l’échange couronné d'Un esprit gourmet où l’on parle de ses dégustations , où l’on discute, du vin du champagne enfin tout ce qui est à base de raisin ; des restaurant , des personnages et  région que l'on aime qui sublime ce fruit divin  et aussi du reste pour quelque fois se rencontrer ici et au bout du monde.</p>
+				<p>Sans oublier ses magnifiques personnage capable de nous faire partir à 1000 mille lieux dans les airs   au simple énoncer  d'un gout, d'une vision . Nous   les nommons : viticulteurs restaurateurs sommeliers œnologues caviste artisan barman et parfois winesnote les poète du raisin rien de plus...</p>
+				<p>Vous l'aurez compris dans vos échanges chat/forum et visite de profils assez rapidement vous saurez si vous avez à faire à un véritable winesnote confirmé ou à un débutant qui méritera quoi qu'il arrive votre vision afin de s'améliorer ensemble.</p>
+				<p>A votre disposition cet espace multimédia</p>
+				<p class="last">Evoluons ensemble</p>
+				<p class="signature clearfix">Aoc world</p>
+			</div>
         </div><!-- /.container-fluid -->
       </div><!-- /.row -->
     </div><!-- /.container -->

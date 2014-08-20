@@ -44,6 +44,11 @@ $(document).ready(function() {
 	$('#myCarousel').carousel({
 	    interval: 4000
 	});
+	
+	//slide profil
+	$('#myCarouselprofil').carousel({
+	    interval: false
+	});
 
 	// handles the carousel thumbnails
 	$('[id^=carousel-selector-]').click( function(){
@@ -69,5 +74,8 @@ $(document).ready(function() {
 	  $(this).parents('.conversation').children('.add-comment').show();
 	  return false;
 	});
+	
+	//tooltip
+	$('.send').tooltip();
 
 }); //ready
