@@ -88,4 +88,36 @@ $(document).ready(function() {
 	//tooltip
 	$('.send').tooltip();
 
+	//mod tab
+	$('.mod-tab').tab();
+
 }); //ready
+
+$.fn.tab = function(options) {
+    // This is the easiest way to have default options.
+    var settings = $.extend({
+        // These are the defaults.
+    }, options),
+            idtab;
+    return this.each(function() {
+        $tabcontent = $(this).find('.tab-content');
+        $tablist = $(this).find('.tab-list');
+        $tabcontent.find(' > li:nth-child(n+2)').hide();
+        $tablist.find('> li .tab-link').bind('focus', function() {
+            $tablist.find('> li.active').removeClass('active');
+            idtab = $(this).data('idtab');
+            $tabcontent.find(' > li').hide();
+            $tabcontent.find(' > li#' + idtab).show();
+            $(this).parent().addClass('active');
+            return false;
+        });
+        $tablist.find('> li .tab-link').bind('click', function() {
+            $tablist.find('> li.active').removeClass('active');
+            idtab = $(this).data('idtab');
+            $tabcontent.find(' > li').hide();
+            $tabcontent.find(' > li#' + idtab).show();
+            $(this).parent().addClass('active');
+            return false;
+        });
+    });
+};
