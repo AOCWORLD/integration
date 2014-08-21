@@ -232,6 +232,10 @@ body {
 						color: #000;
 						border-radius: 0;
 						padding: 5px;
+                        span {
+                            color: #00bf79;
+                            margin-right: 5px;
+                        }
 					}
 				}
 			}
@@ -862,7 +866,7 @@ body {
 	&.user {
 		background-color: #ebebee;
 		.bg-wrap-top {
-			min-height: 234px;
+			min-height: 0;
 		}
 		#wrap {
 			padding-top: 45px;
@@ -1150,13 +1154,13 @@ body {
                                             width: 100%;
                                             margin-bottom: 10px;
                                             .flag-fav {
-                                                float: left;
+                                                /*float: left;*/
                                             }
                                             .date-fav {
                                                 color: #4187dd;
                                                 font-family: "Roboto Condensed";
                                                 font-size: 12px;
-                                                float: right;
+                                                /*float: right;*/
                                             }
                                         }
                                         .fav-middle {
@@ -1173,6 +1177,16 @@ body {
                                             font-size: 12px;
                                             padding-left: 22px;
                                             background: url(../images/favoris-tab.png) no-repeat 0 50%;
+                                        }
+                                    }
+                                }
+                                &.fav-user {
+                                    .fav {
+                                        .img-fav {
+                                            width: 20%;
+                                        }
+                                        .txt-fav {
+                                            width: 75%;
                                         }
                                     }
                                 }
