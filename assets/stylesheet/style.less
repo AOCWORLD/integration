@@ -948,6 +948,114 @@ body {
                     text-transform: uppercase;
                     text-decoration: none;
                 }
+                .body-forum {
+                    padding: 20px 10px 30px 30px;
+                    background-color: #fff;
+                    .mCustomScrollbar {
+                        height: 275px;
+                        margin-bottom: 25px;
+                        .mCSB_scrollTools {
+                            .mCSB_draggerRail {
+                                background-color: #f2f2f3;
+                                border-radius: 0;
+                            }
+                            .mCSB_dragger {
+                                .mCSB_dragger_bar {
+                                    background-color: #00bf79;
+                                }
+                            }
+                        }
+                        .conversation {
+                            padding-bottom: 10px;
+                            margin-bottom: 10px;
+                            margin-right: 20px;
+                            border-bottom: 1px solid #cfd1d5;
+                            .img-forum {
+                                width: 13%;
+                                float: left;
+                                margin-right: 2%;
+                            }
+                            .text {
+                                width: 85%;
+                                float: left;
+                                .text-top {
+                                    width: 100%;
+                                    margin-bottom: 3px;
+                                    .name {
+                                        color: #55575d;
+                                        font-family: "Roboto";
+                                        font-size: 14px;
+                                        text-decoration: underline;
+                                        float: left;
+                                    }
+                                    .date {
+                                        color: #00bf79;
+                                        font-family: "Roboto";
+                                        font-size: 12px;
+                                        float: right;
+                                    }
+                                }
+                                .text-bottom {
+                                    width: 100%;
+                                    .forum-comment {
+                                        position: relative;
+                                        padding: 10px 15px;
+                                        color: #55575d;
+                                        font-family: "Roboto";
+                                        font-size: 13px;
+                                        font-weight: 300;
+                                        background-color: #f0f0f0;
+                                        border: 1px solid #dfdfdf;
+                                        margin-left: 3%;
+                                        width: 97%;
+                                        &:before {
+                                            background: url(../images/forum-comment-row.png) no-repeat 50% 50%;
+                                            content: ' ';
+                                            display: inline-block;
+                                            width: 13px;
+                                            height: 13px;
+                                            position: absolute;
+                                            left: -10px;
+                                            top: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .forum-add-comment {
+                        padding-top: 20px;
+                        border-top: 2px solid #00bf79;
+                        margin-right: 25px;
+                        .img-forum-comment {
+                            width: 13%;
+                            float: left;
+                            margin-right: 2%;
+                        }
+                        .forum-input {
+                            padding: 15px;
+                            border-radius: 0;
+                            border: 1px solid #9c9fa8;
+                            box-shadow: none;
+                            width: 85%;
+                            float: left;
+                        }
+                        .forum-action {
+                            width: 100%;
+                            margin-top: 10px;
+                            .btn-forum-action {
+                                float: right;
+                                padding: 10px 45px;
+                                border: 1px solid #9b9fa7;
+                                background-color: #9b9fa7;
+                                color: #fbfbfb;
+                                font-family: "Roboto Condensed";
+                                font-size: 16px;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                }
             }
             .bloc-favoris {
                 width: 100%;
