@@ -605,7 +605,7 @@ body {
                                         color: #00bf79;
                                         font-family: "Roboto Condensed";
                                         font-size: 11px;
-                                        margin-left: 15px;
+                                        margin-right: 15px;
                                     }
                                     .info {
                                         margin: 0 15px 0 0;
@@ -623,7 +623,7 @@ body {
                             }
                         }
                         .carousel-indicators {
-                            left: 38%;
+                            left: 43%;
                             bottom: -60px;
                             li {
                                 &.active {
@@ -635,10 +635,17 @@ body {
                     .thumbs {
                         margin-top: 20px;
 						max-height: 200px;
-                        ul {
-                            li {
-                                width: 33.333%;
+                        .carousel-inner {
+                            .item {
                                 a {
+                                    padding: 3px;
+                                    .captions {
+                                        .bottom {
+                                            .date {
+                                                margin-right: 5px;
+                                            }
+                                        }
+                                    }
                                     &.selected {
                                         border: 2px solid #00bf79;
                                         position: relative;
@@ -1236,8 +1243,8 @@ body {
 					min-height: 496px;
 					.carousel {
 						.thumbs {
-							ul {
-								li {
+							.carousel-inner {
+								.item {
 									a {
 										border: 0;
 										background-color: transparent;
@@ -1587,14 +1594,21 @@ body {
             }
         }
         .thumbs {
-            margin-top: 15px;
-            ul {
-                list-style: none;
-                li {
-                    float: left;
-                    width: 25%;
+            margin: 15px 0 0 0;
+            padding: 0;
+            min-height: inherit;
+            background-color: inherit;
+            border: 0;
+            border-radius: 0;
+            box-shadow: inherit;
+            .carousel-inner {
+                min-height: inherit;
+                .item {                    
+                    width: 100%;
                     a {
                         display: block;
+                        float: left;
+                        width: 25%;
                         background-color: transparent;
                         border-radius: 0;
                         margin: 0;
@@ -1609,7 +1623,7 @@ body {
                             background-color: #fff;
                             &:before {
                                 background: url(../images/carousel/row-bottom-carousel.png) no-repeat 50% 50%;
-                                content: ' ';
+                                content: url('../images/carousel/row-bottom-carousel.png');
                                 display: inline-block;
                                 width: 23px;
                                 height: 11px;
