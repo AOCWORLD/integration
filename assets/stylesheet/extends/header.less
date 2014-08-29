@@ -418,6 +418,88 @@
         .connexion {
             width: 15%;
             float: right;
+            &.profil {
+                .dropdown {
+                    .dropdown-toggle {
+                        background-image: none;
+                        span {
+                            padding-left: 5px;
+                        }
+                        &:hover {
+                            background-image: none;
+                            background-color:inherit;
+                            color: #a3a9c3;
+                        }
+                    }
+                    &.open {
+                        .dropdown-toggle {
+                            background-image: none;
+                            background-color:inherit;
+                            color: #a3a9c3;
+                        }
+                    }
+                    .dropdown-body {
+                        padding: 30px;
+                        background-color: #f4f4f4;
+                        min-width: 450px;
+                        min-height: 230px;
+                        .profil-title {
+                            color: #9a9aa6;
+                            font-family: "Roboto Condensed";
+                            font-size: 28px;
+                            font-weight: bold;
+                            width: 100%;
+                            text-transform: uppercase;
+                            margin-bottom: 20px;
+                        }
+                        .profil-img {
+                            float: left;
+                            width: 24%;
+                            margin-right: 6%;
+                        }
+                        .profil-description-top {
+                            float: left;
+                            width: 70%;
+                            margin-bottom: 20px;
+                            .flag-img {
+                                width: 20%;
+                                float: left;
+                                margin-right: 7%;
+                            }
+                            .profil-adress {
+                                color: #868ba2;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                line-height: 20px;
+                                float: left;
+                                width: 73%;
+                            }
+                        }
+                        .profil-description-bottom {
+                            float: left;
+                            width: 70%;
+                            .name-prop {
+                                display: block;
+                                color: #868ba2;
+                                font-family: "Roboto";
+                                font-size: 12px;
+                                width: 100%;
+                                margin-bottom: 10px;
+                            }
+                            .name-profil {
+                                display: block;
+                                color: #3f496d;
+                                font-family: "Roboto Condensed";
+                                font-size: 18px;
+                                width: 100%;
+                            }
+                        }
+                        &:before {
+                            background: url(../images/row-top-gris.png) no-repeat 50% 50%;
+                        }
+                    }
+                }
+            }
             .dropdown {
                 .dropdown-toggle {
                     background-image: url(../images/big-row-bottom.png);
@@ -444,7 +526,7 @@
                     z-index: 1000;
                     &:before {
                         background: url(../images/row-top.png) no-repeat 50% 50%;
-                        top: -10px;
+                        top: -9px;
                         right: 74px;
                     }
                     form {
