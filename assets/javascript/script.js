@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 	//carousel
 	$('#myCarousel').carousel({
-	    interval: 4000
+	    interval: false
 	});
 	
 	//slide profil
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 	//slide photoright
 	$('#myCarouselphotoright').carousel({
-	    interval: false
+	    interval: 4000
 	});
 
 	// handles the carousel thumbnails
