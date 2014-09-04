@@ -302,6 +302,23 @@ body {
 .carousel-indicators {
     z-index: inherit;
 }
+.img-edit {
+    position: relative;
+    &:hover {
+        .edit {
+            opacity:1;
+        }
+    }
+    .edit {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        background: url(../images/img-edit.png) no-repeat 50% 50%;
+        opacity: 0;
+    }
+}
 .home {
     .bg-wrap-top {
         background: url(../images/bg-header-top-v3.jpg) no-repeat 50% 50%;
@@ -984,6 +1001,151 @@ body {
 		}
 		#wrap {
 			padding-top: 45px;
+            .bloc-infos {
+                width: 100%;
+                margin-bottom: 10px;
+                .title-infos {
+                    display: block;
+                    width: 100%;
+                    min-height: 70px;
+                    line-height: 70px;
+                    color: #fff;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 0 30px;
+                    background: #6c7993 url(../images/ico-infos.png) no-repeat 90% 50%;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                .body-infos {
+                    width: 100%;
+                    background-color: #fff;
+                    padding: 40px 35px 30px 30px;
+                    .infos-top {
+                        width: 100%;
+                        margin-bottom: 55px;
+                        .title {
+                            display: block;
+                            width: 100%;
+                            color: #6c7993;
+                            font-family: "Roboto Condensed";
+                            font-size: 18px;
+                            font-weight: bold;
+                            border-bottom: 1px solid #ced0d2;
+                            padding-bottom: 15px;
+                            text-transform: uppercase;
+                        }
+                        .form-groupe {
+                            width: 100%;
+                            min-height: 53px;
+                            border-bottom: 1px solid #ced0d2;
+                            &.big {
+                                min-height: 80px;
+                                label {
+                                    padding: 29px 5px 0 0;
+                                }
+                                input[type="text"] {
+                                    min-height: 79px;
+                                }
+                            }
+                            label {
+                                color: #838487;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                font-weight: 300;
+                                padding: 16px 5px 0 0;
+                                float: left;
+                                &.w-20 {
+                                    width: 20%;
+                                }
+                                &.w-35 {
+                                    width: 35%;
+                                }
+                                &.w-40 {
+                                    width: 40%;
+                                }
+                                &.w-50 {
+                                    width: 50%;
+                                }
+                            }
+                            input[type="text"] {
+                                color: #838487;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                font-weight: 300;
+                                min-height: 52px;
+                                border:0;
+                                padding: 0;
+                                float: left;
+                                &.w-80 {
+                                    width: 80%;
+                                }
+                                &.w-65 {
+                                    width: 65%;
+                                }
+                                &.w-60 {
+                                    width: 60%;
+                                }
+                                &.w-50 {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                    .infos-bottom {
+                        width: 100%;
+                        .title {
+                            display: block;
+                            width: 100%;
+                            color: #6c7993;
+                            font-family: "Roboto Condensed";
+                            font-size: 18px;
+                            font-weight: bold;
+                            border-bottom: 1px solid #ced0d2;
+                            padding-bottom: 15px;
+                            text-transform: uppercase;
+                        }
+                        .form-groupe {
+                            width: 100%;
+                            min-height: 53px;
+                            border-bottom: 1px solid #ced0d2;
+                            label {
+                                color: #838487;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                font-weight: 300;
+                                padding: 16px 5px 0 0;
+                                float: left;
+                                &.w-30 {
+                                    width: 30%;
+                                }
+                            }
+                            input[type="text"] {
+                                color: #838487;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                font-weight: 300;
+                                min-height: 52px;
+                                border:0;
+                                padding: 0;
+                                float: left;
+                                &.w-70 {
+                                    width: 70%;
+                                }
+                            }
+                            select {
+                                color: #838487;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                font-weight: 300;
+                                float: left;
+                                margin: 16px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
             .bloc-photo {
                 width: 100%;
                 margin-bottom: 10px;
@@ -997,7 +1159,7 @@ body {
                     font-size: 20px;
                     font-weight: 300;
                     padding: 0 30px;
-                    background: #4288dd url(../images/ico-photo.png) no-repeat 90% 50%;
+                    background: #6c7993 url(../images/ico-photo.png) no-repeat 90% 50%;
                     text-transform: uppercase;
                     text-decoration: none;
                 }
@@ -1887,6 +2049,28 @@ body {
 .list-bloc {
     margin-top: 60px;
     min-height: 588px;
+    &.with-add {
+        position: relative;
+        .add-bloc {
+            width: 27px;
+            height: 25px;
+            position: absolute;
+            top: -27px;
+            right: 2%;
+            background: url(../images/bloc-add.png) no-repeat 50% 50%;
+        }
+        .conversation {
+            position: relative;
+            .edit {
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: url(../images/img-edit.png) no-repeat 50% 50%;
+            }
+        }
+    }
     .left {
         float: left;
         width: 19%;
