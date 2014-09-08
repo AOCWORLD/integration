@@ -319,6 +319,23 @@ body {
         opacity: 0;
     }
 }
+.img-delete {
+    position: relative;
+    &:hover {
+        .delete {
+            opacity:1;
+        }
+    }
+    .delete {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        background: url(../images/img-delete.png) no-repeat 50% 50%;
+        opacity: 0;
+    }
+}
 .home {
     .bg-wrap-top {
         background: url(../images/bg-header-top-v3.jpg) no-repeat 50% 50%;
@@ -1190,6 +1207,15 @@ body {
                     .carousel-left {
                         float: left;
                         width: 38%;
+                        position: relative;
+                        .edit {
+                            width: 32px;
+                            height: 32px;
+                            position: absolute;
+                            top: -35px;
+                            right: 0;
+                            background: url(../images/img-edit.png) no-repeat 50% 50%;
+                        }
                         .carousel  {
                             .carousel-control {
                                 top: inherit;
@@ -2089,6 +2115,14 @@ body {
                 top: 10px;
                 right: 10px;
                 background: url(../images/img-edit.png) no-repeat 50% 50%;
+            }
+            .delete {
+                width: 32px;
+                height: 32px;
+                position: absolute;
+                top: 10px;
+                right: 45px;
+                background: url(../images/img-delete.png) no-repeat 50% 50%;
             }
         }
     }

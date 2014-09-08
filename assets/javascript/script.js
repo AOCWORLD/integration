@@ -111,6 +111,7 @@ $(document).ready(function() {
 			$(this).parent('.bloc-infos').addClass('info-open');
 			$(this).parent('.bloc-infos').find('.body-infos').show();
 		}
+		return false;
 	});
 
 }); //ready
