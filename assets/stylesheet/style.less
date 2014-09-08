@@ -1004,6 +1004,11 @@ body {
             .bloc-infos {
                 width: 100%;
                 margin-bottom: 10px;
+                &.info-open {
+                    .body-infos {
+                        display: block;
+                    }
+                }
                 .title-infos {
                     display: block;
                     width: 100%;
@@ -1022,6 +1027,7 @@ body {
                     width: 100%;
                     background-color: #fff;
                     padding: 40px 35px 30px 30px;
+                    display: none;
                     .infos-top {
                         width: 100%;
                         margin-bottom: 55px;

@@ -102,6 +102,17 @@ $(document).ready(function() {
 	//mod tab
 	$('.mod-tab').tab();
 
+	//toggle menu
+	$('.bloc-infos .title-infos').click( function(e){
+		if($(this).parent('.bloc-infos').hasClass('info-open')) {
+			$(this).parent('.bloc-infos').removeClass('info-open');
+			$(this).parent('.bloc-infos').find('.body-infos').hide();
+		}else {
+			$(this).parent('.bloc-infos').addClass('info-open');
+			$(this).parent('.bloc-infos').find('.body-infos').show();
+		}
+	});
+
 }); //ready
 
 $.fn.tab = function(options) {
