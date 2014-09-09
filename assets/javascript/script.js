@@ -113,6 +113,11 @@ $(document).ready(function() {
 		}
 		return false;
 	});
+	
+	//carousel
+	$('#myCarouseltab').carousel({
+	    interval: false
+	});
 
 }); //ready
 
