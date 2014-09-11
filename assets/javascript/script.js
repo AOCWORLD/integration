@@ -90,6 +90,26 @@ $(document).ready(function() {
 	    interval: 4000
 	});
 
+	//slide photo-info-left
+	$('#myCarouselphotoleft1').carousel({
+	    interval: 4000
+	});
+
+	//slide photo-info-right
+	$('#myCarouselphotoright1').carousel({
+	    interval: 4000
+	});
+
+	//slide photo-info-middle
+	$('#myCarouselphotomiddle').carousel({
+	    interval: 4000
+	});
+
+	//slide photo-info-bottom
+	$('#myCarouselphotobottom').carousel({
+	    interval: 4000
+	});
+
 	//view comment
 	/*$('.conversation .view-comment .discu .vu').click( function(){
 	  $(this).parents('.conversation').children('.add-comment').show();

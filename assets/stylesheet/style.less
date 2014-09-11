@@ -1593,10 +1593,268 @@ body {
                     padding: 0 25% 0 0;
                     margin-bottom: 25px;
                 }
+                .bloc-infos-photo {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                    .title-infos-photo {
+                        display: block;
+                        width: 100%;
+                        min-height: 70px;
+                        line-height: 70px;
+                        color: #fff;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 0 30px;
+                        background: #4288dd url(../images/ico-infos-photo-favori.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;  
+                    }
+                    .body-infos-photo {
+                        padding: 25px 35px 30px 30px;
+                        background-color: #fff;
+                        .carousel-top {
+                            padding: 0 0 35px 0;
+                            margin:  0 0 20px 0;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        .carousel-left {
+                            float: left;
+                            width: 50%;
+                            position: relative;
+                            /*.edit {
+                                width: 32px;
+                                height: 32px;
+                                position: absolute;
+                                top: -35px;
+                                right: 0;
+                                background: url(../images/img-edit.png) no-repeat 50% 50%;
+                            }*/
+                            .titlecarousel {
+                                font-family: "Roboto Condensed";
+                                font-size: 18px;
+                                display: block;
+                                width: 100%;
+                                color: #4288dd;
+                                margin: 0 0 20px 0;
+                            }
+                            .carousel  {
+                                .item {
+                                    img {
+                                        float: left;
+                                    }
+                                    .name {
+                                        font-family: "Roboto";
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: #1d213c;
+                                        float: left;
+                                        padding: 15px 0 0 10px;
+                                    }
+                                }
+                                .carousel-control {
+                                    top: inherit;
+                                    bottom: -15px;
+                                    background-image: none;
+                                    width: 8px;
+                                    height: 11px;
+                                    &.left {
+                                        background: url(../images/control-left-small.png) no-repeat 50% 50%;
+                                        left: 15px;
+                                        right: inherit;
+                                    }
+                                    &.right {
+                                        background: url(../images/control-right-small.png) no-repeat 50% 50%;
+                                        left: 35px;
+                                        right: inherit;
+                                    }
+                                }
+                            }
+                        }
+                        .carousel-right {
+                            float: left;
+                            width: 48%;
+                            margin-left: 2%;
+                            .titlecarousel {
+                                font-family: "Roboto Condensed";
+                                font-size: 18px;
+                                display: block;
+                                width: 100%;
+                                color: #4288dd;
+                                margin: 0 0 20px 0;
+                            }
+                            .carousel  {
+                                .item {
+                                    img {
+                                        float: left;
+                                    }
+                                    .name {
+                                        font-family: "Roboto";
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                        color: #1d213c;
+                                        float: left;
+                                        padding: 15px 0 0 10px;
+                                    }
+                                }
+                                .carousel-control {
+                                    top: inherit;
+                                    bottom: -15px;
+                                    background-image: none;
+                                    width: 8px;
+                                    height: 11px;
+                                    &.left {
+                                        background: url(../images/control-left-small.png) no-repeat 50% 50%;
+                                        left: 15px;
+                                        right: inherit;
+                                    }
+                                    &.right {
+                                        background: url(../images/control-right-small.png) no-repeat 50% 50%;
+                                        left: 35px;
+                                        right: inherit;
+                                    }
+                                }
+                            }
+                        }
+                        .carousel-middle {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 30px;
+                            .titlecarousel {
+                                font-family: "Roboto Condensed";
+                                font-size: 18px;
+                                display: block;
+                                width: 100%;
+                                color: #4288dd;
+                                margin: 0 0 20px 0;
+                            }
+                            .carousel  {
+                                .item {
+                                    .bloc {
+                                        width: 50%;
+                                        float: left;
+                                        margin: 0 0 10px 0;
+                                        img {
+                                            float: left;
+                                        }
+                                        .name {
+                                            font-family: "Roboto";
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                            color: #1d213c;
+                                            float: left;
+                                            padding: 15px 0 0 10px;
+                                        }
+                                    }                                        
+                                }
+                                .carousel-control {
+                                    top: inherit;
+                                    bottom: -15px;
+                                    background-image: none;
+                                    width: 16px;
+                                    height: 16px;
+                                    &.left {
+                                        background: url(../images/slide-profil/control-left.png) no-repeat 50% 50%;
+                                        left: inherit;
+                                        right: 20px;
+                                    }
+                                    &.right {
+                                        background: url(../images/slide-profil/control-right.png) no-repeat 50% 50%;
+                                        left: inherit;
+                                        right: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .carousel-bottom {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 40px;
+                            .titlecarousel {
+                                font-family: "Roboto Condensed";
+                                font-size: 18px;
+                                display: block;
+                                width: 100%;
+                                color: #4288dd;
+                                margin: 0 0 20px 0;
+                            }
+                            .carousel  {
+                                .item {
+                                    width: 100%;                                    
+                                }
+                                .carousel-control {
+                                    top: inherit;
+                                    bottom: -25px;
+                                    background-image: none;
+                                    width: 16px;
+                                    height: 16px;
+                                    &.left {
+                                        background: url(../images/slide-profil/control-left.png) no-repeat 50% 50%;
+                                        left: inherit;
+                                        right: 20px;
+                                    }
+                                    &.right {
+                                        background: url(../images/slide-profil/control-right.png) no-repeat 50% 50%;
+                                        left: inherit;
+                                        right: 0;
+                                    }
+                                }
+                                .carousel-indicators {
+                                    bottom: -25px;
+                                    left: 0;
+                                    width: auto;
+                                    padding: 0;
+                                    margin: 0;
+                                    li {
+                                        border: 1px solid #ccc;
+                                        width: 10px;
+                                        height: 10px;
+                                        margin: 0;
+                                        &.active {
+                                            background-color: #4288dd;
+                                            width: 10px;
+                                            height: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .description-infos {
+                            font-family: "Roboto";
+                            font-weight: 300;
+                            font-size: 13px;
+                            line-height: 22px;
+                            color: #1d213c;
+                        }
+                    }
+                }
+                .bloc-itin {
+                    width: 100%;
+                    .title-itin {
+                        display: block;
+                        width: 100%;
+                        min-height: 70px;
+                        line-height: 70px;
+                        color: #fff;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 0 30px;
+                        background: #4288dd url(../images/ico-itineraire.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .body-itin {
+                        height: 310px;
+                        border: 1px solid #ccc;
+                    }
+                }
+
             }
             .bg-white {
                 background-color: #fff;
                 padding: 45px 0;
+                margin: 60px 0 0 0;
             }
         }
     }
