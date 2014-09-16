@@ -4,8 +4,8 @@
 
 function initialize() {
   var mapOptions = {
-    zoom: 13,
-    center: new google.maps.LatLng(48.879033, 2.118491),
+    zoom: 16,
+    center: new google.maps.LatLng(42.664265, 2.904595),
 	mapTypeControl: true,
 	panControl: true,
 	scaleControl: true,
@@ -72,7 +72,7 @@ function initialize() {
  * other.
  */
 var beaches = [
-  ['Lorem ipsum', 48.875344, 2.117847, 1]
+  ['Lorem ipsum', 42.664265, 2.904595, 1]
 ];
 
 function setMarkers(map, locations) {
