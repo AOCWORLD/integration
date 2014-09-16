@@ -139,6 +139,9 @@ $(document).ready(function() {
 	    interval: false
 	});
 
+	//calendar
+	$('#mydate').glDatePicker();
+
 }); //ready
 
 $.fn.tab = function(options) {

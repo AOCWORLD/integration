@@ -1,6 +1,7 @@
 @import "extends/reset.less";
 @import "extends/functions.less";
 @import "extends/scroll.less";
+@import "extends/calendar.less";
 @import "extends/select2.less";
 @import "extends/form.less";
 @import "extends/header.less";
@@ -1585,6 +1586,9 @@ body {
 	}
     &.pro {
         background-color: #fff;
+        .gldp-default {
+            display: block !important;
+        }
         #wrap {
             padding-top: 35px;
             .bg-no-white {
@@ -1856,6 +1860,137 @@ body {
                             width: 100%;
                             margin: auto;
                         }
+                    }
+                }
+                .bloc-videos {
+                    width: 100%;
+                    /*margin-bottom: 10px;*/
+                    .title-video {
+                        display: block;
+                        width: 100%;
+                        min-height:70px;
+                        line-height: 70px;
+                        color: #fff;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 0 30px;
+                        background: #00bf79 url(../images/ico-video.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .carrousel-videos {
+                        width: 100%;
+                        padding: 0;
+                        float: none;
+                        min-height: 445px;
+                        /*border-bottom: 2px solid #00bf79;*/
+                        .carousel {
+                            .carousel-inner {
+                                min-height: inherit;
+                                max-height: 320px;
+                                .item {
+                                    > img {
+                                        min-height: 280px;
+                                    }
+                                    a {
+                                        .captions {
+                                            min-height: inherit;
+                                        }
+                                    }
+                                    .carousel-caption {
+                                        min-height: 60px;
+                                        bottom: 0px;
+                                        .video-title {
+                                            margin: 10px 0 0 15px;
+                                            font-size: 16px;
+                                            display: block;
+                                            float: none;
+                                            text-align: left;
+                                        }
+                                        .date {
+                                            float: left;
+                                            color: #00bf79;
+                                            font-family: "Roboto Condensed";
+                                            font-size: 11px;
+                                            margin-right: 15px;
+                                        }
+                                        .info {
+                                            margin: 0 15px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .carousel-control {
+                                bottom: -30px;
+                                &.left {
+                                    left: 25%;
+                                }
+                                &.right {
+                                    right: 25%;
+                                }
+                            }
+                            .carousel-indicators {
+                                left: 40%;
+                                bottom: -30px;
+                                li {
+                                    &.active {
+                                        background: url(../images/carousel/indicator-active-green.png) no-repeat 50% 50%;
+                                    }
+                                }
+                            }
+                        }
+                        .thumbs {
+                            margin-top: 20px;
+                            max-height: 200px;
+                            .carousel-inner {
+                                .item {
+                                    a {
+                                        padding: 3px;
+                                        .captions {
+                                            .bottom {
+                                                .date {
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+                                        &.selected {
+                                            border: 2px solid #00bf79;
+                                            position: relative;
+                                            background-color: #fff;
+                                            &:before {
+                                                top: -22px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .calendar {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    .title-calendar {
+                        display: block;
+                        width: 100%;
+                        min-height: 70px;
+                        line-height: 70px;
+                        color: #fff;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 0 30px;
+                        background: #00bf79 url(../images/ico-calendar.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .body-calendar {
+                        padding: 25px 20px;
+                        background-color: #fff;
+                        /*min-height: 360px;*/
+                        min-height: 305px;
+
                     }
                 }
 
