@@ -1588,6 +1588,7 @@ body {
         background-color: #fff;
         .gldp-default {
             display: block !important;
+            /***style calendar****/
         }
         #wrap {
             padding-top: 35px;
@@ -1989,10 +1990,125 @@ body {
                         padding: 25px 20px;
                         background-color: #fff;
                         /*min-height: 360px;*/
-                        min-height: 305px;
+                        min-height: 400px;
 
                     }
                 }
+                .appel {
+                    width: 100%;
+                    min-height: 130px;
+                    margin: 0 0 10px 0;
+                    background: #97979c;
+                    a {
+                        display: block;
+                        text-align: center;
+                        min-height: 130px;
+                        text-decoration: none;
+                        color: #fbfbfb;
+                        font-family: "Roboto Condensed";
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background: url(../images/ico-appel.png) no-repeat 50% 20%;
+                        padding: 65% 0 0 0;
+                    }
+                    &:hover {
+                        background: #97979c;
+                        a {
+                            background: url(../images/ico-appel.png) no-repeat 50% 20%;
+                        }
+                    }
+                }
+                .reservation {
+                    width: 100%;
+                    min-height: 130px;
+                    background: #97979c;
+                    a {
+                        display: block;
+                        text-align: center;
+                        min-height: 130px;
+                        text-decoration: none;
+                        color: #fbfbfb;
+                        font-family: "Roboto Condensed";
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        background: url(../images/ico-reservation.png) no-repeat 50% 20%;
+                        padding: 65% 0 0 0;
+                    }
+                    &:hover {
+                        background: #97979c;
+                        a {
+                            background: url(../images/ico-reservation.png) no-repeat 50% 20%;
+                        }
+                    }
+                }
+                .horaire {
+                    width: 100%;
+                    background-color: #7179ad;
+                    min-height: 270px;
+                    padding: 22px 27px;
+                    .top {
+                        border-top: 1px solid #171f63;
+                        border-bottom: 1px solid #171f63;
+                        padding: 10px 0;
+                        margin: 0 0 15px 0;
+                        .titleleft {
+                            color: #fff;
+                            font-family: "Roboto";
+                            font-size: 20px;
+                            font-weight: 300;
+                            float: left;
+                            text-transform: uppercase;
+                        }
+                        .titleright {
+                            color: #171e64;
+                            font-family: "Roboto Condensed";
+                            font-size: 18px;
+                            float: right;
+                        }
+                    }
+                    table {
+                        width: 100%;
+                        tr {
+                            &.odd {
+                                background-color: #bdbcdf;
+                            }
+                            &.even {
+                                background-color: #a9a9d5;
+                            }
+                            td {
+                                color: #171f63;
+                                font-family: "Roboto Condensed";
+                                font-size: 12px;
+                                border-bottom: 2px solid #7179ad;
+                                padding: 0 8px;
+                                &.small {
+                                    width: 39%;
+                                    border-right: 2px solid #7179ad;
+                                }
+                                &.big {
+                                    width: 60%;
+                                }
+                            }
+                            &.active {
+                                background-color: #171f63;
+                                td {
+                                    color: #fff;
+                                    border-top: 2px solid #fff;
+                                    border-bottom: 2px solid #fff;
+                                    &.small {
+                                        border-left: 2px solid #fff;
+                                    }
+                                    &.big {
+                                        border-right: 2px solid #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
 
             }
             .bg-white {
