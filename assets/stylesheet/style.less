@@ -2327,6 +2327,19 @@ body {
                                                 font-size: 16px;
                                                 text-decoration: none;
                                                 cursor: pointer;
+                                                &.first {
+                                                    position: relative;
+                                                    &:after {
+                                                        width:2px;
+                                                        height: 37px;
+                                                        position: absolute;
+                                                        content: "";
+                                                        top: 0;
+                                                        right: -1px;
+                                                        display: inline-block;
+                                                        background: #fff;
+                                                    }
+                                                }
                                                 &.selected {
                                                     background: #9fa6cd;
                                                     color: #1d213b;
@@ -2897,6 +2910,7 @@ body {
         .carousel {
             .carousel-inner {
                 min-height: 320px;
+                overflow: inherit;
                 .item {
                     > img {
                         min-height: 500px;
@@ -2997,12 +3011,12 @@ body {
                             background-color: #fff;
                             &:before {
                                 background: url(../images/carousel/row-bottom-carousel.png) no-repeat 50% 50%;
-                                content: url('../images/carousel/row-bottom-carousel.png');
+                                content: "";
                                 display: inline-block;
                                 width: 23px;
                                 height: 11px;
                                 position: absolute;
-                                left: 45%;
+                                left: 40%;
                                 top: -19px;
                             }
                         }
