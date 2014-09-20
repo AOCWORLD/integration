@@ -172,7 +172,7 @@ $(document).ready(function() {
 	  var id_selector = $(this).attr("id");
 	  var id = id_selector.substr(id_selector.length -1);
 	  id = parseInt(id);
-	  $('#myCarousel .galerie').carousel(id);
+	  $('#myCarousel-tab .galerie').carousel(id);
 	  $('[id^=carousel-selector-]').removeClass('selected');
 	  $(this).addClass('selected');
 	});
