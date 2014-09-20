@@ -337,6 +337,24 @@ body {
         opacity: 0;
     }
 }
+.bloc-with-edit {
+    position: relative;
+    &:hover {
+        .edit {
+            opacity:1;
+            z-index: 1;
+        }
+    }
+    .edit {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url(../images/img-edit.png) no-repeat 50% 50%;
+        opacity: 0;
+    }
+}
 .home {
     .bg-wrap-top {
         background: url(../images/bg-header-top-v3.jpg) no-repeat 50% 50%;
