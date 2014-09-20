@@ -142,6 +142,41 @@ $(document).ready(function() {
 	//calendar
 	$('#mydate').glDatePicker();
 
+	//carousel
+	$('#myCarousel-tab').carousel({
+	    interval: false
+	});
+
+	$('#myCarousel-tab').on('slid.bs.carousel', function() {
+      var id = $('.item.active').data('slide-number');
+	  var id_selector = $(this).attr("id");
+	  id = parseInt(id);
+	  $('[id^=carousel-selector-]').removeClass('selected');
+	  $('[id^=carousel-selector-'+id+']').addClass('selected');
+	});
+
+	$('#myCarouselthumbtab').carousel({
+		interval: false
+	});
+    
+    $('#myCarouselthumbtab').on('slid.bs.carousel', function() {
+      var id = $('.item.active').data('slide-number');
+	  var id_selector = $(this).attr("id");
+	  id = parseInt(id);
+	  $('[id^=carousel-selector-]').removeClass('selected');
+	  $('[id^=carousel-selector-'+id+']').addClass('selected');
+	});
+
+	// handles the carousel thumbnails
+	$('[id^=carousel-selector-]').click( function(){
+	  var id_selector = $(this).attr("id");
+	  var id = id_selector.substr(id_selector.length -1);
+	  id = parseInt(id);
+	  $('#myCarousel .galerie').carousel(id);
+	  $('[id^=carousel-selector-]').removeClass('selected');
+	  $(this).addClass('selected');
+	});
+
 }); //ready
 
 $.fn.tab = function(options) {
