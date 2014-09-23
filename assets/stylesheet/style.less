@@ -2819,7 +2819,7 @@ body {
             .tab-right-title {
                 background-color: #82dac4;
                 margin: 0 0 1px 0;
-                min-height: 80px;
+                min-height: 81px;
                 line-height: 18px;
                 width: 100%;
                 text-align: center;
@@ -2827,6 +2827,56 @@ body {
                 font-family: "Roboto Condensed";
                 font-size: 18px;
                 padding: 20px 0 0 0;
+            }
+            table {
+                .mCustomScrollbar {
+                    width: 100%;
+                    height: 600px;
+                    .mCustomScrollBox {
+                        height: 600px;
+                    }
+                    .mCSB_container {
+                        margin-right: 0;
+                    }
+                    .mCSB_scrollTools {
+                        .mCSB_draggerRail {
+                            background-color: #bfd8cf;
+                            margin-right: 0;
+                            border-radius: 0;
+                        }
+                        .mCSB_dragger {
+                            .mCSB_dragger_bar {
+                                background-color: #70d3ba;
+                                margin-right: 0;
+                                border-radius: 0;
+                            }
+                        }
+                    }
+                    tr {
+                        td {
+                            text-align: center;
+                            border: 1px solid #fff;
+                        }
+                        &.even {
+                            td {
+                                background-color: #e9f2ef;
+                                img {
+                                    height: 118px;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                        &.odd {
+                            td {
+                                background-color: #d9e8e2;
+                                img {
+                                    height: 118px;
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }  
     }
