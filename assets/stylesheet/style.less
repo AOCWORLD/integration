@@ -2880,7 +2880,63 @@ body {
             }
         }  
     }
-    &.pro3 {}
+    &.pro3 {
+        .tab-left-1 {
+            table {
+                width: 49.555%;
+            }
+            padding-right:5px;
+        }
+        .tab-right-1 {
+            padding-left: 2px;
+            .tab-right-title {
+                font-size: 14px;
+            }
+        }
+        .tab-right-2 {
+            padding-right:2px;
+            .tab-right-title {
+                background-color: #f27a7a;
+                margin: 0 0 1px 0;
+                min-height: 81px;
+                line-height: 18px;
+                width: 100%;
+                text-align: center;
+                color: #211d3b;
+                font-family: "Roboto Condensed";
+                font-size: 14px;
+                padding: 20px 0 0 0;
+            }
+            table {
+                width: 100%;
+                tr {
+                    td {
+                        text-align: center;
+                        border: 1px solid #fff;
+                    }
+                    &.even {
+                        td {
+                            background-color: #eee2e2;
+                            img {
+                                height: 118px;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    &.odd {
+                        td {
+                            background-color: #e1cdcd;
+                            img {
+                                height: 118px;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
 }
 #wrap{
     position: relative;
