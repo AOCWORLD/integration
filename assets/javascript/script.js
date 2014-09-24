@@ -140,27 +140,27 @@ $(document).ready(function() {
 	});
 
 	//calendar
-	$('#mydate').glDatePicker({
-		showAlways: true,
-	    //cssName: 'darkneon',
-	    //selectedDate: new Date(2013, 0, 5),
-	    specialDates: [
-	        {
-	            date: new Date(2014, 8, 22),
-	            data: { message: 'Meeting every day 22 of the month' },
-	            repeatMonth: true
-	        },
-	    ],
-	    onClick: function(target, cell, date, data) {
-	        target.val(date.getFullYear() + ' - ' +
-	                    date.getMonth() + ' - ' +
-	                    date.getDate());
+	if ($('#mydate').length){
+		$('#mydate').glDatePicker({
+			showAlways: true,
+		    specialDates: [
+		        {
+		            date: new Date(2014, 8, 22),
+		            data: { message: 'day 22 of the month' },
+		            repeatMonth: true
+		        },
+		    ],
+		    onClick: function(target, cell, date, data) {
+		        target.val(date.getFullYear() + ' - ' +
+		                    date.getMonth() + ' - ' +
+		                    date.getDate());
 
-	        if(data != null) {
-	            alert(data.message + '\n' + date);
-	        }
-	    }
-	});
+		        if(data != null) {
+		            alert(data.message + '\n' + date);
+		        }
+		    }
+		});
+	}
 
 	//carousel
 	$('#myCarousel-tab').carousel({
