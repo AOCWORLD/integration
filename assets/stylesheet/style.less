@@ -2131,41 +2131,48 @@ body {
                     margin: 0 0 10px 0;
                     background: #97979c;
                     &:hover {
-                        background: #eb4c37;
-                    }
-                    a {
-                        display: block;
-                        text-align: center;
-                        min-height: 130px;
-                        text-decoration: none;
-                        color: #fbfbfb;
-                        font-family: "Roboto Condensed";
-                        font-size: 16px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        background: url(../images/ico-appel.png) no-repeat 50% 20%;
-                        padding: 45% 0 0 0;
-                    }
-                }
-                .reservation {
-                    width: 100%;
-                    min-height: 130px;
-                    background: #97979c;
-                    &:hover {
                         background: #f69b0c;
                     }
-                    a {
+                    .reserv {
                         display: block;
                         text-align: center;
-                        min-height: 130px;
+                        /*min-height: 130px;*/
                         text-decoration: none;
-                        color: #fbfbfb;
+                        color: #fff;
                         font-family: "Roboto Condensed";
                         font-size: 16px;
                         font-weight: bold;
                         text-transform: uppercase;
                         background: url(../images/ico-reservation.png) no-repeat 50% 20%;
                         padding: 45% 0 0 0;
+                    }
+					.download {
+						display: block;
+						background: url(../images/ico-download.png) no-repeat 50% 20%;
+						width:87px;
+						height:17px;
+						margin: 8px auto 0;
+					}
+                }
+                .reservation {
+                    width: 100%;
+                    min-height: 130px;
+                    background: #97979c;
+                    &:hover {
+                        background: #9ad916;
+                    }
+                    a {
+                        display: block;
+                        text-align: center;
+                        min-height: 130px;
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: "Roboto Condensed";
+                        font-size: 16px;
+						line-height: 16px;
+                        font-weight: bold;
+                        background: url(../images/ico-chat.png) no-repeat 50% 20%;
+                        padding: 60% 0 0 0;
                     }
                 }
                 .horaire {
@@ -2598,15 +2605,15 @@ body {
                         float: left;
                         min-height: 158px;
                         background: #fff;
-                        border: 2px solid #000b5b;
+                        border: 2px solid #2eaa52;
                         text-align: center;
                         padding: 20px 2% 30px 2%;
-                        &:hover {
-                            background: #000b5b;
+                        /*&:hover {
+                            background: #2eaa52;
                             a {
                                 color: #fff;
                             }
-                        }
+                        }*/
                         a {
                             display: block;
                             min-height: 75px;
@@ -2631,30 +2638,75 @@ body {
                     .right {
                         width: 48%;
                         float: right;
-                        min-height: 158px;
+                        min-height: 166px;
                         background: #fff;
-                        border: 2px solid #019da9;
+                        border: 2px solid #2eaa52;
                         text-align: center;
-                        padding: 20px 2% 18px 2%;
-                        &:hover {
+                        padding: 20px 2% 10px 2%;
+                        /*&:hover {
                             background: #019da9;
                             a {
                                 color: #fff;
                             }
-                        }
+                        }*/
                         a {
                             display: block;
-                            min-height: 60px;
+                            min-height: 85px;
                             text-decoration: none;
-                            background: url(../images/ico-pdf.png) no-repeat 0 50%;
+                            background: url(../images/ico-rappel.png) no-repeat 0 50%;
+							background-size: 100%;
+							/*padding: 5px 0 0 50px;
                             color: #009caf;
                             font-family: "Roboto Condensed";
                             font-size: 16px;
                             font-weight: bold;
-                            padding: 5px 0 0 50px;
                             text-align: left;
-                            text-transform: uppercase;
+                            text-transform: uppercase;*/
                         }
+						form {
+							border: 2px solid #ffc000;
+							-moz-border-radius: 5px;
+							-webkit-border-radius: 5px;
+							border-radius: 5px;
+							-moz-background-clip: padding;
+							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
+							background-color: transparent;
+							width: 100%;
+							min-height: 25px;
+							position: relative;
+							input[type="text"] {
+								float:left;
+								border: 0;
+								height:21px;
+								line-height: 21px;
+								width:80%;
+								color: #a5a5a5;
+								font-family: "Roboto Condensed";
+								font-size: 12px;
+								text-align: center;
+							}
+							input[type="submit"] {
+								float:right;
+								width:20%;
+								height:21px;
+								color: #fbfbfb;
+								font-family: "Roboto Condensed";
+								font-size: 10px;
+								-moz-border-radius: 4px;
+								-webkit-border-radius: 4px;
+								border-radius: 4px;
+								-moz-background-clip: padding;
+								-webkit-background-clip: padding-box;
+								background-clip: padding-box;
+								background-color: #5e5e5e;
+								background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVlNWU1ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhkOGQ4ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+								background-image: -moz-linear-gradient(bottom, #5e5e5e 0%, #8d8d8d 100%);
+								background-image: -o-linear-gradient(bottom, #5e5e5e 0%, #8d8d8d 100%);
+								background-image: -webkit-linear-gradient(bottom, #5e5e5e 0%, #8d8d8d 100%);
+								background-image: linear-gradient(bottom, #5e5e5e 0%, #8d8d8d 100%);
+							}
+						}
                         p {
                             color: #ffd800;
                             font-family: "Roboto Condensed";
