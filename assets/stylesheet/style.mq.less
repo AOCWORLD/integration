@@ -1,4 +1,4 @@
-//affichage descktop
+//affichage descktop large
 @media screen and (min-width: 1420px) {
 	.container {
         width: 1400px;
@@ -22,7 +22,24 @@
 		min-height: 480px;
 	}
 }
+//affichage descktop small
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	#header .nav-bar .search input[type="submit"] {font-size: 15px;}
+	#header .nav-bar nav .select2-container .select2-choice {font-size: 12px;}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#header .nav-bar nav .select2-container .select2-choice {padding: 26px 20px 26px 12%;}
+	#header .nav-bar .search input[type="submit"] {font-size: 10px;}
+	#header .nav-bar nav {font-size: 12px;}
+	#header .nav-bar .connexion .dropdown .dropdown-toggle {padding: 26px 0 26px 0;}
+	#header .nav-bar .logo-img {width: 7%;}
+	#header.affix .nav-bar nav.region .select2-container .select2-choice, 
+	#header.affix .nav-bar nav.categorie .select2-container .select2-choice {padding: 48px 20px 19px 12%;}
+	#header.affix .nav-bar nav .dropdown .dropdown-toggle {padding: 48px 0 19px 12%;}
+	#wrap .chat .title p {font-size: 20px;padding-top: 65%;}
+	#wrap .videos .title p {font-size: 20px;padding-top: 40%;}
+}
 //affichage tablette
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 767px) {}
 //affichage mobile
 @media screen and (max-width: 480px) {}
