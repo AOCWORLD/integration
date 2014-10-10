@@ -2225,6 +2225,87 @@ body {
                         background-color: #fff;
                         /*min-height: 360px;*/
                         min-height: 400px;
+						list-style: none;
+						li {
+							list-style: none;
+							table {
+								width:100%;
+								caption {
+									text-align: center;
+									margin: 0 0 20px 0;
+									font-size: 20px;
+									text-transform: uppercase;
+									color: #00bf79;
+								}
+								thead {
+									tr {
+										th {
+											background: #fff;
+											font-family: Myriad Pro;
+											color: #676c7a;
+											font-size: 16px;
+											font-weight: 400;
+											border-width: 0px 1px 1px 0px !important;
+											height: 40px !important;
+											width: 40px !important;
+											border-style: solid;
+											border-color: #888;
+											text-align: center !important;
+											border-left: 10px solid #fff !important;
+										}
+									}
+								}
+								tfoot {
+									tr {
+										td {
+											&.pad {
+												border: 0;
+											}
+										}
+										a {
+											font-family: Myriad Pro;
+											color: #676c7a;
+											font-size: 18px;
+											font-weight: 400;
+											text-decoration: none;
+										}
+									}
+								}
+								tbody {
+									tr {
+										td {
+											background: #fff;
+											font-family: Myriad Pro;
+											color: #676c7a;
+											font-size: 16px;
+											font-weight: 400;
+											border-width: 0px 1px 1px 0px !important;
+											height: 50px !important;
+											width: 40px !important;
+											border-style: solid;
+											border-color: #888;
+											text-align: center !important;
+											border-left: 10px solid #fff !important;
+											border-top: 10px solid #fff !important;
+											&.today {
+												background-color: #00bf79;
+												color: #fff;
+												/*border-color: #00bf79;*/
+											}
+											&.event {
+												background-color: cornflowerblue;
+												color: #fff !important;
+												/*border-color: cornflowerblue;*/
+												a {
+													color: #fff !important;
+												}
+											}
+										}
+									}
+								}
+								
+							}
+						}
 
                     }
                 }
