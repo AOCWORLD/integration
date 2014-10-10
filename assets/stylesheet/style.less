@@ -20,6 +20,87 @@ body {
 .video-js .vjs-poster {
 	z-index: inherit !important;
 }
+//pop up pro 
+.popup {
+	.modal-content {
+		border: 1px solid #ccc;
+		background-color: #fff;
+		.modal-header {
+			background-color: #f5f6f7;
+			.modal-title {
+				color: #000;
+				font-size: 14px;
+			}
+		}
+		.modal-body {
+			padding:0;
+			ul {
+				list-style: none;
+				padding: 5px 10px;
+				li {
+					width:100%;
+					padding: 5px 0;
+					border-bottom: 1px solid #ccc;
+					min-height:50px;
+					clear:both;
+					&:last-child {
+						border-bottom: 0;
+					}
+					.flag {
+						float:left;
+						margin-right: 15px;
+						padding: 12px 0 0 10px;
+					}
+					.name {
+						float:left;
+						font-size: 14px;
+						color: #000;
+						font-weight: bold;
+						display: block;
+						padding: 8px 0 0 0;
+					}
+					.details {
+						float:right;
+						min-width: 50px;
+						display: block;
+						height: 25px;
+						line-height: 25px;
+						color: #4e5665;
+						padding: 0 8px;
+						border: 1px solid #ccc;
+						text-shadow: 0 1px 0 #fff;
+						background-color: #f6f7f8 ;
+						border-radius: 2px;
+						-webkit-border-radius: 2px;
+						-moz-border-radius: 2px;
+						-ms-border-radius: 2px;
+						text-align: center;
+						margin: 7px 0 0 0;
+						text-decoration:none;
+					}
+				}
+			}
+			.mCustomScrollbar {
+				height:308px;
+				.mCSB_scrollTools {
+					.mCSB_draggerRail {
+						background-color: #ebebee;
+					}
+					.mCSB_dragger {
+						.mCSB_dragger_bar {
+							background-color: #97979c;
+						}
+					}
+				}
+				.mCSB_inside {
+					.mCSB_container {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
 //custom pop up 
 .modal-dialog {
 	width: 450px;
