@@ -33,7 +33,7 @@
 	#header.big-header .bg-fixed-header-bottom.pro .img-restau {top: 10px;}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	#header .nav-bar .page-title h1 {margin-top: 15%;}
+	#header .nav-bar .page-title h1 {margin-top: 11%;}
 	#header .nav-bar nav .select2-container .select2-choice {padding: 26px 20px 26px 12%;font-size: 12px}
 	#header .nav-bar .connexion .dropdown .dropdown-toggle {padding: 29px 0 23px 0;}
 	#header .nav-bar .search input[type="submit"] {font-size: 10px;}
@@ -77,7 +77,7 @@
 	#wrap .chat .title p {padding: 20px;}
 	#wrap .chat .title p br {display: none;}
 	#wrap .chat .mCustomScrollbar {width: 100%;}
-	#wrap .carrousel-videos {width: 100%;padding: 0;min-height: 800px;margin-bottom:15px;}
+	#wrap .carrousel-videos {width: 100%;padding: 0;min-height: 600px;margin-bottom:15px;margin-top:15px;}
 	#wrap .videos {width: 100%;}
 	#wrap .videos .title {min-height: inherit;text-align: inherit;background-position:95% 50%;}
 	#wrap .videos .title p {padding: 20px 0 0 20px;}
@@ -87,7 +87,37 @@
 	.home .list-bloc .left, .home .list-bloc .right {width: 100%;}
 	.home .list-bloc .left .top-visit img, .home .list-bloc .right .top-visit img {width: 100%;}
 	.home .list-bloc .left .bottom-visit, .home .list-bloc .right .bottom-visit {position: relative;}
+	.home .ALune {float:none;}
+	#header .nav-bar .logo-img, #header.affix .nav-bar .logo-img {display: none;width: 0;margin: 0;}
+	#header .nav-bar .region, #header .nav-bar .categorie, #header.affix .nav-bar nav, #header.affix .nav-bar nav {width: 20%;}
+	#header .nav-bar .search, #header.affix .nav-bar .search {width: 40%;margin: 14px 0 13px 0;}
+	#header .nav-bar .connexion, #header.affix .nav-bar nav {width: 18%;font-size: 10px;}
+	#header .nav-bar .search input[type="text"] {padding: 10px 5px;width: 60%;}
+	#header .nav-bar .search input[type="submit"] {width: 40%;font-size: 12px;}
+	#header .nav-bar .page-title h1 {margin-top: 17%;}
+	#header.affix .nav-bar nav .dropdown .dropdown-toggle {padding-left:2%;}
+	.home .list-bloc .conversation .perso-picture {width: 25%;}
+	.home .list-bloc .conversation .perso-picture:after {left: 26%;}
+	.home .list-bloc .conversation .perso-txt {width: 75%;}
+	#footer {padding: 20px 0 50px 0;margin-top: 10px;}
+	#footer .top-footer {margin-bottom: 10px;}
+	#footer .bottom-footer {padding: 0 15px;}
+	#footer .bottom-footer .first {width: 100%;margin-left: 0;margin-bottom: 10px;}
+	#footer .bottom-footer .sep-footer {display:none;}
+	#footer .bottom-footer .second {width: 100%;margin-bottom: 10px;}
+	#header .nav-bar .connexion .dropdown .dropdown-body:before {right: 20px;}
+	
+	
 	
 }
 //affichage mobile
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+	#header .nav-bar .search input[type="submit"] {font-size: 9px;word-wrap: break-word;}
+	.home #wrap .carrousel-videos {min-height: 380px;}
+	.home #wrap .carrousel-videos .carousel .carousel-control.right {right: 15%;}
+	.home #wrap .carrousel-videos .carousel .carousel-inner {min-height: inherit;}
+	#header .nav-bar .connexion.profil .dropdown .dropdown-body {padding: 10px;min-height: 180px;min-width: 300px;}
+	#header .nav-bar .connexion.profil .dropdown .dropdown-body .profil-img {width: 40%;margin-right: 3%;}
+	#header .nav-bar .connexion.profil .dropdown .dropdown-body .profil-description-top,
+	#header .nav-bar .connexion.profil .dropdown .dropdown-body .profil-description-bottom {width: 57%;}
+}
