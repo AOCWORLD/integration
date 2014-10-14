@@ -73,20 +73,28 @@
 }
 //affichage tablette
 @media screen and (max-width: 767px) {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, 
+.col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, 
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, 
+.col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding:0;}
+	#header .nav-bar .connexion .dropdown .dropdown-toggle:hover {padding: 32px 0 23px 12%;}
+	#header.big-header .bg-fixed-header-bottom .flag {margin: 33px 0 0 35%;}
+	#header.affix .nav-bar nav.connexion .dropdown .dropdown-toggle {padding: 55px 0 15px 12%;}
 	#wrap .chat .title {min-height: inherit;text-align: inherit;background-position:95% 50%;}
-	#wrap .chat .title p {padding: 20px;}
+	#wrap .chat .title p {padding: 20px;font-size: 20px;}
 	#wrap .chat .title p br {display: none;}
 	#wrap .chat .mCustomScrollbar {width: 100%;}
 	#wrap .carrousel-videos {width: 100%;padding: 0;min-height: 600px;margin-bottom:15px;margin-top:15px;}
 	#wrap .videos {width: 100%;}
 	#wrap .videos .title {min-height: inherit;text-align: inherit;background-position:95% 50%;}
-	#wrap .videos .title p {padding: 20px 0 0 20px;}
-	#wrap .videos .title .sub-title {padding: 0 0 20px 20px;}
+	#wrap .videos .title p {padding: 20px 0 0 20px;font-size: 20px;}
+	#wrap .videos .title .sub-title {padding: 0 0 20px 20px;font-size: 12px;}
 	#footer .bottom-footer .input-group .input-group-addon {float: right;}
 	.home .list-bloc .middle {width: 100%;padding: 0;margin: 10px 0;}
 	.home .list-bloc .left, .home .list-bloc .right {width: 100%;}
 	.home .list-bloc .left .top-visit img, .home .list-bloc .right .top-visit img {width: 100%;}
-	.home .list-bloc .left .bottom-visit, .home .list-bloc .right .bottom-visit {position: relative;}
+	.home .list-bloc .left .bottom-visit, .home .list-bloc .right .bottom-visit {position: relative;height: 50px;}
 	.home .ALune {float:none;}
 	#header .nav-bar .logo-img, #header.affix .nav-bar .logo-img {display: none;width: 0;margin: 0;}
 	#header .nav-bar .region, #header .nav-bar .categorie, #header.affix .nav-bar nav, #header.affix .nav-bar nav {width: 20%;}
@@ -106,18 +114,34 @@
 	#footer .bottom-footer .sep-footer {display:none;}
 	#footer .bottom-footer .second {width: 100%;margin-bottom: 10px;}
 	#header .nav-bar .connexion .dropdown .dropdown-body:before {right: 20px;}
+	#header .nav-bar .connexion .dropdown .dropdown-body {padding: 10px 15px 15px 15px;min-width: 470px;}
+	.select2-drop.select2-drop-active {min-width: 120px;}
+	.list-bloc .bottom-visit p {font-size: 25px;}
+	#header .bg-fixed-wrap-top .nav-menu .dropdown .menu-right {min-width: 470px;padding: 10px;}
+	#header .bg-fixed-wrap-top .nav-menu .dropdown .menu-right > li ul li label {font-size: 11px;}
 	
 	
 	
 }
 //affichage mobile
 @media screen and (max-width: 480px) {
+	#header .nav-bar .page-title h1 {font-size: 20px !important;margin-top: 20%;}
+	#header .nav-bar nav.connexion .dropdown .dropdown-toggle {padding: 32px 0 8px 0;}
+	#header.affix .nav-bar nav.connexion .dropdown .dropdown-toggle {padding: 40px 0 15px 0;}
 	#header .nav-bar .search input[type="submit"] {font-size: 9px;word-wrap: break-word;}
-	.home #wrap .carrousel-videos {min-height: 380px;}
+	.home #wrap .carrousel-videos {min-height: 445px;}
 	.home #wrap .carrousel-videos .carousel .carousel-control.right {right: 15%;}
 	.home #wrap .carrousel-videos .carousel .carousel-inner {min-height: inherit;}
 	#header .nav-bar .connexion.profil .dropdown .dropdown-body {padding: 10px;min-height: 180px;min-width: 300px;}
 	#header .nav-bar .connexion.profil .dropdown .dropdown-body .profil-img {width: 40%;margin-right: 3%;}
 	#header .nav-bar .connexion.profil .dropdown .dropdown-body .profil-description-top,
 	#header .nav-bar .connexion.profil .dropdown .dropdown-body .profil-description-bottom {width: 57%;}
+	#header .nav-bar .connexion .dropdown .dropdown-body {padding: 5px;min-width: 300px;}
+	.select2-drop.select2-drop-active:before {right: 70%;}
+	.home .list-bloc .top-visit {height: inherit;}
+	.home .list-bloc .conversation .perso-picture {width: 30%;}
+	.home .list-bloc .conversation .perso-picture:after {left: 31%;}
+	.home .list-bloc .conversation .perso-txt {width: 70%;}
+	#header .bg-fixed-wrap-top .nav-menu .dropdown .menu-right {min-width: 300px;padding: 5px;}
+	#header .bg-fixed-wrap-top .nav-menu .dropdown .menu-right > li ul li label {font-size: 7px;}
 }
