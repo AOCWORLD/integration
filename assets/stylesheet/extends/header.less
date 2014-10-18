@@ -519,8 +519,8 @@
                     position: absolute;
                     right: 0;
                     left: inherit;
-                    min-width: 734px;
-                    min-height: 465px;
+                    min-width: 500px;
+                    min-height: 450px;
                     background-color: #fff;
                     padding: 20px 30px 30px 30px;
                     z-index: 1000;
@@ -530,11 +530,11 @@
                         right: 74px;
                     }
                     form {
-                        width: 50%;
+                        width: 100%;
                         float: left;
                         position: relative;
                         &.left {
-                            padding-right: 5%;
+                            /*padding-right: 5%;
                             &:after {
                                 background: url(../images/border-left-form.png) no-repeat 50% 50%;
                                 content: ' ';
@@ -544,10 +544,17 @@
                                 position: absolute;
                                 right: 0;
                                 top: 0;
-                            }
+                            }*/
+							.form-action {
+								a {
+									clear: both;
+									margin-top: 10px;
+								}
+							}
                         }
                         &.right {
                             padding-left: 5%;
+							display: none !important;
                             .form-action {
                                 margin-bottom: 30px;
                             }
