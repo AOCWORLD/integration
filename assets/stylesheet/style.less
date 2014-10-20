@@ -1303,6 +1303,7 @@ body {
                             width: 100%;
                             min-height: 53px;
                             border-bottom: 1px solid #ced0d2;
+                            clear:both;
                             &.big {
                                 min-height: 80px;
                                 label {
@@ -1332,7 +1333,8 @@ body {
                                     width: 50%;
                                 }
                             }
-                            input[type="text"] {
+                            input[type="text"],
+                            input[type="password"] {
                                 color: #838487;
                                 font-family: "Roboto";
                                 font-size: 14px;
@@ -1352,6 +1354,9 @@ body {
                                 }
                                 &.w-50 {
                                     width: 50%;
+                                }
+                                &.w-40 {
+                                    width: 40%;
                                 }
                             }
                         }

@@ -44,6 +44,7 @@
 }
 //affichage descktop small
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+.no-home.pro #wrap .bg-no-white .tab .tab-middle {margin-bottom: 20px;}
 	#header .nav-bar .search input[type="submit"] {font-size: 15px;}
 	#header .nav-bar nav .select2-container .select2-choice {font-size: 12px;/*padding: 48px 20px 19px 12%;*/padding: 33px 20px 19px 12%;}
 	#header.affix .nav-bar nav.region .select2-container .select2-choice, 
@@ -53,6 +54,7 @@
 	#header.big-header .bg-fixed-header-bottom.pro .img-restau {top: 10px;}
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+.no-home.pro #wrap .bg-no-white .tab .tab-middle {margin-bottom: 20px;}
 	#header .nav-bar .page-title h1 {margin-top: 11%;}
 	#header .nav-bar nav .select2-container .select2-choice {padding: 26px 20px 26px 12%;font-size: 12px}
 	#header .nav-bar .connexion .dropdown .dropdown-toggle {padding: 29px 0 23px 0;}
@@ -99,6 +101,7 @@
 @media screen and (max-width: 991px) {
 	.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos {min-height: 550px;}
 	.no-home.pro #wrap .bg-no-white .reservation a {padding: 32% 0 0 0;}
+.no-home.pro #wrap .bg-no-white .tab .tab-middle {margin-bottom: 20px;}
 }
 //affichage tablette
 @media screen and (max-width: 767px) {
@@ -107,6 +110,8 @@
 .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, 
 .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
 .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding:0;}
+        .no-home #header .bg-fixed-wrap-bottom .title {font-size:28px;}
+.no-home.pro #wrap .bg-no-white .tab .tab-middle {margin-bottom: 20px;}
 	#header .nav-bar .connexion .dropdown .dropdown-toggle:hover,
 	#header .nav-bar .connexion .dropdown .dropdown-toggle {padding: 32px 0 23px 0;}
 	#header.big-header .bg-fixed-header-bottom .flag {margin: 33px 0 0 35%;}
@@ -178,6 +183,14 @@
 	.no-home #wrap.contact .contact-bloc .middle .form-horizontal {max-width: inherit;width: 100%;margin: 0;}
 	.no-home #wrap.contact .contact-bloc .middle .form-horizontal .form-group-btnn {margin: 0 0 20px 0;}
 	
+.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos .carousel .carousel-control.left {left: 15%;}
+.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos .carousel .carousel-control.right {right: 15%;}
+.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos .carousel .carousel-indicators {min-height: 55px;min-width: 300px;max-width: 300px;bottom: -60px;left: 27%;}
+
+.no-home.pro2 .tab-right-1, .no-home.pro3 .tab-right-2 {clear:both;margin-top:20px;}
+.no-home.pro2 .tab-right-1 table {width:100%;}
+.no-home.pro2 .tab-right-1 table .mCustomScrollbar tr.even td img,
+.no-home.pro2 .tab-right-1 table .mCustomScrollbar tr.odd td img {height: auto;}
 	
 	
 }
@@ -190,11 +203,13 @@
 	.no-home.pro .list-bloc .conversation .perso-picture {width: 30%;}
 	.no-home.pro .list-bloc .conversation .perso-picture:after {left: 31%;}
 	.no-home.pro .list-bloc .conversation .perso-txt {width: 70%;}
+.no-home.pro #wrap .bg-no-white .tab .tab-middle {margin-bottom: 20px;}
 }
 //affichage mobile
 @media screen and (max-width: 480px) {
 	#header .nav-bar .page-title h1 {font-size: 20px !important;margin-top: 20%;}
-	.no-home #header .bg-fixed-wrap-bottom .title {font-size: 20px;}
+.no-home.la-une #wrap .right-bottom .list-bloc .conversation .perso-txt {padding: 25px 25px 10px 50px !important;}
+	.no-home #header .bg-fixed-wrap-bottom .title {font-size: 20px !important;}
 	#header .nav-bar .connexion .dropdown .dropdown-toggle:hover, #header .nav-bar nav.connexion .dropdown .dropdown-toggle {padding: 17px 0 23px 0;}
 	/*#header .nav-bar nav.connexion .dropdown .dropdown-toggle {padding: 32px 0 8px 0;}*/
 	#header.affix .nav-bar nav.connexion .dropdown .dropdown-toggle {padding: 40px 0 15px 0;}
@@ -233,10 +248,30 @@
 	.no-home.pro #wrap .bg-no-white .reservation a {padding: 30% 0 0 0;}
 	.no-home.la-une #wrap .search form .btn-default {font-size: 12px;}
 	
-	.list-bloc .conversation .perso-picture {width: 30%;}
+	/*.list-bloc .conversation .perso-picture {width: 30%;}*/
 	.no-home.la-une #wrap .right-bottom .list-bloc .conversation .perso-picture:after {left: 30%;}
 	.list-bloc .conversation .perso-txt {width: 70%;}
 	
 	.no-home.la-une #wrap .article .add-comment .img-profil {width: 40%;}
 	.no-home.la-une #wrap .article .add-comment .form-groupe {width: 60%;}
+
+#comments .conversation .img-forum, #comments .conversation .avatar.photo, #pm-content #content .conversation .avatar.photo {width:28% !important;}
+#pm-content #content .conversation .text {width:70% !important;}
+#pm-content #content .conversation {margin-bottom:10px !important;}
+
+
+.no-home.user #wrap .bloc-infos .body-infos .infos-top .form-groupe label,
+.no-home.user #wrap .bloc-infos .body-infos .infos-top .form-groupe input[type="text"],
+.no-home.user #wrap .bloc-infos .body-infos .infos-top .form-groupe input[type="password"] {font-size:12px !important;}
+
+.userSlide #slider3 #myCarouselphotoright .item.active img {height: 102px !important;}
+.popup .modal-dialog {width: 300px;}
+
+#wrap .carrousel-videos .thumbs .carousel-inner .item a .captions .top .name {width:70%;word-break: break-word;}
+.no-home.pro #wrap .bg-no-white .tab .tab-middle {margin-bottom: 20px;}
+
+.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos .carousel .carousel-control.left {left: 15%;}
+.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos .carousel .carousel-control.right {right: 15%;}
+.no-home.pro #wrap .bg-no-white .bloc-videos .carrousel-videos .carousel .carousel-indicators {min-height: 55px;min-width: 300px;max-width: 300px;bottom: -60px;left: 27%;}
+
 }
