@@ -138,6 +138,9 @@ $(document).ready(function() {
 	$('#myCarouseltab').carousel({
 	    interval: false
 	});
+	$('#myCarouseltab .carousel-inner').carousel({
+	    interval: false
+	});
 
 	//calendar
 	if ($('#mydate').length){
