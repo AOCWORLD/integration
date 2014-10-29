@@ -4,8 +4,10 @@
 
 function initialize() {
   var mapOptions = {
-    zoom: 16,
-    center: new google.maps.LatLng(42.664265, 2.904595),
+    //zoom: 16,
+    zoom: 13,
+    //center: new google.maps.LatLng(42.664265, 2.904595),
+    center: new google.maps.LatLng(latitude, longitude),
 	mapTypeControl: true,
 	panControl: true,
 	scaleControl: true,
@@ -85,7 +87,7 @@ function setMarkers(map, locations) {
   // Origins, anchor positions and coordinates of the marker
   // increase in the X direction to the right and in
   // the Y direction down.
-    var image = 'assets/images/maps-marker.png';
+    var image = template_url+'/assets/images/maps-marker.png';
   // Shapes define the clickable region of the icon.
   // The type defines an HTML &lt;area&gt; element 'poly' which
   // traces out a polygon as a series of X,Y points. The final

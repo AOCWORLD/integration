@@ -52,7 +52,17 @@ $(document).ready(function() {
 	  $('[id^=carousel-selector-]').removeClass('selected');
 	  $('[id^=carousel-selector-'+id+']').addClass('selected');
 	});
-
+        
+        // handles the carousel thumbnails khaled
+	$('[id^=carousel-selector-]').click( function(){
+	  var id_selector = $(this).attr("id");
+	  var id = id_selector.substr(id_selector.length -1);
+	  id = parseInt(id);
+	  $('#myCarouselthumb .galerie').carousel(id);
+	  $('[id^=carousel-selector-]').removeClass('selected');
+	  $(this).addClass('selected');
+	});
+        
 	$('#myCarouselthumb').carousel({
 		interval: false
 	});
