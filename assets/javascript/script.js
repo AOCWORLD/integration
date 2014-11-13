@@ -132,6 +132,12 @@ $(document).ready(function() {
 	  $('.no-home .carrousel-videos [id^=carousel-selector-]').removeClass('selected');
 	  $(this).addClass('selected');
 	});
+	
+	//carousel-indicators
+	var lindic = $('.no-home .carrousel-videos .carousel-indicators > li');
+	if (lindic.length > 5) {
+		$('.no-home .carrousel-videos .carousel-indicators').addClass('larg-width');
+	}
     
     
 	
@@ -152,17 +158,17 @@ $(document).ready(function() {
 
 	//slide photo-info-left
 	$('#myCarouselphotoleft1').carousel({
-	    interval: 4000
+	    interval: false
 	});
 
 	//slide photo-info-right
 	$('#myCarouselphotoright1').carousel({
-	    interval: 4000
+	    interval: false
 	});
 
 	//slide photo-info-middle
 	$('#myCarouselphotomiddle').carousel({
-	    interval: 4000
+	    interval: false
 	});
 
 	//slide photo-info-bottom
