@@ -1345,6 +1345,18 @@ body {
 			.middle {
 				width: 90%;
 				margin: 0;
+				.col-md-6 {
+					&.col-sm-6 {
+						background: #fff;
+						&.sign_in {
+							background: transparent;
+							.form-horizontal {
+								background: #fff;
+							}
+						}
+					}
+				
+				}
 			}
 			.img-inscrit {
 				margin-bottom: 20px;
@@ -1354,8 +1366,8 @@ body {
 			}
 			.sign_in {
 				.form-horizontal {
-					opacity: .9;
-					filter: alpha(opacity=90);
+					/*opacity: .9;
+					filter: alpha(opacity=90);*/
 				}
 			}
 		}
