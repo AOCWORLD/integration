@@ -1339,30 +1339,61 @@ body {
 		}
 	}
 	&.inscrit {
+		#wrap {
+			padding-top:0;
+		}
+		#footer{
+			&.small {
+				margin: 30px 0 0 0;
+				padding: 25px 0 60px 0;
+			}
+		}
 		.contact-bloc {
-			background: url(../images/bg-inscrit.jpg) no-repeat 0 25%;
+			/*background: url(../images/bg-inscrit.jpg) no-repeat 0 25%;*/
+			background: url(../images/bg-inscrit.jpg) repeat-y 0 0;
 			background-size: 100% !important;
+			padding-top:66px;
 			.middle {
-				width: 90%;
+				/*width: 90%;*/
+				width: 100%;
 				margin: 0;
 				.col-md-6 {
 					&.col-sm-6 {
-						background: #fff;
+						/*background: #fff;*/
+						background: transparent;
 						&.sign_in {
 							background: transparent;
 							.form-horizontal {
-								background: #fff;
+								background: #eceaea;
 							}
+						}
+						.box-left {
+							max-width: 466px;
+							margin: 68px 0 0 23%;
+							background: #fff;
+							padding: 15px 30px;
 						}
 					}
 				
 				}
+				.videos-bottom {
+					margin: 66px 0 0 0;
+					.video {
+						width: 628px;
+						margin: 0 0 0 28%;
+						background: #fff;
+						padding: 13px;
+						> img {
+							max-width: 100%;
+						}
+					}
+				}
 			}
 			.img-inscrit {
-				margin-bottom: 20px;
+				margin: 0 10px 0 0;
 			}
 			.inscrit-ins {
-				margin-top: 15px;
+				/*margin-top: 15px;*/
 			}
 			.sign_in {
 				.form-horizontal {
@@ -4321,9 +4352,9 @@ body {
 	}
 	.inscrit-ins {
         color: #898989;
-        font-family: "Roboto";
-        font-size: 26px;
-		font-weight: 100;
+        font-family: "Roboto Condensed";
+        font-size: 15px;
+		/*font-weight: 100;*/
 	}
 	.sign_in {
 		.form-horizontal {
