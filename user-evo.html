@@ -1,0 +1,800 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="no-home la-une user">
+
+  <div class="bg-wrap-top"></div>
+  
+  <!-- Debut header -->
+  <header id="header" class="big-header">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <h1 class="title">Patrick</h1>
+            <div class="profil">Bonjour,<span class="sexe">Mr.</span><span class="name">Patrick</span></div>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+	  <div class="bg-fixed-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <!-- carousel -->
+            <div class="carrousel-profil" id="slider">
+              <!-- galerie-->
+              <div id="myCarouselprofil" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active" data-slide-number="0">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                    </div>
+                    <div class="item" data-slide-number="1">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                    </div>
+                    <div class="item" data-slide-number="2">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarouselprofil" data-slide="prev"></a>
+                <a class="carousel-control right" href="#myCarouselprofil" data-slide="next"></a>
+              </div>
+              <!-- /.galerie-->
+            </div>
+            <!-- /.carousel -->
+			<img class="flag" src="assets/images/flag-profil.png" alt="image de drapeau" />
+			<div class="region">Suisse</div>
+			<a class="favoris" href="#">Ajouter à mes préférences</a>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+    		<!-- share -->
+    		<div class="share col-md-12 col-sm-12 pdlr-0 clearfix">
+    		  <div class="open-to-share">
+    			<ul class="share-list">
+    			  <li><a href="#" class="email" title="e-mail"></a></li>
+    			  <li><a href="#" class="google" title="google+"></a></li>
+    			  <li><a href="#" class="tw" title="twitter"></a></li>
+    			  <li><a href="#" class="fb" title="facebook"></a></li>
+    			</ul>
+    		  </div>
+    		</div>
+    		<!-- /.share -->
+          <div class="col-md-5 col-sm-12 pdlr-0">
+            <div class="bloc-photo clearfix">
+              <a href="#" class="title-photo">photos</a>
+              <div class="body-photo clearfix">
+                <!-- carousel-left -->
+                <div class="carousel-left clearfix" id="slider1">
+                  <!-- galerie-->
+                  <div id="myCarouselphotoleft" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active" data-slide-number="0">
+                            <img src="assets/images/slide-profil/img-photoleft.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="1">
+                            <img src="assets/images/slide-profil/img-photoleft.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="2">
+                            <img src="assets/images/slide-profil/img-photoleft.jpg" alt="image de profil" />
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarouselphotoleft" data-slide="prev"></a>
+                    <a class="carousel-control right" href="#myCarouselphotoleft" data-slide="next"></a>
+                  </div>
+                  <!-- /.galerie-->
+                </div>
+                <!-- /.carousel-left -->
+                <!-- carousel-right -->
+                <div class="carousel-right clearfix" id="slider3">
+                  <!-- galerie-->
+                  <div id="myCarouselphotoright" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active" data-slide-number="0">
+                            <img src="assets/images/slide-profil/img-photoright.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="1">
+                            <img src="assets/images/slide-profil/img-photoright.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="2">
+                            <img src="assets/images/slide-profil/img-photoright.jpg" alt="image de profil" />
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarouselphotoright" data-slide="prev"></a>
+                    <a class="carousel-control right" href="#myCarouselphotoright" data-slide="next"></a>
+                  </div>
+                  <!-- /.galerie-->
+                </div>
+                <!-- /.carousel-right -->
+              </div>
+            </div>
+            <div class="bloc-forum clearfix">
+              <a href="#" class="title-forum">forum</a>
+              <div class="body-forum">
+                <div class="mCustomScrollbar">
+                  <div class="conversation clearfix">
+                    <img class="img-forum" src="assets/images/img-forum.png" alt="image de profil" />
+                    <div class="text">
+                      <div class="text-top clearfix">
+                        <p class="name">Patrick</p>
+                        <p class="date">10Juil.2014 - <span>04:34 PM</span></p>
+                      </div>
+                      <div class="text-bottom">
+                        <p class="forum-comment">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conversation clearfix">
+                    <img class="img-forum" src="assets/images/img-forum.png" alt="image de profil" />
+                    <div class="text">
+                      <div class="text-top clearfix">
+                        <p class="name">Patrick</p>
+                        <p class="date">10Juil.2014 - <span>04:34 PM</span></p>
+                      </div>
+                      <div class="text-bottom">
+                        <p class="forum-comment">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conversation clearfix">
+                    <img class="img-forum" src="assets/images/img-forum.png" alt="image de profil" />
+                    <div class="text">
+                      <div class="text-top clearfix">
+                        <p class="name">Patrick</p>
+                        <p class="date">10Juil.2014 - <span>04:34 PM</span></p>
+                      </div>
+                      <div class="text-bottom">
+                        <p class="forum-comment">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="conversation clearfix">
+                    <img class="img-forum" src="assets/images/img-forum.png" alt="image de profil" />
+                    <div class="text">
+                      <div class="text-top clearfix">
+                        <p class="name">Patrick</p>
+                        <p class="date">10Juil.2014 - <span>04:34 PM</span></p>
+                      </div>
+                      <div class="text-bottom">
+                        <p class="forum-comment">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="forum-add-comment">
+                  <form action="#" method="GET">
+                    <div class="clearfix">
+                      <img class="img-forum-comment" src="assets/images/img-forum.png" alt="image de profil" />
+                      <input class="forum-input" type="text" placeholder="Ecrire un commentaire">
+                    </div>
+                    <div class="forum-action clearfix">
+                      <input class="btn btn-forum-action" type="submit" value="Envoyer">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bloc-favoris clearfix">
+              <a href="#" class="title-favoris">mes préférences</a>
+              <div class="body-favoris">
+                <div class="mod-tab"><div class="mod-tab-wrap">
+                  <ol class="tab-list">
+                    <li class="active"><a class="tab-link" href="#tab-00001" data-idtab="tab-00001">Mes préférences Peoplewine</a></li>
+                    <li><a class="tab-link" href="#tab-00002" data-idtab="tab-00002">Mes préférences Winesnote</a></li>
+                  </ol>
+                  <ol class="tab-content">
+                    <li id="tab-00001" class="mCustomScrollbar">
+                      <div class="fav clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/img-tab.jpg" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav clearfix">
+                        <div class="img-fav right">
+                          <img src="assets/images/img-tab.jpg" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav left">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav right" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav left">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav last clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/img-tab.jpg" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="fav-user" id="tab-00002">
+                      <div class="fav clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/perso-pic.png" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav clearfix">
+                        <div class="img-fav right">
+                          <img src="assets/images/perso-pic.png" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav left">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav right" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav left">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav last clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/perso-pic.png" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12 user-left pdr-0">
+            <div class="right-top clearfix">
+              <div class="col-md-7 col-sm-7 pdlr-0">
+                <a href="#" class="title-video">video</a>
+                <!-- carousel -->
+                <div class="carrousel-videos" id="slider">
+              <!-- galerie-->
+              <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner galerie">
+                    <div class="item active" data-slide-number="0" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 1</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="1" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 2</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="2" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 3</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="3" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 4</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="4" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 5</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="5" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 6</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="6" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 7</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="7" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 8</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="8" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 9</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="9" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 10</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- thumbnail-->
+                  <div class="well thumbs clearfix">
+                    <div id="myCarouselthumb" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item clearfix active" data-slide-number="0">
+                              <a id="carousel-selector-0" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-1">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-2">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-3">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="1">
+                              <a id="carousel-selector-4" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-5">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-6">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-7">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="2">
+                              <a id="carousel-selector-8" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-9">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> 
+                        <a class="left carousel-control" href="#myCarouselthumb" data-slide="prev"></a>
+                        <a class="right carousel-control" href="#myCarouselthumb" data-slide="next"></a>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarouselthumb" data-slide-to="0" class="active">1</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="1">2</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="2">3</li>
+                        </ol>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+                <!--/well-->
+                <!-- /.thumbnail-->
+              </div>
+              <!-- /.galerie-->
+            </div>
+                <!-- /.carousel -->
+              </div>
+              <div class="col-md-5 col-sm-5 pdr-0">
+                <a href="#" class="title-degustations">Mes dégustations</a>
+                <table>
+					<tr class="head">
+						<td colspan="2">Lieu de l’achat ou de la dégustation</td>
+						<td class="last">Ambiance</td>
+					</tr>
+					<tr>
+						<td colspan="2">vide</td>
+						<td class="last">vide</td>
+					</tr>
+				</table>
+				<table>
+					<tr class="head">
+						<td>Pays</td>
+						<td>Ville</td>
+						<td>Date</td>
+						<td class="last">Occasion</td>
+					</tr>
+					<tr>
+						<td><select><option>Tunisie</option><option>France</option></select></td>
+						<td><select><option>Sfax</option><option>Sousse</option></select></td>
+						<td>21-11-14</td>
+						<td class="last"><select><option>Entre ami</option><option>Ami</option></select></td>
+					</tr>
+				</table>
+				<table>
+					<tr class="head">
+						<td colspan="2">Nom du menu ou du plat</td>
+						<td colspan="2" class="last">Vin-champagne-Spiritueux</td>
+					</tr>
+					<tr>
+						<td colspan="2">Pizza</td>
+						<td>Ch belle vu</td>
+						<td class="last">1999</td>
+					</tr>
+				</table>
+				<table>
+					<tr class="diff">
+						<td colspan="2"><select><option>Excellent***</option><option>Moyen</option></select></td>
+						<td><select><option>12</option><option>13</option></select></td>
+						<td><select><option>Blanc</option><option>rouge</option></select></td>
+						<td><select><option>Madérisé</option><option>madérisé</option></select></td>
+						<td class="last"><select><option>12</option><option>13</option></select></td>
+					</tr>
+				</table>
+				<table>
+					<tr class="head">
+						<td colspan="2">Nom du menu ou du plat</td>
+						<td colspan="2" class="last">Vin-champagne-Spiritueux</td>
+					</tr>
+					<tr>
+						<td colspan="2"><div class="big"></div></td>
+						<td colspan="2" class="last"><div class="big"></div></td>
+					</tr>
+				</table>
+				<div class="validation">
+					<form>
+						<div class="approuvation"><INPUT type="checkbox" name="choix1" value="1">Je certifie que <span>ce bulletin</span> reflète ma réalité</div>
+						<div class="validation-input clearfix">
+							<p>bulletin <span>non modifiable</span></p>
+							<input type="submit" class="btn btn-green" value="VALIDER">
+						</div>
+						<a href="#" class="link-degustation">Voir mes dégustations</a>
+					</form>
+				</div>
+              </div>
+            </div>
+            <div class="right-bottom clearfix">
+              <div class="list-bloc">
+                <div class="conversation">
+                  <div class="perso-picture">
+                    <img src="assets/images/perso-pic.png" alt="perso"/>
+                      <p>Par <span>Soso</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+						<li>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send"></a>
+							<div class="tooltip bottom" role="tooltip">
+							  <div class="tooltip-arrow"></div>
+							  <div class="tooltip-inner">
+								<span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+							  </div>
+							</div>
+						</li>
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+				<div class="conversation">
+                  <div class="perso-picture">
+                    <img src="assets/images/perso-pic.png" alt="perso"/>
+                      <p>Par <span>Soso</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+						<li>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send"></a>
+							<div class="tooltip bottom" role="tooltip">
+							  <div class="tooltip-arrow"></div>
+							  <div class="tooltip-inner">
+								<span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+							  </div>
+							</div>
+						</li>
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+				<ul class="pagination">
+                  <li><a href="#">&lt;</a></li>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer" class="white">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+			<div class="col-md-4 col-sm-4 pdlr-0">
+				<img src="assets/images/footer-world.png" alt="world" />
+			</div>
+			<div class="col-md-8 col-sm-8 pdl-0">
+				<p><span>Aoc world </span>vous permet de découvrir des winesnote étonnant qui aime vivre profondément leur passion nous proposant des endroits de dégustation à visiter et à découvrir,  publiant articles ,préférences et coup de cœur.</p>
+				<p>Etant détenteur de cette espace vous êtes un winesnote, à chacun son niveau et sa vision le maitre mot  est l'objectivité de vos expériences  vis à vis de votre niveau. Car vous serez lu , suivi et probablement un guide pour des internautes (clients) sensible à votre message.</p>
+				<p>L’esprit Winesnote, c’est avant tout le gout du partage, de l’échange couronné d'Un esprit gourmet où l’on parle de ses dégustations , où l’on discute, du vin du champagne enfin tout ce qui est à base de raisin ; des restaurant , des personnages et  région que l'on aime qui sublime ce fruit divin  et aussi du reste pour quelque fois se rencontrer ici et au bout du monde.</p>
+				<p>Sans oublier ses magnifiques personnage capable de nous faire partir à 1000 mille lieux dans les airs   au simple énoncer  d'un gout, d'une vision . Nous   les nommons : viticulteurs restaurateurs sommeliers œnologues caviste artisan barman et parfois winesnote les poète du raisin rien de plus...</p>
+				<p>Vous l'aurez compris dans vos échanges chat/forum et visite de profils assez rapidement vous saurez si vous avez à faire à un véritable winesnote confirmé ou à un débutant qui méritera quoi qu'il arrive votre vision afin de s'améliorer ensemble.</p>
+				<p>A votre disposition cet espace multimédia</p>
+				<p class="last">Evoluons ensemble</p>
+				<p class="signature clearfix">Aoc world</p>
+			</div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>

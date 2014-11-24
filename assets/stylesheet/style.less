@@ -1969,6 +1969,136 @@ body {
                 }
             }
 			.right-top {
+				.title-degustations {
+					display: block;
+					width: 100%;
+					min-height: 70px;
+					line-height: 70px;
+					color: #fff;
+					font-family: "Roboto";
+					font-size: 20px;
+					font-weight: 300;
+					padding: 0 30px;
+					background: #4288dd url(../images/ico-degustation.png) no-repeat 90% 50%;
+					text-transform: uppercase;
+					text-decoration: none;
+					margin-bottom: 5px;
+				}
+				table {
+					width: 100%;
+					tr {
+						&.head {
+							td {
+								color: #fff;
+								font-family: "Roboto Condensed";
+								font-size: 13px;
+								background-color: #4d81bd;
+							}
+
+						}
+						&.diff {
+							td {
+								background-color: #dce4ee;
+								padding: 3px 0;
+							}
+						}
+						td {
+							background-color: #edeff3;
+							text-align: center;
+							padding: 3px;
+							color: #3b3e4d;
+							font-family: "Roboto Condensed";
+							font-size: 14px;
+							border-right: 1px solid #fff;
+							border-bottom: 1px solid #fff;
+							&.last {
+								border-right: 0;
+							}
+							select {
+								border: 0;
+								background: transparent;
+							}
+							.big {
+								min-height: 150px;
+							}
+						}
+					}
+				}
+				.validation {
+					width: 100%;
+					background: #fff;
+					padding: 30px 35px;
+					form {
+						.approuvation {
+							margin-bottom: 20px;
+							input {
+								margin: 0 5px 0 0;
+							}
+							color: #5d5d5d;
+							color: #5d5d5d;
+							font-family: "Roboto Condensed";
+							font-size: 14px;
+							span {
+								color: #0161d6;
+							}
+						}
+						.validation-input {
+							border: 1px solid #b8b8b8;
+							-moz-border-radius: 2px;
+							-webkit-border-radius: 2px;
+							border-radius: 2px;
+							-moz-background-clip: padding;
+							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
+							padding: 3px;
+							margin-bottom: 3px;
+							p {
+								color: #848181;
+								font-family: "Roboto Condensed";
+								font-size: 12px;
+								float: left;
+								width: 60%;
+								padding: 8px 0 0 5px;
+								span {
+									color: #529305;
+								}
+							}
+							.btn-green {
+								float: left;
+								width: 40%;
+								border: 1px solid #379b01;
+								-moz-border-radius: 2px;
+								-webkit-border-radius: 2px;
+								border-radius: 2px;
+								-moz-background-clip: padding;
+								-webkit-background-clip: padding-box;
+								background-clip: padding-box;
+								background-color: #66b40a;
+								color: #fbfbfb;
+								font-family: "Roboto Condensed";
+								font-size: 14px;
+							}
+						}
+						.link-degustation {
+							text-align: center;
+							text-transform: uppercase;
+							border: 1px solid #2f79ed;
+							-moz-border-radius: 2px;
+							-webkit-border-radius: 2px;
+							border-radius: 2px;
+							-moz-background-clip: padding;
+							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
+							background-color: #4b8df9;
+							color: #fbfbfb;
+							font-family: "Roboto Condensed";
+							font-size: 14px;
+							width: 100%;
+							display: block;
+							padding: 2px 0;
+						}
+					}
+				}
 				.chat {
 					.mCustomScrollbar {
 						height: 330px;
