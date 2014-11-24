@@ -3663,7 +3663,8 @@ body {
             width: 100%;
             min-height: 178px;
             background: #4187dd url(../images/ico-tchat.png) no-repeat 50% 15%;
-            margin-bottom: 15px;
+            /*margin-bottom: 15px;*/
+			margin-bottom: 3px;
             text-align: center;
             text-decoration: none;
             p {
@@ -3673,8 +3674,45 @@ body {
                 font-weight: 300;
                 padding-top: 40%;
                 text-transform: uppercase;
+				span {
+					font-size: 20px;
+				}
             }
         }
+		.delegation {
+			display: block;
+			margin-bottom: 3px;
+			border: 1px solid #42598a;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+			-moz-background-clip: padding;
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+			background-color: #5f76a3;
+			color: #fff;
+			font-family: "Roboto Condensed";
+			font-size: 14px;
+			text-align: center;
+			padding: 2px 0;
+		}
+		.avis {
+			display: block;
+			margin-bottom: 10px;
+			border: 1px solid #379b01;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			border-radius: 2px;
+			-moz-background-clip: padding;
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+			background-color: #65b30b;
+			color: #fff;
+			font-family: "Roboto Condensed";
+			font-size: 14px;
+			text-align: center;
+			padding: 2px 0;
+		}
         .search {
             padding: 5px 15px;
             border: 1px solid #a9acb0;
@@ -3683,9 +3721,10 @@ body {
             background-color: transparent;
         }
         .mCustomScrollbar {
-            border-top: 1px solid #dde2e7;
+            /*border-top: 1px solid #dde2e7;*/
             border-bottom: 1px solid #dde2e7;
-            height: 379px;
+            /*height: 379px;*/
+			height: 489px;
             width: 95%;
             list-style: none;
             margin-bottom: 15px;
@@ -3713,9 +3752,33 @@ body {
                 }
                 img {
                     float: left;
+					width: 23%;
                     /*margin: 9px 12px 9px 15px;*/
-                    margin: 5px 3% 5px 3%;
+                    /*margin: 5px 3% 5px 3%;*/
+					margin: 8px 5% 9px 3%;
+					min-width: 52px;
                 }
+				.informations {
+					width: 67%;
+					float: left;
+					.name {
+						color: #737981;
+						font-family: "Roboto";
+						font-size: 18px;
+						font-weight: 300;
+						display: block;
+						margin: 5px 0 10px 0;
+					}
+					.details {
+						color: #747881;
+						font-family: "Roboto";
+						font-size: 13px;
+						display: block;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						white-space: nowrap;
+					}
+				}
                 .infos {
                     float: left;
                     /*margin: 9px 12px 9px 15px;*/
