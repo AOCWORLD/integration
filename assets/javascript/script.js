@@ -311,6 +311,11 @@ $(document).ready(function() {
 	  $('.pro #myCarousel-tab .galerie [id^=carousel-selector-]').removeClass('selected');
 	  $(this).addClass('selected');
 	});
+	
+	//datatable
+	$('#myTable').DataTable({
+		responsive: true
+	});
 
 }); //ready
 
