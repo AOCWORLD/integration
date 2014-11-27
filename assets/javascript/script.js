@@ -315,7 +315,8 @@ $(document).ready(function() {
 	//datatable
 	$('#myTable').DataTable({
 		"responsive" : true,
-		"bLengthChange": false,
+		"bLengthChange": true,
+		"lengthMenu": [5, 10, 25, 50, 100],
 		"ordering": false,
 		"info": false
 	});
