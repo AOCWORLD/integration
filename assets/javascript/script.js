@@ -313,6 +313,9 @@ $(document).ready(function() {
 	});
 	
 	//datatable
+	$("#myTable td[colspan=3]").each(function() {
+		$(this).parent().remove();
+	});
 	$('#myTable').DataTable({
 		"responsive" : true,
 		"bLengthChange": true,
@@ -320,8 +323,11 @@ $(document).ready(function() {
 		"ordering": false,
 		"info": false
 	});
+	$('.menu-length').append($('.dataTables_length'));
 
 }); //ready
+
+//$.fn.dataTableExt.sErrMode = 'throw';
 
 $.fn.tab = function(options) {
     // This is the easiest way to have default options.
