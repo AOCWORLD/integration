@@ -314,7 +314,10 @@ $(document).ready(function() {
 	
 	//datatable
 	$('#myTable').DataTable({
-		responsive: true
+		"responsive" : true,
+		"bLengthChange": false,
+		"ordering": false,
+		"info": false
 	});
 
 }); //ready
