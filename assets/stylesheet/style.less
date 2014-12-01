@@ -591,8 +591,10 @@ body {
 			font-size: 18px;
 			padding: 0 0 1px 0;
 			border-bottom: 2px solid #304286;
-			position: absolute;
-			top: 38px;
+			/*position: absolute;
+			top: 38px;*/
+			float: left;
+			margin: 0 0 10px 0;
 			.link-left {
 				display: inline-block;
 				background-color: #304286;
@@ -632,8 +634,12 @@ body {
 		#myTable_wrapper {
 			#myTable_filter {
 				margin: 0 0 10px 0;
-				min-width: 100%;
-				padding-left: 285px;
+				/*min-width: 100%;
+				padding-left: 285px;*/
+				position: absolute;
+				right: 0;
+				top: -50px;
+				left: 285px;
 				label {
 					display: block;
 					border: 1px solid #8991ad;
@@ -657,7 +663,8 @@ body {
 					right: 2px;
 					left: 2px;
 					bottom: 2px;
-					width: 99.5%;
+					width: 99.7%;
+					min-height: 34px;
 				}
 			}
 			#myTable {
@@ -761,6 +768,7 @@ body {
 					font-weight: normal;
 					margin: 0 5px;
 					padding: 0;
+					outline: 0;
 					&.previous, &.previous:hover {
 						background: url(../images/bg-previous.png) no-repeat 50% 50%;
 						text-indent: -9999px;
