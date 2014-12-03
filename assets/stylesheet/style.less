@@ -4,6 +4,7 @@
 @import "extends/calendar.less";
 @import "extends/select2.less";
 @import "extends/form.less";
+@import "extends/bxslider.less";
 @import "extends/header.less";
 @import "extends/footer.less";
 
@@ -1672,6 +1673,75 @@ body {
 		}
 		#wrap {
 			padding-top: 45px;
+			.bloc-promo-top {
+				width: 100%;
+				margin-top: 10px;
+				.title-promo {
+					display: block;
+                    width: 100%;
+                    min-height: 45px;
+                    line-height: 45px;
+					text-align: center;
+                    color: #5f636d;
+                    font-family: "Roboto";
+                    font-size: 20px;
+                    font-weight: 400;
+                    background: #f6f6f3;
+                    text-transform: uppercase;
+                    text-decoration: none;
+				}
+				.body-promo {
+					width: 100%;
+					padding: 35px 30px 30px 30px;
+					background: #fff;
+				}
+			}
+			.bloc-promo-bottom {
+				width: 100%;
+				background: transparent;
+				padding: 35px 0 0 0;
+				text-align: center;
+				p {
+					color: #3b3f4d;
+					font-family: "Roboto";
+					font-size: 13px;
+					font-weight: 300;
+				}
+				.btn-moins {
+					display: block;
+					width: 44px;
+					height: 44px;
+					float: left;
+					padding:0;
+					margin:0;
+					/*background: url(../images/promo/btn-moins.png) no-repeat 50% 50%;*/
+					background: url(../images/promo/btn-moins-1.png) no-repeat 50% 50%;
+					color: #6f7178;
+					font-family: "Roboto Condensed";
+					font-size: 16px;
+					font-weight: bold;
+					text-decoration: none;
+					line-height: 44px;
+					text-align: center;
+				}
+				.btn-plus {
+					display: block;
+					width: 44px;
+					height: 44px;
+					float: right;
+					padding:0;
+					margin:0;
+					/*background: url(../images/promo/btn-plus.png) no-repeat 50% 50%;*/
+					background: url(../images/promo/btn-plus-1.png) no-repeat 50% 50%;
+					color: #6f7178;
+					font-family: "Roboto Condensed";
+					font-size: 16px;
+					font-weight: bold;
+					text-decoration: none;
+					line-height: 44px;
+					text-align: center;
+				}
+			}
             .bloc-infos {
                 width: 100%;
                 margin-bottom: 10px;
