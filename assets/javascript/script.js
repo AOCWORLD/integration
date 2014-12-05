@@ -353,6 +353,28 @@ $(document).ready(function() {
 		jQuery(this).backstretch(jQuery(this).data('backstretch'));
 	});
 	
+	//promo btn 
+	if ( $( ".body-promo" ).length ) {
+		//clique page 1
+		$( ".btn-next-1" ).click( function(){
+			$(this).parents('.page-1').css ('display','none');
+			$(this).parents('.page').find('.page-2').css ('display','block');
+			return false;
+		});
+		//clique page 2
+		$( ".btn-next-2" ).click( function(){
+			$(this).parents('.page-2').css ('display','none');
+			$(this).parents('.page').find('.page-3').css ('display','block');
+			return false;
+		});
+		// click body to reset
+		$('body').click(function(){
+		  $('.body-promo .page .page-3').fadeOut();
+		  $('.body-promo .page .page-2').fadeOut();
+		  $('.body-promo .page .page-1').css ('display','block');
+		});
+	}
+	
 }); //ready
 
 //$.fn.dataTableExt.sErrMode = 'throw';

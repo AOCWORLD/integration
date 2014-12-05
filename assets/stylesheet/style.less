@@ -1759,7 +1759,6 @@ body {
 									.middle {
 										width: 30%;
 										float: left;
-										min-height: 630px;
 										margin: 0;
 										border-right: 1px solid #fff;
 										background: #f6f4ef url(../images/promo/bg-promo.png) no-repeat 50% 50%;
@@ -1767,7 +1766,6 @@ body {
 									.right {
 										width: 30%;
 										float: left;
-										min-height: 630px;
 										margin: 0;
 										border-right: 1px solid #fff;
 										background: #f6f4ef url(../images/promo/bg-promo.png) no-repeat 50% 50%;
@@ -1776,12 +1774,61 @@ body {
 										display: block;
 										padding: 30px;
 										width: 100%;
+										.disabled {
+											display: none;
+										}
+										&.epuise {
+											position: relative;
+											.disabled {
+												display: block;
+												position: absolute;
+												top: 0;
+												right: 0;
+												left: 0;
+												bottom: 0;
+											}
+											.product-epuise {
+												display: block;
+											}
+											.nb-clique {
+												border-left: #a9abb0;
+												color: #a9abb0;
+											}
+											.btn-profite {
+												background: url(../images/promo/bg-btn-gray.png) no-repeat 50% 50%;
+											}
+											.img-epuise {
+												display: block;
+												margin: 0 auto;
+											}
+											.img-product {
+												display: none;
+												margin: 0 auto;
+											}
+											.sales {
+												background: url(../images/promo/bg-solde-gray.png) no-repeat 50% 50%;
+											}
+											.product-prices {
+												.new {
+													color: #3b3f4d;
+												}
+											}
+										}
 									}
 									.page-2 {
 										display: none;
+										margin: 7px 9px;
+										border: 2px solid #4b8efa;
+										padding: 20px 20px 15px 20px;
+										min-height: 649px;
 									}
 									.page-3 {
 										display: none;
+										min-height: 617px;
+										margin: 7px 9px;
+										border: 2px solid #4b8efa;
+										padding: 20px 20px 15px 20px;
+										min-height: 649px;
 									}
 									.offre-top {
 										clear: both;
@@ -1818,6 +1865,14 @@ body {
 										margin-bottom: 25px;
 										text-align: center;
 										position: relative;
+										.img-epuise {
+											display: none;
+											margin: 0 auto;
+										}
+										.img-product {
+											display: block;
+											margin: 0 auto;
+										}
 										.sales {
 											background: url(../images/promo/bg-solde.png) no-repeat 50% 50%;
 											width: 88px;
@@ -1830,6 +1885,16 @@ body {
 											top: 70px;
 											right: 65px;
 											padding: 18px 10px 0 10px;
+										}
+										.product-epuise {
+											display: none;
+											color: #85878d;
+											font-family: "Roboto";
+											font-size: 60px;
+											font-weight: bold;
+											position: absolute;
+											left: 22%;
+											bottom: 20%;
 										}
 									}
 									.product-name {
@@ -1871,6 +1936,81 @@ body {
 										font-size: 10px;
 										font-weight: 100;
 										text-align: center;
+									}
+									.oblig {
+										color: #808d8e;
+										font-family: "Roboto";
+										font-size: 14px;
+										font-weight: 300;
+										position: absolute;
+										left: 0;
+										bottom: 5px;
+									}
+									.form-horizontal {
+										width: 100%;
+										position: relative;
+										.code {
+											color: #00bf79;
+											font-family: "Roboto Condensed";
+											font-size: 14px;
+											text-align: center;
+											padding: 20px 0;
+										}
+										.form-img {
+											width: 100%;
+											margin: 0 0 20px 0;
+										}
+										.form-group {
+											width: 100%;
+											padding: 0;
+											margin: 0 0 5px 0;
+											&.last {
+												margin: 0 0 15px 0;
+											}
+											.form-control {
+												padding: 5px 15px;
+												margin: 0;
+												width: 100%;
+												border: 1px solid #ced3d3;
+												border-radius: 0;
+												background: transparent;
+												color: #808d8e;
+												font-family: "Roboto Condensed";
+												font-size: 14px;
+												font-weight: normal;
+												height: 32px;
+												line-height: 32px;
+											}
+										}
+										.form-action {
+											padding: 0;
+											margin: 0;
+											.btn-blue {
+												float: right;
+												border: 1px solid #2365d1;
+												background-color: #4b8df9;
+												color: #fff;
+												font-family: "Roboto Condensed";
+												font-size: 14px;
+												font-weight: bold;
+												padding: 7px 15px;
+											}
+										}
+									}
+									.merci {
+										background: url(../images/promo/bg-merci.png) no-repeat 50% 50%;
+										background-size: 100%;
+										color: #fff;
+										font-family: "Roboto";
+										font-size: 60px;
+										font-weight: bold;
+										text-shadow: 0 1px 4px rgba(0,0,0,.6);
+										min-height: 300px;
+										text-align: center;
+										padding: 65px 0 0 0;
+									}
+									.img-restau-merci {
+										width: 100%;
 									}
 								}
 							}
