@@ -578,6 +578,24 @@ body {
     }
 }
 .tableau {
+	#header {
+		.bg-fixed-wrap-top {
+			.nav-menu {
+				.title-page {
+					display: inline-block;
+					float: left;
+					color: #a4aac3;
+					font-family: "Roboto";
+					font-size: 14px;
+					margin: 5px 0 0 31%;
+					a {
+						color: #00bf79;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 	#wrap {
 		.bg-gray {
 			min-height: inherit !important;
@@ -1697,6 +1715,17 @@ body {
 					.prods-slider {
 						background: #fff;
 						border: 0;
+						.bx-wrapper {
+							margin: 0 auto !important;
+						}
+						.bx-viewport {
+							box-shadow: none;
+							border: 0;
+							left: 0;
+						}
+						.bx-pager {
+							display: none !important;
+						}
 						.bx-prev {
 							width: 50px;
 							height: 101px;
@@ -1721,6 +1750,7 @@ body {
 						}
 						table {
 							border: 0;
+							width: 100%;
 							tr {
 								td {
 									border: 0;

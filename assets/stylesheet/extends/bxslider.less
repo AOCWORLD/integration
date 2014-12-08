@@ -1,146 +1,204 @@
-.prods-slider {
-  margin-top: 30px;
-  position: relative;
-  background-color: #f7f5ed;
-  border-bottom: 1px solid #b6ab93;
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
 }
-.prods-slider:first-child {
-  margin-top: 0;
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
 }
-.prods-slider .slider {
-  margin: 0;
-  padding: 0;
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;
+	left: -5px;
+	background: #fff;
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
 }
-.prods-slider table {
-  width: 100%;
-  position: relative;
-  border: 1px solid #e3d3c3;
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
 }
-.prods-slider table td {
-  padding: 0;
-  border: 1px solid #e3d3c3;
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
 }
-.prods-slider .event {
-  width: 468px;
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
 }
-.prods-slider .event.right .content {
-  left: auto;
-  right: 0;
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
 }
-.prods-slider .event.dark .title-wrapper .title {
-  color: #f7f5ed;
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
-.prods-slider .event .content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 468px;
-  height: 100%;
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
 }
-.prods-slider .event img {
-  display: block;
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px;
 }
-.prods-slider .event .title-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
+
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(images/controls.png) no-repeat -43px -32px;
 }
-.prods-slider .event .title-wrapper .title {
-  padding: 30px 170px 30px 25px;
-  color: #414135;
-  font-size: 40px;
-  font-size: 4rem;
-  line-height: 1;
-  display: table-cell;
-  text-transform: uppercase;
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
 }
-.prods-slider .event .title-wrapper .title span {
-  display: block;
-  color: #DED2BD;
-  font-size: 14px;
-  font-size: 1.4rem;
-  margin-bottom: 5px;
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
 }
-.prods-slider .event .title-wrapper .title.center {
-  padding: 0 90px;
-  text-align: center;
-  vertical-align: middle;
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
 }
-.prods-slider .event .btn-plus {
-  position: absolute;
-  right: -30px;
-  top: 50%;
-  z-index: 20;
-  margin-top: -30px;
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
 }
-.btn-plus {
-  padding: 60px 0 0 60px;
-  width: 0;
-  height: 0;
-  display: block;
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background: url(http://www.vin-malin.fr/skin/frontend/vin-malin/default/img/sprite.png) left -219px no-repeat;
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
 }
-.prods-slider .event .btn-plus.left {
-  left: -30px;
-  right: auto;
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
 }
-.prods-slider .event .btn-plus:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  transform: rotate(360deg);
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
 }
-.prods-slider .bx-prev,
-.prods-slider .bx-next {
-  /*padding: 36px 0 0 37px;
-  width: 0;
-  height: 0;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  left: -37px;
-  top: 50%;
-  margin-top: -18px;
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-  background-color: #c6bba9;*/
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
 }
-/*.prods-slider .bx-prev:after,
-.prods-slider .bx-next:after {
-  content: "";
-  padding: 9px 0 0 5px;
-  width: 0;
-  height: 0;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -4px 0 0 -2px;
-  background: url(http://www.vin-malin.fr/skin/frontend/vin-malin/default/img/sprite.png) -20px -80px no-repeat;
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
 }
-.prods-slider .bx-prev:hover,
-.prods-slider .bx-next:hover {
-  background-color: #d1bf87;
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
 }
-.prods-slider .bx-next {
-  left: auto;
-  right: -37px;
-  -webkit-border-radius: 0 5px 5px 0;
-  -moz-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
 }
-.prods-slider .bx-next:after {
-  background-position: -25px -80px;
-}*/
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}

@@ -352,7 +352,7 @@
           <div class="col-md-7 col-sm-12 user-left pdr-0">
             <div class="right-top clearfix">
               <div class="col-md-6 col-sm-6 pdlr-0">
-                <a href="#" class="title-video">video</a>
+                <a href="#" class="title-video">videos</a>
                 <!-- carousel -->
                 <div class="carrousel-videos" id="slider">
               <!-- galerie-->
@@ -597,60 +597,320 @@
               </div>
               <div class="col-md-6 col-sm-6 pdr-0">
                 <a href="#" class="title-degustations">Mes dégustations</a>
-                <table>
-					<tr class="head">
-						<td colspan="2">Lieu de l’achat ou de la dégustation</td>
-						<td class="last">Ambiance</td>
-					</tr>
-					<tr>
-						<td colspan="2"><input type="text"></td>
-						<td class="last"><input type="text"></td>
-					</tr>
-				</table>
-				<table>
-					<tr class="head">
-						<td class="w-25">Pays</td>
-						<td class="w-25">Ville</td>
-						<td class="w-25">Date</td>
-						<td class="last w-25">Occasion</td>
-					</tr>
-					<tr>
-						<td><select><option class="red">Tunisie</option><option class="red-dark">France</option><option class="green">Tunisie</option><option class="green-dark">France</option></select></td>
-						<td><select><option>Sfax</option><option>Sousse</option></select></td>
-						<td><select><option>21-11-14</option><option>21-11-13</option></select></td>
-						<td class="last"><select><option>Entre ami</option><option>Ami</option></select></td>
-					</tr>
-				</table>
-				<table>
-					<tr class="head">
-						<td class="w-50" colspan="2">Nom du menu ou du plat</td>
-						<td colspan="2" class="last w-50">Vin-champagne-Spiritueux</td>
-					</tr>
-					<tr>
-						<td colspan="2">Pizza</td>
-						<td>Ch belle vu</td>
-						<td class="last"><select><option>1999</option><option>2000</option></select></td>
-					</tr>
-				</table>
-				<table>
-					<tr class="diff">
-						<td class="w-25"><select><option>Excellent***</option><option>Moyen</option></select></td>
-						<td class="w-25"><select><option>12</option><option>13</option></select></td>
-						<td class="w-16"><select><option>Blanc</option><option>rouge</option></select></td>
-						<td class="w-16"><select><option>Madérisé</option><option>madérisé</option></select></td>
-						<td class="last w-14"><select><option>12</option><option>13</option></select></td>
-					</tr>
-				</table>
-				<table>
-					<tr class="head">
-						<td class="w-50" colspan="2">Nom du menu ou du plat</td>
-						<td colspan="2" class="last w-50">Vin-champagne-Spiritueux</td>
-					</tr>
-					<tr>
-						<td colspan="2"><div class="big"><textarea rows="7" placeholder="écrire ici"></textarea></div></td>
-						<td colspan="2" class="last"><div class="big"><textarea rows="7" placeholder="écrire ici"></textarea></div></td>
-					</tr>
-				</table>
+                <form method="post" id="degustation_form">
+            <table>
+                <tbody><tr class="head">
+                    <td colspan="2">Lieu de l’achat ou de la dégustation</td>
+                    <td class="last">Ambiance</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="lieu">
+                        <span class="erreur"></span>
+                    </td>
+                    <td class="last">
+                        <select class="ambiance" name="ambiance" style="width: 100%;">
+                            <option>Je ne sais pas</option>
+                            <option>Simple</option>
+                            <option>Amicale</option>
+                            <option>Familliale</option>
+                            <option>Classique</option>
+                            <option>Branché</option>
+                            <option>People</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table>
+                <tbody><tr class="head">
+                    <td class="w-25">Pays</td>
+                    <td class="w-25">Ville</td>
+                    <td class="w-25">Date</td>
+                    <td class="last w-25">Occasion</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="pays">
+                            <option class="red">Suisse</option>
+                            <option class="red-dark">France</option>
+                            <option class="green">Espagne</option>
+                            <option class="green-dark">Allemagne</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="ville">
+                            <option>Berne</option>
+                            <option>Paris</option>
+                            <option>Madrid</option>
+                            <option>Berlin</option>
+                        </select>
+                    </td>
+                    <td><select name="date">
+                            <option>08-12-2014</option>
+                            <option>07-12-2014</option>
+                            <option>06-12-2014</option>
+                            <option>05-12-2014</option>
+                            <option>04-12-2014</option>
+                            <option>03-12-2014</option>
+                            <option>02-12-2014</option>
+                            <option>01-12-2014</option>
+                        </select></td>
+                    <td class="last">
+                        <select name="occasion">
+                            <option>Seul</option>
+                            <option>En couple</option>
+                            <option>Entre ami</option>
+                            <option>En famille</option>
+                            <option>Evenement</option>
+                            <option>Buisness</option>
+                            <option>Rencontre</option>
+                            <option>Dégustation</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="dif">
+                <tbody><tr class="head">
+                    <td class="w-50" colspan="2">Menu / Plat</td>
+                    <td colspan="2" class="last w-50">Vins/Champagne/Spiritueux</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="nom_du_menu_ou_du_plat">
+                        <span class="erreur"></span>
+                    </td>
+                    <td>
+                        <input type="text" name="vin_champagne_spiritueux" style="width: 100%">
+                        <span class="erreur"></span>
+                    </td>
+                    <td class="last">
+                        <select name="date_vin">
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                    <option>2010</option>
+                                                    <option>2009</option>
+                                                    <option>2008</option>
+                                                    <option>2007</option>
+                                                    <option>2006</option>
+                                                    <option>2005</option>
+                                                    <option>2004</option>
+                                                    <option>2003</option>
+                                                    <option>2002</option>
+                                                    <option>2001</option>
+                                                    <option>2000</option>
+                                                    <option>1999</option>
+                                                    <option>1998</option>
+                                                    <option>1997</option>
+                                                    <option>1996</option>
+                                                    <option>1995</option>
+                                                    <option>1994</option>
+                                                    <option>1993</option>
+                                                    <option>1992</option>
+                                                    <option>1991</option>
+                                                    <option>1990</option>
+                                                    <option>1989</option>
+                                                    <option>1988</option>
+                                                    <option>1987</option>
+                                                    <option>1986</option>
+                                                    <option>1985</option>
+                                                    <option>1984</option>
+                                                    <option>1983</option>
+                                                    <option>1982</option>
+                                                    <option>1981</option>
+                                                    <option>1980</option>
+                                                    <option>1979</option>
+                                                    <option>1978</option>
+                                                    <option>1977</option>
+                                                    <option>1976</option>
+                                                    <option>1975</option>
+                                                    <option>1974</option>
+                                                    <option>1973</option>
+                                                    <option>1972</option>
+                                                    <option>1971</option>
+                                                    <option>1970</option>
+                                                    <option>1969</option>
+                                                    <option>1968</option>
+                                                    <option>1967</option>
+                                                    <option>1966</option>
+                                                    <option>1965</option>
+                                                    <option>1964</option>
+                                                    <option>1963</option>
+                                                    <option>1962</option>
+                                                    <option>1961</option>
+                                                    <option>1960</option>
+                                                    <option>1959</option>
+                                                    <option>1958</option>
+                                                    <option>1957</option>
+                                                    <option>1956</option>
+                                                    <option>1955</option>
+                                                    <option>1954</option>
+                                                    <option>1953</option>
+                                                    <option>1952</option>
+                                                    <option>1951</option>
+                                                    <option>1950</option>
+                                                    <option>1949</option>
+                                                    <option>1948</option>
+                                                    <option>1947</option>
+                                                    <option>1946</option>
+                                                    <option>1945</option>
+                                                    <option>1944</option>
+                                                    <option>1943</option>
+                                                    <option>1942</option>
+                                                    <option>1941</option>
+                                                    <option>1940</option>
+                                                    <option>1939</option>
+                                                    <option>1938</option>
+                                                    <option>1937</option>
+                                                    <option>1936</option>
+                                                    <option>1935</option>
+                                                    <option>1934</option>
+                                                    <option>1933</option>
+                                                    <option>1932</option>
+                                                    <option>1931</option>
+                                                    <option>1930</option>
+                                                    <option>1929</option>
+                                                    <option>1928</option>
+                                                    <option>1927</option>
+                                                    <option>1926</option>
+                                                    <option>1925</option>
+                                                    <option>1924</option>
+                                                    <option>1923</option>
+                                                    <option>1922</option>
+                                                    <option>1921</option>
+                                                    <option>1920</option>
+                                                    <option>1919</option>
+                                                    <option>1918</option>
+                                                    <option>1917</option>
+                                                    <option>1916</option>
+                                                    <option>1915</option>
+                                                    <option>1914</option>
+                                                    <option>1913</option>
+                                                    <option>1912</option>
+                                                    <option>1911</option>
+                                                    <option>1910</option>
+                                                    <option>1909</option>
+                                                    <option>1908</option>
+                                                    <option>1907</option>
+                                                    <option>1906</option>
+                                                    <option>1905</option>
+                                                    <option>1904</option>
+                                                    <option>1903</option>
+                                                    <option>1902</option>
+                                                    <option>1901</option>
+                                            </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table>
+                <tbody><tr class="diff">
+                    <td class="w-25"><select name="satisfaction_plat">
+                            <option>Satisfaisant</option>
+                            <option>Satisfaisant*</option>
+                            <option>Bon</option>
+                            <option>Bon*</option>
+                            <option>Très bon</option>
+                            <option>Très bon**</option>
+                            <option>Excellent</option>
+                            <option>Excellent***</option>
+                        </select></td>
+                    <td class="w-25"><select name="note_plat">
+                            <option class="red">1</option>
+                            <option class="red">2</option>
+                            <option class="red">3</option>
+                            <option class="red">4</option>
+                            <option class="red">5</option>
+                            <option class="red-dark">6</option>
+                            <option class="red-dark">7</option>
+                            <option class="red-dark">8</option>
+                            <option class="red-dark">9</option>
+                            <option class="red-dark">10</option>
+                            <option class="green">11</option>
+                            <option class="green">12</option>
+                            <option class="green">13</option>
+                            <option class="green">14</option>
+                            <option class="green">15</option>
+                            <option class="green-dark">16</option>
+                            <option class="green-dark">17</option>
+                            <option class="green-dark">18</option>
+                            <option class="green-dark">19</option>
+                            <option class="green-dark">20</option>
+                        </select></td>
+                    <td class="w-16 satisfaction_champagne">
+                        <select name="satisfaction_champagne">
+                            <option>Satisfaisant</option>
+                            <option>Bon</option>
+                            <option>Très bon</option>
+                            <option>Excellent</option>
+                            <option>Bouchoné</option>
+                            <option>Madérisé</option>
+                            <option>Structuré</option>
+                            <option>Charpanté</option>
+                            <option>Massif</option>
+                            <option>Creux</option>
+                            <option>Retenu</option>
+                            <option>Timide</option>
+                            <option>Volubile</option>
+                            <option>Poétique</option>
+                            <option>Disert</option>
+                            <option>Envahissant</option>
+                        </select>
+                    </td>
+                    <td class="w-14">
+                        <select name="note_champagne">
+                            <option class="red">1</option>
+                            <option class="red">2</option>
+                            <option class="red">3</option>
+                            <option class="red">4</option>
+                            <option class="red">5</option>
+                            <option class="red-dark">6</option>
+                            <option class="red-dark">7</option>
+                            <option class="red-dark">8</option>
+                            <option class="red-dark">9</option>
+                            <option class="red-dark">10</option>
+                            <option class="green">11</option>
+                            <option class="green">12</option>
+                            <option class="green">13</option>
+                            <option class="green">14</option>
+                            <option class="green">15</option>
+                            <option class="green-dark">16</option>
+                            <option class="green-dark">17</option>
+                            <option class="green-dark">18</option>
+                            <option class="green-dark">19</option>
+                            <option class="green-dark">20</option>
+                        </select>
+                    </td>
+                    <td class="last w-16">
+                        <select name="type_champagne">
+                            <option>Blanc</option>
+                            <option>Rosé</option>
+                            <option>Rouge</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="di">
+                <tbody><tr class="head">
+                    <td class="w-50" colspan="2">Sensations</td>
+                    <td colspan="2" class="last w-50">
+                        <div class="sensations">Sensations</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="big"><textarea rows="7" placeholder="écrire ici" name="description_plat"></textarea>
+                            <span class="erreur"></span>
+                        </div>
+                    </td>
+                    <td colspan="2" class="last">
+                        <div class="big"><textarea rows="7" placeholder="écrire ici" name="description_champagne"></textarea>
+                            <span class="erreur"></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            </form>
 				<div class="validation">
 					<form>
 						<div class="approuvation"><INPUT type="checkbox" name="choix1" value="1">Je certifie que <span>ce bulletin</span> reflète ma réalité</div>
