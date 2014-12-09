@@ -44,6 +44,16 @@ $(document).ready(function() {
 	$('.home #myCarousel .galerie').carousel({
 	    interval: 4000
 	});
+	
+	//pause && play
+	$('.video-stream').click(function () {
+        $('.home #myCarouselthumb').carousel({
+			interval: false
+		});
+		$('.home #myCarousel .galerie').carousel({
+			interval: false
+		});
+    });
 
 	$('.home #myCarousel .galerie').on('slid.bs.carousel', function() {
       var id = $('.home #myCarousel .item.active').data('slide-number');
