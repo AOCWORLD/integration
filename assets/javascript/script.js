@@ -360,6 +360,19 @@ $(document).ready(function() {
 		});
 	}
 	
+	//share
+	if ( $( ".share" ).length ) {
+		$('.share .open-to-share').hover(function(){
+			$(this).parent('.share').find('.mobile-app').hide();
+			$(this).css('width','150px');
+			$(this).parent('.share').find('.share-list').show();
+		},function(){
+			$(this).parent('.share').find('.share-list').hide();
+			$(this).css('width','37px');
+			$(this).parent('.share').find('.mobile-app').show();
+		});
+	}
+	
 }); //ready
 
 //$.fn.dataTableExt.sErrMode = 'throw';

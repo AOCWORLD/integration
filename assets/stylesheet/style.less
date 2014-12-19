@@ -1751,7 +1751,8 @@ body {
 							padding: 0;
 							margin: 0;
 							top: 50%;
-							left: -80px;
+							/*left: -80px;*/
+							left: -50px;
 							background: url(../images/promo/btn-left.png) no-repeat 50% 50%;
 							color: transparent;
 						}
@@ -1762,7 +1763,8 @@ body {
 							padding: 0;
 							margin: 0;
 							top: 50%;
-							right: -80px;
+							/*right: -80px;*/
+							right: -50px;
 							background: url(../images/promo/btn-right.png) no-repeat 50% 50%;
 							color: transparent;
 						}
@@ -4455,16 +4457,52 @@ body {
     }
     .share {
         margin-bottom: 10px;
+		.mobile-app {
+			float: right;
+			margin-right: 10px;
+			> a {
+				display: inline-block;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				-moz-background-clip: padding;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				background-color: #7c7f8c;
+				color: #fff;
+				font-family: "Myriad Pro";
+				font-size: 9px;
+				line-height: 10px;
+				font-weight: bold;
+				padding: 5px 6px 5px 25px;
+				text-decoration: none;
+				&:hover {
+					background-color: #000;
+				}
+			}
+			.play {
+				background-image: url(../images/play.png);
+				background-position: 5px 50%;
+				background-repeat: no-repeat;
+				margin-right: 10px;
+			}
+			.store {
+				background-image: url(../images/store.png);
+				background-position: 5px 50%;
+				background-repeat: no-repeat;
+			}
+		}
         .open-to-share {
             float: right;
             background: url(../images/open-to-share.png) no-repeat 100% 50%;
-            width: 150px;
-            height: 24px;
-            &:hover {
+            /*width: 150px;*/
+			min-width: 37px;
+            height: 32px;
+            /*&:hover {
                 .share-list {
                     display: block;
                 }
-            }
+            }*/
             .share-list {
                 display: none;
                 list-style: none;

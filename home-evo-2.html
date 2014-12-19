@@ -1,0 +1,933 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="home">
+  
+  <div class="bg-wrap-top affix-top" data-spy="affix" data-offset-top="10"></div>
+  
+  <!-- Debut header -->
+  <header id="header" class="affix-top" data-spy="affix" data-offset-top="10">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="active" href="#">Accueil</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <a class="logo" href="#"><img src="assets/images/logo.png" alt="logo AOCWORLD.com"/></a>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="nav-bar">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <div class="logo-img"><a href="#"><img src="assets/images/logo-img.png" alt="logo AOCWORLD.com"/></a></div>
+            <!-- country -->
+            <nav class="region">
+              <select class="selectscroll">
+                <option value="tous">Tous les Pays</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+                <option value="tn">Tunisie</option>
+                <option value="fr">France</option>
+              </select>
+            </nav>
+            <!-- /.country -->
+            <div class="sep"></div>
+            <!-- categorie -->
+            <nav class="categorie">
+            <div class="cat">
+              <select class="selectscroll">
+                <option value="tous">Tous les Catégories</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+                <option value="bar">bar</option>
+                <option value="barvin">bar à vin</option>
+              </select>
+            </div>
+            </nav>
+            <!-- /.categorie -->
+            <div class="search">
+              <form action="#" method="GET">
+                <input type="text" placeholder="Rechercher par ville, nom, téléphone, mail">
+                <input type="submit" value="Je trouve">
+              </form>
+            </div>
+            <!-- connexion -->
+            <nav class="connexion profil">
+              <div class="dropdown">
+                <div class="dropdown-toggle">Bonjour.<span>Mr. Blanc</span></div>
+                <div class="dropdown-body">
+                  <h2 class="profil-title">Restaurant Bonifade</h2>
+                  <img class="profil-img" src="assets/images/img-user.png" alt="image de profil">
+                  <div class="profil-description-top">
+                    <img class="flag-img" src="assets/images/img-flag.png" alt="image de drapeau">
+                    <p class="profil-adress">suisse <br> Nom de la ville et code postale</p>
+                  </div>
+                  <div class="profil-description-bottom">
+                    <span class="name-prop">Propriétaire</span>
+                    <span class="name-profil">Monsieur Blanc</span>
+                  </div>
+                </div>
+              </div>
+            </nav><!-- /.connexion -->
+            <!-- title -->
+            <div class="page-title">
+              <h1>Bienvenue sur AOCWORLD</h1>
+              <p>De la vigne à la table</p>
+              <p>Dans toutes les régions il y a un PeopleWine à votre goût</p>
+            </div>
+            <!-- /.title -->
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap" class="affix-top" data-spy="affix" data-offset-top="10">
+  <div class="bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <!-- share -->
+          <div class="share col-md-12 col-sm-12 pdlr-0 clearfix">
+            <div class="open-to-share">
+              <ul class="share-list">
+                <li><a href="#" class="email" title="e-mail"></a></li>
+                <li><a href="#" class="google" title="google+"></a></li>
+                <li><a href="#" class="tw" title="twitter"></a></li>
+                <li><a href="#" class="fb" title="facebook"></a></li>
+              </ul>
+            </div>
+			<div class="mobile-app">
+				<a href="#" class="play">Disponible sur <br> App Store</a>
+				<a href="#" class="store">Disponible sur <br> Google play</a>
+			</div>
+          </div>
+          <!-- /.share -->
+          <!-- bloc top -->
+          <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
+            <!-- chat -->
+            <div class="chat col-md-2 col-sm-2 pdlr-0">
+              <div class="clearfix">
+                <a class="title" href="#">
+                  <p>Avis <br> <span>des conommateurs</span></p>
+                  <!--<img src="assets/images/tchat.png" alt="tchat" />-->
+                </a>
+				<a class="delegation" href="#">Voir le tableau des dégutations</a>
+				<a class="avis" href="#">Ecrire un avis</a>
+              </div>
+              <!--<input class="search" type="text" placeholder="Chercher des contacts">-->
+              <ul class="mCustomScrollbar">
+                <li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+				<li class="profil clearfix">
+                  <img src="assets/images/profil-1.png" alt="image de profil" />
+                  <div class="informations">
+                    <span class="name">Lila</span>
+                    <span class="details">Grand chef au sein de notre restaurant</span>
+                  </div>
+                </li>
+              </ul>
+              <!--<div class="module-chat">
+                <ul>
+                  <li><a href="#" class="mail" title="email"></a></li>
+                  <li><a href="#" class="discussion" title="discussion instantanée"></a></li>
+                  <li><a href="#" class="video" title="video"></a></li>
+                  <li><a href="#" class="audio" title="audio"></a></li>
+                </ul>
+              </div>-->
+            </div>
+            <!-- /.chat -->
+            <!-- carousel -->
+            <div class="carrousel-videos" id="slider">
+              <!-- galerie-->
+              <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner galerie">
+                    <div class="item active" data-slide-number="0" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 1</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="1" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 2</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="2" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 3</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="3" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 4</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="4" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 5</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="5" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 6</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="6" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 7</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="7" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 8</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="8" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 9</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="9" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 10</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- thumbnail-->
+                  <div class="well thumbs clearfix">
+                    <div id="myCarouselthumb" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item clearfix active" data-slide-number="0">
+                              <a id="carousel-selector-0" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-1">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-2">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-3">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="1">
+                              <a id="carousel-selector-4" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-5">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-6">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-7">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="2">
+                              <a id="carousel-selector-8" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-9">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                  <div class="bottom clearfix">
+                                    <p class="date">10 Juil.2014</p>
+                                    <span class="ico-discu">04</span>
+                                    <span class="ico-view">82</span>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> 
+                        <a class="left carousel-control" href="#myCarouselthumb" data-slide="prev"></a>
+                        <a class="right carousel-control" href="#myCarouselthumb" data-slide="next"></a>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarouselthumb" data-slide-to="0" class="active">1</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="1">2</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="2">3</li>
+                        </ol>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+                <!--/well-->
+                <!-- /.thumbnail-->
+              </div>
+              <!-- /.galerie-->
+            </div>
+            <!-- /.carousel -->
+            <!-- videos -->
+            <div class="videos">
+              <div class="clearfix"><a class="title" href="#">
+              <p>AOCWORLD A LA UNE</p>
+              <p class="sub-title">Retrouvez-nous sur Myworld</p>
+                <!--<img src="assets/images/videos.png" alt="tchat" />-->
+              </a></div>
+              <ul class="mCustomScrollbar">
+                <li class="profil clearfix">
+                  <img src="assets/images/video-1.png" alt="image de video" />
+                  <div class="infos clearfix">
+                    <span class="info-title">Tuto</span>
+                    <img class="flag" src="assets/images/flag-2.png" alt="nationalité" />
+                  </div>
+                  <div class="video-title">Titre de la sécance video 01</div>
+                  <div class="note-fav clearfix">
+                    <ul class="note">
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-not-active"></li>
+                    </ul>
+                  </div>
+                  <div class="nb-view clearfix">
+                    <span class="comment">04</span>
+                    <span class="view">82</span>
+                  </div>
+                </li>
+                <li class="profil clearfix">
+                  <img src="assets/images/video-1.png" alt="image de video" />
+                  <div class="infos clearfix">
+                    <span class="info-title">Tuto</span>
+                    <img class="flag" src="assets/images/flag-2.png" alt="nationalité" />
+                  </div>
+                  <div class="video-title">Titre de la sécance video 01</div>
+                  <div class="note-fav clearfix">
+                    <ul class="note">
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-not-active"></li>
+                    </ul>
+                  </div>
+                  <div class="nb-view clearfix">
+                    <span class="comment">04</span>
+                    <span class="view">82</span>
+                  </div>
+                </li>
+                <li class="profil clearfix">
+                  <img src="assets/images/video-1.png" alt="image de video" />
+                  <div class="infos clearfix">
+                    <span class="info-title">Tuto</span>
+                    <img class="flag" src="assets/images/flag-2.png" alt="nationalité" />
+                  </div>
+                  <div class="video-title">Titre de la sécance video 01</div>
+                  <div class="note-fav clearfix">
+                    <ul class="note">
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-not-active"></li>
+                    </ul>
+                  </div>
+                  <div class="nb-view clearfix">
+                    <span class="comment">04</span>
+                    <span class="view">82</span>
+                  </div>
+                </li>
+                <li class="profil clearfix">
+                  <img src="assets/images/video-1.png" alt="image de video" />
+                  <div class="infos clearfix">
+                    <span class="info-title">Tuto</span>
+                    <img class="flag" src="assets/images/flag-2.png" alt="nationalité" />
+                  </div>
+                  <div class="video-title">Titre de la sécance video 01</div>
+                  <div class="note-fav clearfix">
+                    <ul class="note">
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-not-active"></li>
+                    </ul>
+                  </div>
+                  <div class="nb-view clearfix">
+                    <span class="comment">04</span>
+                    <span class="view">82</span>
+                  </div>
+                </li>
+                <li class="profil clearfix">
+                  <img src="assets/images/video-1.png" alt="image de video" />
+                  <div class="infos clearfix">
+                    <span class="info-title">Tuto</span>
+                    <img class="flag" src="assets/images/flag-2.png" alt="nationalité" />
+                  </div>
+                  <div class="video-title">Titre de la sécance video 01</div>
+                  <div class="note-fav clearfix">
+                    <ul class="note">
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-not-active"></li>
+                    </ul>
+                  </div>
+                  <div class="nb-view clearfix">
+                    <span class="comment">04</span>
+                    <span class="view">82</span>
+                  </div>
+                </li>
+                <li class="profil clearfix">
+                  <img src="assets/images/video-1.png" alt="image de video" />
+                  <div class="infos clearfix">
+                    <span class="info-title">Tuto</span>
+                    <img class="flag" src="assets/images/flag-2.png" alt="nationalité" />
+                  </div>
+                  <div class="video-title">Titre de la sécance video 01</div>
+                  <div class="note-fav clearfix">
+                    <ul class="note">
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-active"></li>
+                      <li class="note-not-active"></li>
+                    </ul>
+                  </div>
+                  <div class="nb-view clearfix">
+                    <span class="comment">04</span>
+                    <span class="view">82</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /.videos -->
+          </div>
+          <!-- /.bloc top -->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <!-- bloc bottom -->
+          <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
+            <div class="list-bloc">
+              <div class="left">
+                <div class="top-visit">
+                  <img src="assets/images/visit-1.png" alt="visit"/>
+                </div>
+                <div class="bottom-visit">
+                  <p>A visiter</p>
+                </div>
+              </div>
+              <div class="middle">
+                <div class="conversation">
+                  <div class="perso-picture">
+                    <img src="assets/images/perso-pic.png" alt="perso"/>
+                      <p>Par <span>Soso</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+                <div class="conversation">
+                  <div class="perso-picture">
+                    <img src="assets/images/tuto.png" alt="perso"/>
+                      <p>Par <span>Tuto</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie.</p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+                <div class="conversation">
+                  <div class="perso-picture">
+                    <img src="assets/images/perso-pic.png" alt="perso"/>
+                      <p>Par <span>Soso</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+                <ul class="pagination">
+                  <li><a href="#">&lt;</a></li>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+              </div>
+              <div class="right">
+                <div class="top-visit">
+                  <img src="assets/images/decouver-1.png" alt="decouvrir"/>
+                </div>
+                <div class="bottom-visit">
+                  <p>A découvir</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.bloc bottom -->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <!-- footer top -->
+          <div class="top-footer">
+            <div class="container">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/globe.png" alt="globe"/>
+                  </div>
+                  <div class="col-md-6 col-sm-6 pdlr-0">
+                      <img src="assets/images/video.png" alt="video"/>
+                  </div>
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/vin.png" alt="vin"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer top-->
+          <!-- footer bottom-->
+          <div class="bottom-footer clearfix">
+            <div class="first">
+              <h4 class="header-list">Votre présence sur AOCWORLD</h4>
+              <ul>
+                <li>Utilisateurs Winesnote</li>
+                <li>Professionel Myworld</li>
+              </ul>
+            </div>
+            <div class="sep-footer"></div>
+            <div class="second">
+              <h4 class="header-list">Apropos d’AOCWORLD</h4>
+              <ul>
+                <li>Condition d’utilisation</li>
+                <li>Contactez AOCWORLD</li>
+              </ul>
+            </div>
+            <div class="sep-footer"></div>
+            <div class="col-md-4 col-sm-4 pdlr-0">
+              <h4 class="header-list">Newsletter</h4>
+              <ul>
+                <li>Pour rester informé, il suffit de souscrire</li>
+              </ul>
+              <div class="input-group">
+                <form method="Get" action="#">
+                  <input type="text" class="form-control" placeholder="Saisissez votre adresse e-mail...">
+                  <input type="submit" class="input-group-addon" value="S'inscire">
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer bottom-->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.nicescroll.js"></script>
+  <script type="text/javascript" src="assets/javascript/select2.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>
