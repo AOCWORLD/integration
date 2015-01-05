@@ -74,7 +74,7 @@ function initialize() {
  * other.
  */
 var beaches = [
-  ['Lorem ipsum', 42.664265, 2.904595, 1]
+  ['Lorem ipsum', latitude, longitude, 1]
 ];
 
 function setMarkers(map, locations) {

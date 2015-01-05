@@ -13,7 +13,7 @@ $(document).ready(function(){
 		var phonenumber = $(this).children('input[name="phonenumber"]');
 
 		if(phonenumber.val()==""){
-			error.html("Numéro de téléphone ne peut pas être vide");
+			error.html("Inscrire votre numéro");
 		}
 		else{
 			$.ajax({
