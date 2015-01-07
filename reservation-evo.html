@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="no-home">
+
+  <div class="bg-wrap-top"></div>
+  
+  <!-- Debut header -->
+  <header id="header">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+                <li><a class="no-ico" href="#">Contact</a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <h1 class="title">réservation</h1>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap" class="contact commande reservation">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+        	<div class="contact-bloc">
+                  <div class="middle">
+                      <div class="row">
+                        <div class="container-fluid">
+                        <div class="col-md-3 col-sm-3 pdlr-0">
+                          *******
+                        </div>
+                        <div class="col-md-9 col-sm-9 pdlr-0">
+                        	<div class="col-md-6 col-sm-6 pdlr-0">
+                            	<form class="form-horizontal" role="form">
+                                  <div class="form-group">
+                                      <span class="title-form-commande">Informations</span>
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" id="nom" placeholder="Nom *">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="text" class="form-control" id="prenom" placeholder="Prénom *">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="email" class="form-control" id="mail" placeholder="E-mail">
+                                  </div>
+                                  <div class="form-group"><!--<div class="form-group big-marge">-->
+                                      <input type="text" class="form-control" id="Tel" placeholder="Tél *">
+                                  </div>
+                                  <div class="form-group">
+                                    <textarea class="form-control-txt" rows="8" placeholder="Une informations secondaire"></textarea>
+                                  </div>
+                                  <p><span>*</span>  Champs obligatoires</p>
+                                  <div class="form-group-btnn">
+                                      <button type="submit" class="btn btn-default">Je réserve</button>
+                                  </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pdlr-0">
+                            	<img class="img-commande" src="assets/images/img-commande.jpg">
+                                <div class="adr-adr">
+                                  <img src="assets/images/flag-commande.jpg">
+                                  <p>Restaurant boifade</p>
+                                  <p>calle veronica, 4</p>
+                                	<p>Madrid, 28079 </p>
+                                  <p>E-mail:</p>
+                                  <p>info@aocworld.com </p>
+                                  <p>Fax: +41 22 552 0 558</p>
+                                </div> 
+                            </div>
+                            </div>
+
+                        </div>
+                      </div>
+          
+                  </div>
+                </div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <!-- footer top -->
+          <div class="top-footer">
+            <div class="container">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/globe.png" alt="globe"/>
+                  </div>
+                  <div class="col-md-6 col-sm-6 pdlr-0">
+                      <img src="assets/images/video.png" alt="video"/>
+                  </div>
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/vin.png" alt="vin"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer top-->
+          <!-- footer bottom-->
+          <div class="bottom-footer clearfix">
+            <div class="first">
+              <h4 class="header-list">Votre présence sur AOCWORLD</h4>
+              <ul>
+                <li>Utilisateurs Winesnote</li>
+                <li>Professionel Myworld</li>
+              </ul>
+            </div>
+            <div class="sep-footer"></div>
+            <div class="second">
+              <h4 class="header-list">Apropos d’AOCWORLD</h4>
+              <ul>
+                <li>Condition d’utilisation</li>
+                <li>Contactez AOCWORLD</li>
+              </ul>
+            </div>
+            <div class="sep-footer"></div>
+            <div class="col-md-4 col-sm-4 pdlr-0">
+              <h4 class="header-list">Newsletter</h4>
+              <ul>
+                <li>Pour rester informé, il suffit de souscrire</li>
+              </ul>
+              <div class="input-group">
+                <form method="Get" action="#">
+                  <input type="text" class="form-control" placeholder="Saisissez votre adresse e-mail...">
+                  <input type="submit" class="input-group-addon" value="S'inscire">
+                </form>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 search-zone pdlr-0">
+                <div class="input-group clearfix">
+                <form method="Get" action="#">
+        				  <input type="text" class="form-control" placeholder="Google">
+                  <button class="btn btn-default img-search" type="button"></button>
+                </form>
+    			</div>
+          	</div>
+
+			</div>
+          <!-- /.footer bottom-->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>
