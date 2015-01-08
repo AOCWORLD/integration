@@ -932,6 +932,170 @@ body {
         background-color: #fff;
         padding-top: 45px;
         &.commande {
+        	.table-commande {
+				width: 100%;
+				th {
+					padding: 3px 0;
+					border-right: 1px solid #fff;
+					color: #385f52;
+					font-family: "Roboto Condensed";
+					font-size: 13px;
+					background-color: #d8ede5;
+					text-align: center;
+					&.last {
+						border-right: 0;
+					}
+					&.dark {
+						background-color: #bae0d2;
+					}
+					&.w-10 {
+						width: 10%;
+					}
+					&.w-20 {
+						width: 20%;
+					}
+					&.w-40 {
+						width: 40%;
+					}
+				}
+				tr {
+					td {
+						padding: 10px 0;
+						text-align: center;
+						border-bottom: 1px solid #bbd3cb;
+						.content {
+							border-right: 1px solid #bbd3cb;
+							padding: 15px 0;
+						}
+						&.radio {
+							/*custom radio bouton*/
+						}
+						&.description {
+							color: #798385;
+							font-family: "Roboto";
+							font-size: 10px;
+							font-weight: 300;
+							text-align: left;
+							.content {
+								padding: 0 10px;
+							}
+						}
+						&.ref {
+							color: #798385;
+							font-family: "Roboto Condensed";
+							font-size: 12px;
+						}
+						&.price {
+							color: #009961;
+							font-family: "Roboto Condensed";
+							font-size: 14px;
+						}
+						&.image {
+							position: relative;
+							cursor: pointer;
+							&:hover {
+								.rollover {
+									display: block;
+								}
+							}
+							img {
+								width: 32px;
+								height: 32px
+							}
+							.rollover {
+								display: none;
+								position: absolute;
+								top: 30px;
+								right: -280px;
+								width: 290px;
+								height: 385px;
+								background: url(../images/bg-img-commande.png) no-repeat 50% 50%;
+								text-align: center;
+								z-index: 10;
+								.year {
+									color: #fbfbfb;
+									font-family: "Roboto Condensed";
+									font-size: 14px;
+									font-weight: bold;
+									text-align: center;
+									padding: 8px 0;
+								}
+								.img-big {
+									width: 266px;
+									height: 266px;
+									margin: 16px 0;
+								}
+								.price-product {
+									color: #00bf79;
+									font-family: "Roboto Condensed";
+									font-size: 24px;
+									text-align: center;
+								}
+							}
+							.content {
+								padding: 10px 0;
+								border-right: 0;
+							}
+						}
+					}
+				}
+			}
+			.pagination {
+				margin-left: 40%;
+				list-style: none;
+				li {
+					display: inline-block;
+					float: left;
+					color: #bbbcbe;
+					font-family: "Roboto";
+					font-size: 12px;
+					font-weight: 100;
+					width: 20px;
+					height: 20px;
+					margin-left: 8px;
+					cursor: pointer;
+					text-align: center;
+					&:hover,
+					&.selected {
+						color: #fff;
+						background-color: #00bf79;
+						border-radius: 10px;
+						-webkit-border-radius: 10px;
+						-moz-border-radius: 10px;
+						line-height: 20px;
+					}
+					&.prev, &.next {
+						font-size: 24px;
+						width: auto;
+						height: auto;
+						margin-top: -11px;
+					}
+					&.next {
+						margin-left: 0;
+					}
+				}
+			}
+			.total {
+				border: 1px solid #d1e3dd;
+				height: 95px;
+				float: right;
+				min-width: 170px;
+				text-align: center;
+				.top {
+					background-color: #d9ede5;
+					color: #385f52;
+					font-family: "Roboto Condensed";
+					font-size: 18px;
+					padding: 10px 0;
+					margin-bottom: 10px;
+				}
+				.bottom {
+					color: #009961;
+					font-family: "Roboto Condensed";
+					font-size: 18px;
+					font-weight: bold;
+				}
+			}
         	&.reservation {
         		.contact-bloc {
         			.middle {
