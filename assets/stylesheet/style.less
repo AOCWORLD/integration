@@ -577,6 +577,55 @@ body {
         min-height: 300px;
     }
 }
+
+/*ui datepiker*/
+#ui-datepicker-div {
+	padding: 0;
+}
+.ui-datepicker .ui-datepicker-header {
+	background: #000;
+	border-radius: 0;
+	color: #fff;
+}
+.ui-datepicker .ui-datepicker-prev {
+ 	border: 1px solid #fff;
+	background: #fff url("images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
+	font-weight: normal;
+	color: #212121;
+	left: 2px;
+ }
+ .ui-datepicker .ui-datepicker-next {
+ 	border: 1px solid #fff;
+	background: #fff url("images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
+	font-weight: normal;
+	color: #212121;
+	right: 2px;
+ }
+ .ui-state-hover, 
+ .ui-widget-content .ui-state-hover, 
+ .ui-widget-header .ui-state-hover, 
+ .ui-state-focus, 
+ .ui-widget-content .ui-state-focus, 
+ .ui-widget-header .ui-state-focus {
+ 	top: 2px;
+ }
+/*.ui-datepicker .ui-datepicker-prev span {
+	background: url('imgs/ui-icons_222222_256x240.png') no-repeat -82px -194px;
+	width: 12px;
+	height: 12px;
+}
+.ui-datepicker .ui-datepicker-next span {
+	background: url('imgs/ui-icons_222222_256x240.png') no-repeat -50px -194px;
+	width: 12px;
+	height: 12px;
+}*/
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight {
+	color: #fff;
+	background:#00bf79;
+	border: 1px solid #00bf79;
+}
 #header {
 .bg-fixed-wrap-top {
 	.nav-menu {
@@ -932,6 +981,57 @@ body {
         background-color: #fff;
         padding-top: 45px;
         &.commande {
+        	&.merci {
+        		.msg-merci {
+        			display: inline-block;
+        			width: 43%;
+        			margin-right: 2%;
+        			float: left;
+        			min-width: 375px;
+        			height: 385px;
+        			background: url(../images/bg-msg-merci.png) no-repeat 0 50%;
+        			position: relative;
+        			.top {
+        				position: absolute;
+        				top: 70px;
+        				left: 85px;
+        				color: #fbfbfb;
+						font-family: "Roboto Condensed";
+						font-size: 103px;
+						font-weight: bold;
+        			}
+        			.bottom {
+        				position: absolute;
+        				top: 190px;
+        				left: 85px;
+        				color: #fbfbfb;
+						font-family: "Roboto Condensed";
+						font-size: 24px;
+        			}
+        		}
+        		.msg-description {
+        			display: inline-block;
+        			width: 55%;
+        			img {
+        				margin-bottom: 20px;
+        			}
+        			p {
+        				color: #7e8892;
+						font-family: "Roboto";
+						font-size: 13px;
+						margin-bottom: 20px;
+						&.big-size {
+							font-size: 18px;
+						}
+						&.green {
+							color: #00bf79;
+						}
+						&.bleu {
+							color: #4288dd;
+						}
+        			}
+        		}
+        	}
         	.table-commande {
 				width: 100%;
 				th {
@@ -967,8 +1067,81 @@ body {
 							border-right: 1px solid #bbd3cb;
 							padding: 15px 0;
 						}
-						&.radio {
-							/*custom radio bouton*/
+						&.btn-radio {
+							/* Base for label styling */
+							[type="radio"]:not(:checked),
+							[type="radio"]:checked {
+								 position: absolute;
+								 left: -9999px;
+							}
+							[type="radio"]:not(:checked) + label,
+							[type="radio"]:checked + label {
+								 position: relative;
+								 cursor: pointer;
+							}
+							/* radio aspect */
+							[type="radio"]:not(:checked) + label:before,
+							[type="radio"]:checked + label:before  {
+								 content: '';
+								 position: absolute;
+								 left:-10px;
+								 top: -15px;
+								 width: 19px;
+								 height: 19px;
+								 border: 1px solid #dae4eb;
+								 background: #fff;
+								 box-shadow:0 0 5px #EBEBEB inset;
+							}
+							[type="radio"]:not(:checked) + label:after,
+							[type="radio"]:checked + label:after {
+								content: '';
+								position: absolute;
+								top: -11px;
+								left: -6px;
+								width: 11px;
+								height: 11px;
+								background-color: #00bf79;
+							    -webkit-border-radius: 100%;
+								-moz-border-radius: 100%;
+								border-radius: 100%;
+							}
+
+							/* radio mark aspect changes */
+							[type="radio"]:not(:checked) + label:after {
+								 opacity: 0;
+								 -webkit-transform: scale(0);
+								 -moz-transform: scale(0);
+								 -ms-transform: scale(0);
+								 transform: scale(0);
+							}
+							[type="radio"]:checked + label:after {
+								opacity: 1;
+								-webkit-transform: scale(1);
+								-moz-transform: scale(1);
+								-ms-transform: scale(1);
+								transform: scale(1);
+							}
+							/* disabled radio */
+							[type="radio"]:disabled:not(:checked) + label:before,
+							[type="radio"]:disabled:checked + label:before {
+								 box-shadow: none;
+								 border-color: #bbb;
+								 background-color: #ddd;
+							}
+							[type="radio"]:disabled:checked + label:after {
+								color: #999;
+							}
+							[type="radio"]:disabled + label {
+								color: #aaa;
+							}
+							/* radio button  aspect circle */
+							[type="radio"]:not(:checked) + label:before,
+							[type="radio"]:checked + label:before  {
+								-webkit-border-radius: 10px;
+								-moz-border-radius: 10px;
+								-o-border-radius: 10px;
+								border-radius: 10px;
+							}
 						}
 						&.description {
 							color: #798385;
@@ -1069,6 +1242,12 @@ body {
 						width: auto;
 						height: auto;
 						margin-top: -11px;
+						&:hover {
+							background-color: inherit;
+							border-radius: 0;
+							line-height: inherit;
+							color: #bbbcbe;
+						}
 					}
 					&.next {
 						margin-left: 0;
@@ -1097,6 +1276,124 @@ body {
 				}
 			}
         	&.reservation {
+        		.bloc-reservation {
+        			width: 100%;
+        			.tile-etape {
+        				color: #00bf79;
+						font-family: "Roboto";
+						font-size: 24px;
+						margin-bottom: 15px;
+						span {
+							display: inline-block;
+							font-size: 20px;
+							-moz-border-radius: 12px;
+							-webkit-border-radius: 12px;
+							border-radius: 12px;
+							background-color: transparent;
+							margin-right: 5px;
+							border: 1px solid #00bf79;
+							padding: 0 10px;
+							text-align: center;
+						}
+        			}
+        			.agenda {
+        				margin-bottom: 30px;
+        				input {
+        					padding: 0 5px;
+        				}
+        			}
+        			.subtitle-etape {
+        				color: #6d7e78;
+						font-family: "Roboto";
+						font-size: 16px;
+						border-bottom: 1px solid #6d7e78;
+						margin-bottom: 10px;
+						&.without-border {
+							border-bottom: 0;
+							margin-bottom: 5px;
+						}
+        			}
+        			.horaire {
+        				margin-bottom: 20px;
+        				.time {
+        					display: inline-block;
+        					color: #777;
+							font-family: "Roboto Condensed";
+							font-size: 13px;
+							border: 1px solid #a4b9b1;
+							-moz-border-radius: 4px;
+							-webkit-border-radius: 4px;
+							border-radius: 4px;
+							-moz-background-clip: padding;
+							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
+							background-color: #f1f1f1;
+							margin: 0 5px 10px 0;
+							cursor: pointer;
+							span {
+								display: block;
+								padding: 3px 10px;
+							}
+							&.selected {
+								color: #fff;
+								border: 1px solid #00bf79;
+								background-color: #fff;
+								padding: 2px;
+								span {
+									background-color: #00bf79;
+									padding: 1px 8px;
+									-moz-border-radius: 4px;
+									-webkit-border-radius: 4px;
+									border-radius: 4px;
+									-moz-background-clip: padding;
+									-webkit-background-clip: padding-box;
+									background-clip: padding-box;
+								}
+							}
+        				}
+        			}
+        			.nb-personne {
+        				margin-bottom: 20px;
+        				.nombre {
+        					display: inline-block;
+        					min-width: 35px;
+        					text-align: center;
+        					color: #777;
+							font-family: "Roboto Condensed";
+							font-size: 13px;
+							border: 1px solid #a4b9b1;
+							-moz-border-radius: 4px;
+							-webkit-border-radius: 4px;
+							border-radius: 4px;
+							-moz-background-clip: padding;
+							-webkit-background-clip: padding-box;
+							background-clip: padding-box;
+							background-color: #f1f1f1;
+							margin: 0 5px 10px 0;
+							cursor: pointer;
+							span {
+								display: block;
+								padding: 3px 10px;
+							}
+							&.selected {
+								color: #fff;
+								border: 1px solid #00bf79;
+								background-color: #fff;
+								padding: 2px;
+								span {
+									background-color: #00bf79;
+									padding: 1px 8px;
+									-moz-border-radius: 4px;
+									-webkit-border-radius: 4px;
+									border-radius: 4px;
+									-moz-background-clip: padding;
+									-webkit-background-clip: padding-box;
+									background-clip: padding-box;
+								}
+							}
+        				}
+        			}
+        		}
         		.contact-bloc {
         			.middle {
         				.adr-adr {

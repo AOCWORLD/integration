@@ -321,6 +321,31 @@ $(document).ready(function() {
 			$(this).parent('.share').find('.mobile-app').show();
 		});
 	}
+
+	//reservation
+	if ($('.agenda').length) {
+		$('#datepicker').datepicker();
+	}
+
+	//checkbox reservation
+	if ($('.bloc-reservation').length) {
+		$('.horaire .time').click( function(){
+		  if ($(this).hasClass('selected')) {
+		  	$(this).removeClass('selected');
+		  }else {
+		  	$(this).parents('.horaire').find('.selected').removeClass('selected');
+		  	$(this).addClass('selected');
+		  }
+		});
+		$('.nb-personne .nombre').click( function(){
+		  if ($(this).hasClass('selected')) {
+		  	$(this).removeClass('selected');
+		  }else {
+		  	$(this).parents('.nb-personne').find('.selected').removeClass('selected');
+		  	$(this).addClass('selected');
+		  }
+		});
+	}
 	
 }); //ready
 

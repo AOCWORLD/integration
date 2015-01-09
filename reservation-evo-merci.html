@@ -10,7 +10,6 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
   <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="assets/stylesheet/style.css">
   <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
   <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
@@ -86,7 +85,7 @@
   <!-- Fin header -->
   
   <!-- Debut wrap -->
-  <div id="wrap" class="contact commande reservation">
+  <div id="wrap" class="contact commande merci">
     <div class="container">
       <div class="row">
         <div class="container-fluid">
@@ -94,112 +93,31 @@
                   <div class="middle">
                       <div class="row">
                         <div class="container-fluid">
-                        <div class="col-md-3 col-sm-3 pdlr-0">
-                          <div class="bloc-reservation">
-                            <div class="tile-etape"><span>1</span>Date</div>
-                            <div class="agenda"><input type="text" id="datepicker"></div>
-                            <div class="tile-etape"><span>2</span>Horaire</div>
-                            <div class="subtitle-etape">Déjeuner</div>
-                            <div class="horaire">
-                              <div>
-                                <div class="time"><span>12:00</span></div>
-                                <div class="time"><span>12:15</span></div>
-                                <div class="time selected"><span>12:30</span></div>
-                                <div class="time"><span>12:45</span></div>
-                                <div class="time"><span>13:00</span></div>
-                              </div>
-                              <div>
-                                <div class="time"><span>13:15</span></div>
-                                <div class="time"><span>13:30</span></div>
-                                <div class="time"><span>13:45</span></div>
-                                <div class="time"><span>14:00</span></div>
-                                <div class="time"><span>14:15</span></div>
-                              </div>
-                            </div>
-                            <div class="subtitle-etape">Dîner</div>
-                            <div class="horaire">
-                              <div>
-                                <div class="time"><span>12:00</span></div>
-                                <div class="time"><span>12:15</span></div>
-                                <div class="time selected"><span>12:30</span></div>
-                                <div class="time"><span>12:45</span></div>
-                                <div class="time"><span>13:00</span></div>
-                              </div>
-                              <div>
-                                <div class="time"><span>13:15</span></div>
-                                <div class="time"><span>13:30</span></div>
-                                <div class="time"><span>13:45</span></div>
-                                <div class="time"><span>14:00</span></div>
-                                <div class="time"><span>14:15</span></div>
-                              </div>
-                            </div>
-                            <div class="tile-etape"><span>3</span>Nombre de personne(s)</div>
-                            <div class="nb-personne">
-                            <div>
-                              <div class="nombre"><span>1</span></div>
-                              <div class="nombre"><span>2</span></div>
-                              <div class="nombre"><span>3</span></div>
-                              <div class="nombre selected"><span>4</span></div>
-                              <div class="nombre"><span>5</span></div>
-                            </div>
-                            <div>
-                              <div class="nombre"><span>6</span></div>
-                              <div class="nombre"><span>7</span></div>
-                              <div class="nombre"><span>8</span></div>
-                              <div class="nombre"><span>9</span></div>
-                              <div class="nombre"><span>10</span></div>
-                            </div>
-                            </div>
-                            <div class="subtitle-etape without-border">Au delà de 10 personnes:</div>
-                            <select>
-                              <option>11</option>
-                              <option>12</option>
-                              <option>13</option>
-                              <option>14</option>
-                            </select>
+                        <div class="col-md-9 col-sm-9 pdl-0">
+                          <div class="msg-merci">
+                            <div class="top">Merci</div>
+                            <div class="bottom">pour votre réservation</div>
+                          </div>
+                          <div class="msg-description">
+                            <img src="assets/images/img-reserv.png">
+                            <p class="green">Sans information de notre part dans les 24h,<br>celle-ci est validée.</p>
+                            <p>Le numéro de réservation se trouve dans votre boîte Email.</p>
+                            <p class="bleu big-size">Récapitulatif de réservation</p>
+                            <p>Masmoudi Khaled<br>31.01.14 à 12h30 pour 4 personnes</p>
                           </div>
                         </div>
-                        <div class="col-md-9 col-sm-9 pdr-0">
-                        	<div class="col-md-6 col-sm-6 pdlr-0">
-                            	<form action="reservation-evo-merci.html" class="form-horizontal" role="form">
-                                  <div class="form-group">
-                                      <span class="title-form-commande">Informations</span>
-                                  </div>
-                                  <div class="form-group">
-                                      <input type="text" class="form-control" id="nom" placeholder="Nom *">
-                                  </div>
-                                  <div class="form-group">
-                                      <input type="text" class="form-control" id="prenom" placeholder="Prénom *">
-                                  </div>
-                                  <div class="form-group">
-                                      <input type="email" class="form-control" id="mail" placeholder="E-mail">
-                                  </div>
-                                  <div class="form-group"><!--<div class="form-group big-marge">-->
-                                      <input type="text" class="form-control" id="Tel" placeholder="Tél *">
-                                  </div>
-                                  <div class="form-group">
-                                    <textarea class="form-control-txt" rows="8" placeholder="Une informations secondaire"></textarea>
-                                  </div>
-                                  <p><span>*</span>  Champs obligatoires</p>
-                                  <div class="form-group-btnn">
-                                      <button type="submit" class="btn btn-default">Je réserve</button>
-                                  </div>
-                                </form>
-                            </div>
-                            <div class="col-md-6 col-sm-6 pdlr-0">
-                            	<img class="img-commande" src="assets/images/img-commande.jpg">
-                                <div class="adr-adr">
-                                  <img src="assets/images/flag-commande.jpg">
-                                  <p>Restaurant boifade</p>
-                                  <p>calle veronica, 4</p>
-                                	<p>Madrid, 28079 </p>
-                                  <p>E-mail:</p>
-                                  <p>info@aocworld.com </p>
-                                  <p>Fax: +41 22 552 0 558</p>
-                                </div> 
-                            </div>
-                            </div>
-
+                        <div class="col-md-3 col-sm-3 pdlr-0">
+                        	<img class="img-commande" src="assets/images/img-commande.jpg">
+                            <div class="adr-adr">
+                              <img src="assets/images/flag-commande.jpg">
+                              <p>Restaurant boifade</p>
+                              <p>calle veronica, 4</p>
+                            	<p>Madrid, 28079 </p>
+                              <p>E-mail:</p>
+                              <p>info@aocworld.com </p>
+                              <p>Fax: +41 22 552 0 558</p>
+                            </div> 
+                        </div>
                         </div>
                       </div>
           
@@ -283,7 +201,6 @@
   <!-- Fin Footer -->
   
   <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
   <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript" src="assets/javascript/script.js"></script>
