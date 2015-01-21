@@ -1,0 +1,1373 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="no-home la-une user pro">
+
+  <div class="bg-wrap-top"></div>
+  
+  <!-- Debut header -->
+  <header id="header" class="big-header">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+                <li><a class="no-ico" href="#">Contact</a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <img class="title-flag" src="assets/images/title-flag.png" alt="image de drapeau">
+            <h1 class="title">restaurant bonifade</h1>
+            <div class="profil">Bonjour,<span class="sexe">Mr.</span><span class="name">Patrick</span></div>
+            <a class="btn-green btn-reservation" href="reservation-evo.html">Réserver</a>
+            <span class="subtitle">Nom de la ville et code postale</span>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+	  <div class="bg-fixed-header-bottom pro">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <!-- carousel -->
+            <div class="carrousel-profil" id="slider">
+              <!-- galerie-->
+              <div id="myCarouselprofil" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active" data-slide-number="0">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                        <div class="prop">Propriétaire</div>
+                        <div class="prop-name">Monsieur Blanc</div>
+                    </div>
+                    <div class="item" data-slide-number="1">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                        <div class="prop">Propriétaire</div>
+                        <div class="prop-name">Monsieur Blanc</div>
+                    </div>
+                    <div class="item" data-slide-number="2">
+                        <img src="assets/images/slide-profil/img-profil.png" alt="image de profil" />
+                        <div class="prop">Propriétaire</div>
+                        <div class="prop-name">Monsieur Blanc</div>
+                    </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarouselprofil" data-slide="prev"></a>
+                <a class="carousel-control right" href="#myCarouselprofil" data-slide="next"></a>
+              </div>
+              <!-- /.galerie-->
+            </div>
+            <!-- /.carousel -->
+      			<!--<div class="prop">Propriétaire</div>-->
+            <a class="favoris" href="#">Ajouter à mes préférences</a>
+            <!--<div class="prop-name">Monsieur Blanc</div>-->
+            <p class="nb-favoris" data-toggle="modal" data-target="#myModal2"><span>2380</span> personnes préfèrent cette page</p>
+            <img class="img-restau" src="assets/images/logo-restau.png" alt="logo du restaurant">
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap">
+    <div class="bg-no-white">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <!-- share -->
+            <div class="share col-md-12 col-sm-12 pdlr-0 clearfix">
+              <div class="open-to-share">
+              <ul class="share-list">
+                <li><a href="#" class="email" title="e-mail"></a></li>
+                <li><a href="#" class="google" title="google+"></a></li>
+                <li><a href="#" class="tw" title="twitter"></a></li>
+                <li><a href="#" class="fb" title="facebook"></a></li>
+              </ul>
+              </div>
+            </div>
+            <!-- /.share -->
+            <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
+              <div class="col-md-4 col-sm-4 pdlr-0">
+                <div class="bloc-infos-photo clearfix">
+                  <a href="#" class="title-infos-photo">à PROPOS</a>
+                  <div class="body-infos-photo clearfix">
+                  <!-- carousel-bottom -->
+                    <div class="carousel-bottom clearfix bloc-with-edit" id="slider4">
+                    <a class="edit" href="#"></a>
+                      <!-- galerie-->
+                      <div id="myCarouselphotobottom" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active" data-slide-number="0">
+                                <img src="assets/images/bar.png" alt="image de restaurant">
+                            </div>
+                            <div class="item" data-slide-number="1">
+                              <img src="assets/images/bar.png" alt="image de restaurant">
+                            </div>
+                            <div class="item" data-slide-number="2">
+                              <img src="assets/images/bar.png" alt="image de restaurant">
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarouselphotobottom" data-slide="prev"></a>
+                        <a class="carousel-control right" href="#myCarouselphotobottom" data-slide="next"></a>
+                        <!-- Carousel indicator -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarouselphotobottom" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarouselphotobottom" data-slide-to="1"></li>
+                            <li data-target="#myCarouselphotobottom" data-slide-to="2"></li>
+                        </ol>
+                      </div>
+                      <!-- /.galerie-->
+                    </div>
+                    <!-- /.carousel-bottom -->
+                    <p class="description-infos mCustomScrollbar">de 1855. Il partage cette rare distinction avec le Château Margaux, le Château Latour, le Château Lafite Rothschild et   HautBrion.
+depuis 1945, l'étiquette est différente chaque année, et souvent illustrée par un artiste célèbre (parmi lesquels Chagall, Miro, Picasso…)</p>
+                  <div class="carousel-top clearfix">
+                    <!-- carousel-left -->
+                    <div class="carousel-left clearfix bloc-with-edit" id="slider1">
+                    <a class="edit" href="#"></a>
+                    <span class="titlecarousel">Cuisinier :</span>
+                      <!-- galerie-->
+                      <div id="myCarouselphotoleft1" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active" data-slide-number="0">
+                                <img src="assets/images/cuisinier.png" alt="image de profil">
+                                <a class="name" href="#">Monsieur Alain</a>
+                            </div>
+                            <div class="item" data-slide-number="1">
+                                <img src="assets/images/cuisinier.png" alt="image de profil">
+                                <a class="name" href="#">Monsieur Alain</a>
+                            </div>
+                            <div class="item" data-slide-number="2">
+                                <img src="assets/images/cuisinier.png" alt="image de profil">
+                                <a class="name" href="#">Monsieur Alain</a>
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarouselphotoleft1" data-slide="prev"></a>
+                        <a class="carousel-control right" href="#myCarouselphotoleft1" data-slide="next"></a>
+                      </div>
+                      <!-- /.galerie-->
+                    </div>
+                    <!-- /.carousel-left -->
+                    <!-- carousel-right -->
+                    <div class="carousel-right clearfix bloc-with-edit" id="slider2">
+                    <a class="edit" href="#"></a>
+                    <span class="titlecarousel">Sommelier :</span>
+                      <!-- galerie-->
+                      <div id="myCarouselphotoright1" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active left" data-slide-number="0">
+                                <img src="assets/images/sommelier.png" alt="image de profil">
+                                <a class="name" href="#">Monsieur Paul</a>
+                            </div>
+                            <div class="item next left" data-slide-number="1">
+                                <img src="assets/images/sommelier.png" alt="image de profil">
+                                <a class="name" href="#">Monsieur Paul</a>
+                            </div>
+                            <div class="item" data-slide-number="2">
+                                <img src="assets/images/sommelier.png" alt="image de profil">
+                                <a class="name" href="#">Monsieur Paul</a>
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarouselphotoright1" data-slide="prev"></a>
+                        <a class="carousel-control right" href="#myCarouselphotoright1" data-slide="next"></a>
+                      </div>
+                      <!-- /.galerie-->
+                    </div>
+                    <!-- /.carousel-right -->
+                    </div><!-- /.carousel-top -->
+                    <!-- carousel-middle -->
+                    <div class="carousel-middle clearfix bloc-with-edit" id="slider3">
+                    <a class="edit" href="#"></a>
+                    <span class="titlecarousel">Service :</span>
+                      <!-- galerie-->
+                      <div id="myCarouselphotomiddle" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active" data-slide-number="0">
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                            </div>
+                            <div class="item" data-slide-number="1">
+                              <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                            </div>
+                            <div class="item" data-slide-number="2">
+                              <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                                <div class="bloc">
+                                  <img src="assets/images/sommelier.png" alt="image de profil">
+                                  <a class="name" href="#">Monsieur Paul</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarouselphotomiddle" data-slide="prev"></a>
+                        <a class="carousel-control right" href="#myCarouselphotomiddle" data-slide="next"></a>
+                      </div>
+                      <!-- /.galerie-->
+                    </div>
+                    <!-- /.carousel-middle -->
+                    
+                  </div>
+                </div>
+
+                <div class="bloc-itin clearfix">
+                  <a href="#" class="title-itin">itinéraire</a>
+                  <div class="body-itin clearfix">
+                    <div class="carte" id="div_carte"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="tab clearfix">
+                  <p class="title-top"><span>tableau 1 :</span>Titre du tableau</p>
+                  <div class="tab-title">texte</div>
+                  <div class="col-md-4 col-sm-4 pdlr-0">
+                    <table class="tab-left">
+                      <tbody class="odd">
+                        <tr class="head">
+                          <td colspan="2">Texte</td>
+                        </tr>
+                        <tr>
+                          <th rowspan="3">Texte</th>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="even">
+                        <tr>
+                          <th rowspan="3">Texte</th>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="odd">
+                        <tr>
+                          <th rowspan="3">Texte</th>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="even">
+                        <tr>
+                          <th rowspan="3">Texte</th>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                      </tbody>
+                      <tbody class="odd">
+                        <tr>
+                          <th rowspan="3">Texte</th>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                        <tr>
+                          <td>Texte</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-md-5 col-sm-5">
+                    <div class="tab-middle">
+                      <!-- carousel -->
+                      <div class="carrousel-tab" id="slider8">
+                        <!-- galerie-->
+                        <div id="myCarousel-tab" class="carousel slide">
+                          
+                          <!-- thumbnail-->
+                            <div class="well thumbs clearfix">
+                              <div id="myCarouselthumbtab" class="carousel slide">
+                                  <!-- Carousel items -->
+                                  <div class="carousel-inner">
+                                      <div class="item clearfix active" data-slide-number="0">
+                                        <a id="carousel-selector-10" class="selected first">
+                                          Menu 1
+                                        </a>
+                                        <a id="carousel-selector-11">
+                                          Menu 2
+                                        </a>
+                                      </div>
+                                      <!--/item-->
+                                      <div class="item clearfix" data-slide-number="1">
+                                        <a id="carousel-selector-12" class="first">
+                                          Menu 3
+                                        </a>
+                                        <a id="carousel-selector-13">
+                                          Menu 4
+                                        </a>
+                                      </div>
+                                  </div>
+                                  <!--/carousel-inner--> 
+                                  <a class="left carousel-control" href="#myCarouselthumbtab" data-slide="prev"></a>
+                                  <a class="right carousel-control" href="#myCarouselthumbtab" data-slide="next"></a>
+                              </div>
+                              <!--/myCarousel-->
+                          </div>
+                          <!--/well-->
+                          <!-- /.thumbnail-->
+                          <!-- Carousel items -->
+                          <div class="carousel-inner galerie">
+                              <div class="item active" data-slide-number="10" data-interval="false">
+                                  <table>
+                                    <tbody>
+                                      <tr class="head">
+                                        <td>Entrée1</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Plat</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Dessert</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                              <div class="item" data-slide-number="11" data-interval="false">
+                                  <table>
+                                    <tbody>
+                                      <tr class="head">
+                                        <td>Entrée2</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Plat</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Dessert</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                              <div class="item" data-slide-number="12" data-interval="false">
+                                  <table>
+                                    <tbody>
+                                      <tr class="head">
+                                        <td>Entrée3</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Plat</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Dessert</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+                              <div class="item" data-slide-number="13" data-interval="false">
+                                  <table>
+                                    <tbody>
+                                      <tr class="head">
+                                        <td>Entrée4</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Plat</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="head">
+                                        <td>Dessert</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                      <tr class="bottom">
+                                        <td>Texte</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </div>
+
+                          </div>
+                          <!-- /.Carousel items -->
+
+                        </div>
+                        <!-- /.galerie-->
+                      </div>
+                      <!-- /.carousel -->
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                    <div class="tab-right">
+                      <div class="head">Notre Cave</div>
+                      <!--<div class="mCustomScrollbar">--><div class="cave mCustomScrollbar">
+                        <div class="odd" data-toggle="modal" data-target="#myModal">
+                          <img src="assets/images/product/product.png" alt="produit"/>
+                          <!--<div class="description-product">
+                            <span class="name-product">Nom du produit</span>
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          </div>-->
+                        </div>
+                        <div class="even" data-toggle="modal" data-target="#myModal">
+                          <img src="assets/images/product/product.png" alt="produit"/>
+                          <!--<div class="description-product">
+                            <span class="name-product">Nom du produit</span>
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          </div>-->
+                        </div>
+                        <div class="odd" data-toggle="modal" data-target="#myModal">
+                          <img src="assets/images/product/product.png" alt="produit"/>
+                          <!--<div class="description-product">
+                            <span class="name-product">Nom du produit</span>
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          </div>-->
+                        </div>
+                        <div class="even" data-toggle="modal" data-target="#myModal">
+                          <img src="assets/images/product/product.png" alt="produit"/>
+                          <!--<div class="description-product">
+                            <span class="name-product">Nom du produit</span>
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          </div>-->
+                        </div>
+                        <div class="odd" data-toggle="modal" data-target="#myModal">
+                          <img src="assets/images/product/product.png" alt="produit"/>
+                          <!--<div class="description-product">
+                            <span class="name-product">Nom du produit</span>
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          </div>-->
+                        </div>
+                        <div class="even">
+                          <img src="assets/images/product/product.png" alt="produit"/>
+                          <!--<div class="description-product">
+                            <span class="name-product">Nom du produit</span>
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          </div>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="description clearfix mCustomScrollbar">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                </div>
+                <div class="informations clearfix">
+                  <div class="left">
+                    <a href="#">renseignement<br>reservation<br>et livraison</a>
+                    <p>0041 22 550 0 550</p>
+                  </div>
+                  <div class="right">
+                    <a href="#">on vous rappel</a>
+					<form action="#" method="GET">
+						<input class="right-text" type="text" placeholder="your number"/>
+						<input type="submit" value="OK"/>
+					</form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 pdlr-0">
+                <div class="bloc-videos">
+                <a href="#" class="title-video">video</a>
+                <!-- carousel -->
+                <div class="carrousel-videos" id="slider5">
+                  <!-- galerie-->
+                  <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner galerie">
+                        <div class="item active" data-slide-number="0" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 1</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="1" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 2</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="2" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 3</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="3" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 4</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="4" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 5</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="5" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 6</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="6" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 7</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="item" data-slide-number="7" data-interval="false">
+                            <img src="assets/images/carousel/video.jpg" alt="video" />
+                            <div class="carousel-caption">
+                              <span class="video-title">Titre de la sécance vidéo 8</span>
+                              <div class="info">
+                                <p class="date">10 Juil.2014</p>
+                                <span class="comment">04</span>
+                                <span class="view">82</span>
+                                <a href="#" class="share-accueil" title="Envoyer la vidéo vers la page d'acceuil"></a>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- thumbnail-->
+                      <div class="well thumbs clearfix">
+                        <div id="myCarouselthumb" class="carousel slide">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item clearfix active" data-slide-number="0">
+                                  <a id="carousel-selector-0" class="selected">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a id="carousel-selector-1">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a id="carousel-selector-2">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a id="carousel-selector-3" class="last">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!--/item-->
+                                <div class="item clearfix" data-slide-number="1">
+                                  <a id="carousel-selector-4" class="selected">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a id="carousel-selector-5">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a id="carousel-selector-6">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <a id="carousel-selector-7" class="last">
+                                    <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                    <div class="captions">
+                                      <div class="top clearfix">
+                                        <p class="name">Léa</p>
+                                        <img src="assets/images/flag-small.png" alt="pays" />
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <!--/item-->
+                            </div>
+                            <!--/carousel-inner--> 
+                            <a class="left carousel-control" href="#myCarouselthumb" data-slide="prev"></a>
+                            <a class="right carousel-control" href="#myCarouselthumb" data-slide="next"></a>
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarouselthumb" data-slide-to="0" class="active">1</li>
+                                <li data-target="#myCarouselthumb" data-slide-to="1">2</li>
+                            </ol>
+                        </div>
+                        <!--/myCarousel-->
+                    </div>
+                    <!--/well-->
+                    <!-- /.thumbnail-->
+                  </div>
+                  <!-- /.galerie-->
+                </div>
+                <!-- /.carousel -->
+                </div>
+                <div class="calendar">
+                  <a href="#" class="title-calendar">notre agenda</a>
+                  <div class="body-calendar">
+                    
+                  </div>
+                </div>
+                <div class="col-md-5 col-sm-5 pdl-0">
+                  <div class="appel">
+                    <a class="reserv" href="#">réservez en direct</a>
+					<a class="download" href="#">Download</a>
+                  </div>
+                  <div class="reservation">
+                    <a href="#">Tchat LIVE<br>at your service</a>
+                  </div>
+                </div>
+                <div class="col-md-7 col-sm-7 pdlr-0">
+                  <div class="horaire">
+                    <div class="top clearfix">
+                      <span class="titleleft">horaire</span>
+                      <span class="titleright">Semaine 21</span>
+                    </div>
+                    <table>
+                      <tr class="odd">
+                        <td class="small">Lundi</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                      <tr class="even">
+                        <td class="small">Mardi</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                      <tr class="odd">
+                        <td class="small">Mercredi</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                      <tr class="even">
+                        <td class="small">Jeudi</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                      <tr class="odd">
+                        <td class="small">Vendredi</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                      <tr class="active">
+                        <td class="small">Samedi</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                      <tr class="odd">
+                        <td class="small">Dimanche</td>
+                        <td class="big">de 08h00 à 20h00</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.bg-no-white -->
+    <div class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
+              <div class="col-md-3 col-sm-3 pdl-0">
+                <div class="bloc-temoigne">
+                  <span class="title-bloc-temoigne">Temoignage <br> <span>Ce que pensent nos clients</span></span>
+                  <a class="avis" href="#">Ecrire un avis</a>
+                  <ul class="user-list">
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                      <div class="info-user-over">
+                        <span class="info-user-title-over">Lila</span>
+                        <p class="info-user-description-over">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                      <div class="info-user-over">
+                        <span class="info-user-title-over">Lila</span>
+                        <p class="info-user-description-over">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                      <div class="info-user-over">
+                        <span class="info-user-title-over">Lila</span>
+                        <p class="info-user-description-over">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                      <div class="info-user-over">
+                        <span class="info-user-title-over">Lila</span>
+                        <p class="info-user-description-over">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="pagination">
+                    <li><a href="#">&lt;</a></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&gt;</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 pdlr-0">
+                <div class="list-bloc with-add">
+                  <a class="add-bloc" href="#"></a>
+                  <div class="conversation">
+                    <a class="edit" href="#"></a>
+                    <a class="delete" href="#"></a>
+                    <div class="perso-picture">
+                      <img src="assets/images/perso-pic.png" alt="perso">
+                        <p>Par <span>Soso</span></p>
+                    </div>
+                    <div class="perso-txt">
+                      <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                        <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                    </div>
+                    <div class="clearfix">
+                      <div class="view-comment">
+                        <ul class="clearfix">
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="send" data-original-title="Envoyer l'article à l'administrateur"></a>
+                            <div class="tooltip bottom" role="tooltip">
+                              <div class="tooltip-arrow"></div>
+                              <div class="tooltip-inner">
+                              <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#" class="msg" title="message"></a></li>
+                          <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- add-comment -->
+                    <div class="add-comment clearfix">
+                      <div class="img-profil">
+                        <img src="assets/images/img-profil.png" alt="image de profil">
+                        <span>Patrick</span>
+                      </div>
+                      <div class="form-groupe">
+                        <textarea placeholder="Ajouter commentaire"></textarea>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                      </div>
+                    </div>
+                    <!-- /.add-comment -->
+                  </div>
+                  <div class="conversation">
+                    <a class="edit" href="#"></a>
+                    <a class="delete" href="#"></a>
+                    <div class="perso-picture">
+                      <img src="assets/images/perso-pic.png" alt="perso">
+                        <p>Par <span>Soso</span></p>
+                    </div>
+                    <div class="perso-txt">
+                      <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                        <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                    </div>
+                    <div class="clearfix">
+                      <div class="view-comment">
+                        <ul class="clearfix">
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="send" data-original-title="Envoyer l'article à l'administrateur"></a>
+                            <div class="tooltip bottom" role="tooltip">
+                              <div class="tooltip-arrow"></div>
+                              <div class="tooltip-inner">
+                              <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#" class="msg" title="message"></a></li>
+                          <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- add-comment -->
+                    <div class="add-comment clearfix">
+                      <div class="img-profil">
+                        <img src="assets/images/img-profil.png" alt="image de profil">
+                        <span>Patrick</span>
+                      </div>
+                      <div class="form-groupe">
+                        <textarea placeholder="Ajouter commentaire"></textarea>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                      </div>
+                    </div>
+                    <!-- /.add-comment -->
+                  </div>
+                  <div class="conversation">
+                    <a class="edit" href="#"></a>
+                    <a class="delete" href="#"></a>
+                    <div class="perso-picture">
+                      <img src="assets/images/perso-pic.png" alt="perso">
+                        <p>Par <span>Soso</span></p>
+                    </div>
+                    <div class="perso-txt">
+                      <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                        <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                    </div>
+                    <div class="clearfix">
+                      <div class="view-comment">
+                        <ul class="clearfix">
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" class="send" data-original-title="Envoyer l'article à l'administrateur"></a>
+                            <div class="tooltip bottom" role="tooltip">
+                              <div class="tooltip-arrow"></div>
+                              <div class="tooltip-inner">
+                              <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#" class="msg" title="message"></a></li>
+                          <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- add-comment -->
+                    <div class="add-comment clearfix">
+                      <div class="img-profil">
+                        <img src="assets/images/img-profil.png" alt="image de profil">
+                        <span>Patrick</span>
+                      </div>
+                      <div class="form-groupe">
+                        <textarea placeholder="Ajouter commentaire"></textarea>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                      </div>
+                    </div>
+                    <!-- /.add-comment -->
+                  </div>
+                  <ul class="pagination">
+                    <li><a href="#">&lt;</a></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">&gt;</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 pdr-0">
+                <div class="bloc-personne">
+                  <span class="title-bloc-personne">Personnes qui <br> apprécient cette page</span>
+                  <ul class="user-list">
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <img class="img-user" src="assets/images/user-img.png" alt="image utilisateur">
+                      <div class="info-user">
+                        <span class="info-user-title">Lila</span>
+                        <p class="info-user-description">Le Lorem Ipsum est simplement du faux texte employé</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="clearfix">
+                    <a class="see-more-user" href="#">Voir tous le winesnote</a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.bg-white -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer" class="pro">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
+            <div class="col-md-3 col-sm-3 pdlr-0">
+              <img src="assets/images/chef-world.png" alt="image de footer">
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <form class="clearfix" method="Get" action="#">
+                <input type="text" class="form-control" placeholder="Saisissez le lien du video pour le recevoir dans votre boite mail">
+                <button class="btn btn-default" type="submit">Envoyer</button>
+              </form>
+              <ul class="clearfix">
+                <li><a href="#">Nous contacter</a></li>
+                <li><a href="#">Conditions générales</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-3 pdlr-0">
+              <img src="assets/images/chef-world.png" alt="image de footer">
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Nom du Produit</h4>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/product/product.png" alt="produit"/>
+          <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Modal -->
+  
+  <!-- Modal2 -->
+  <div class="modal fade popup" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Personnes qui préfèrent cette page</h4>
+		  <input class="search" type="text"/>
+        </div>
+        <div class="modal-body">
+          <ul class="mCustomScrollbar">
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+			<li>
+				<img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+				<img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+				<span class="name">Monsieur Blanc</span>
+				<a class="details" href="#">détails</a>
+			</li>
+		  </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Modal2 -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script type="text/javascript" src="assets/javascript/maps.js"></script>
+  <script type="text/javascript" src="assets/javascript/glDatePicker.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>
