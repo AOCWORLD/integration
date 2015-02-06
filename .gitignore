@@ -31,3 +31,4 @@ sitemap.xml
 
 components
 assets/stylesheet/*.css
+/assets/stylesheet/style.c

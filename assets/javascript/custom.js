@@ -121,6 +121,9 @@ $(document).ready(function () {
     $("#UserAvatar .avatar.photo").addClass("img-with-border-and-rounded-corner");
     $("#blogUserConect .avatar.photo").addClass("img-with-border-and-rounded-corner");
     $(".carrousel-profil .avatar.photo").addClass("img-with-border-and-rounded-corner-big");
+    $(".bloc-personne .user-list .avatar.photo").addClass("img-with-border-and-rounded-corner"); 
+    $(".bloc-personne .user-list .avatar.photo").addClass("img-user");
+    
     setTimeout(function () {
         $(".cometchat_userscontentavatarimage").addClass("img-with-border-and-rounded-corner");
     }, 5000);
@@ -173,7 +176,12 @@ $(document).ready(function () {
         $('.erreur').html("");
         var valid = true;
         if (!$("#choix1").is(':checked')) {
-            alert("Vous devez accepter la certification.");
+            
+            
+            
+            
+            
+            ("Vous devez accepter la certification.");
             valid = false;
         }
 
@@ -253,7 +261,63 @@ $(document).ready(function () {
 	});
   }    
     //Fin promotion
-    
+    //Temoignage
+   if($('#paginationTemoignage').length>0){    
+       chargementAvis();      
+       $('#paginationTemoignage').on('click','.page-numbers',function(){
+           $page = $(this).attr('href');
+	   $pageind = $page.indexOf('page=');
+	   $page = $page.substring(($pageind+5));
+           
+           $(".imgLoadTem1").show(); 
+	   $.ajax({
+	     url:$('#basePath').val()+"/listeTemoignage.php",
+                  type:"POST",
+                  data:"actionfunction=showData&idProEncour="+$('#idProEncour').val()+"&page="+$page,
+            cache: false,
+            success: function(response){		   
+                        $('#paginationTemoignage').html(response);
+                        $(".imgLoadTem1").hide();
+                        $("#paginationTemoignage .avatar.photo").addClass("img-with-border-and-rounded-corner");
+                        $("#paginationTemoignage .avatar.photo").addClass("img-user");                        
+                    }		
+               });
+            return false;
+	});
+        
+        //addAvis
+        $("#form-horizontal-avis .btn-green-light").click(function () {
+            var errorForm = 0;
+            if($('#avis_client').val() == ""){       
+                $('#avis_client').addClass("inputError"); errorForm++;
+            }else $('#avis_client').removeClass("inputError");
+            
+            var hrefConnect = $('#urlonnect').val();
+            
+            if(hrefConnect != "#"){
+              window.location.href = hrefConnect;  
+            }
+            if(errorForm == 0 && hrefConnect == "#"){ 
+                $(".imgLoadTem1").show(); 
+                var str = $('#form-horizontal-avis').serialize();            
+                $.ajax({
+                    type: "POST",
+                    url: $('#basePath').val()+"/avisProEnvoi.php",
+                    data: str+"&idProEncour="+$('#idProEncour').val(),
+                    success: function(msg){ 
+                        
+                        chargementAvis();
+                    }
+                }); 
+
+              $('.bloc-temoigne .temoigne-page-2').hide();
+              $('.bloc-temoigne').children('.temoigne-page-1').show(); 
+            }        
+            return false;
+      });
+ 
+ }  
+   
     //ajax video
    if($('.ChargementVideoHome').length>0){    
     setTimeout(function() {
@@ -343,7 +407,7 @@ $(document).ready(function () {
         }, 5000);
     }
     //fin ajax video
-    
+   
    
                                 
 }); //ready
@@ -352,6 +416,26 @@ $(document).ready(function () {
 var chat = function (id) {
     jQuery('#cometchat_userlist_' + id).click();
 }
+
+//chargement Avis
+function chargementAvis(){ 
+    
+    $.ajax({
+        url:$('#basePath').val()+"/listeTemoignage.php",
+             type:"POST",
+             data:"actionfunction=showData&page=1&idProEncour="+$('#idProEncour').val(),
+        cache: false,
+        success: function(response){  
+             $('#paginationTemoignage').html(response);
+             $(".imgLoadTem").hide();
+             $(".imgLoadTem1").hide();
+             $("#paginationTemoignage .avatar.photo").addClass("img-with-border-and-rounded-corner");
+             $("#paginationTemoignage .avatar.photo").addClass("img-user");             
+           }
+      }); 
+}  
+ 
+//Fin avis Pro
 
 function youtubeHome(){  
    //carousel video home page
@@ -379,7 +463,8 @@ function youtubeHome(){
         
 	$('.home [id^=carousel-selector-]').click( function(){
 	  var id_selector = $(this).attr("id");
-	  var id = id_selector.substr(id_selector.length -1);
+	  //var id = id_selector.substr(id_selector.length -1);
+        var id = id_selector.replace("carousel-selector-", "");
 	  id = parseInt(id);
 	  $('.home #myCarouselthumb .galerie').carousel(id);
 	  $('.home [id^=carousel-selector-]').removeClass('selected');
@@ -400,7 +485,8 @@ function youtubeHome(){
 
 	$('.home [id^=carousel-selector-]').click( function(){
 	  var id_selector = $(this).attr("id");
-	  var id = id_selector.substr(id_selector.length -1);
+	  //var id = id_selector.substr(id_selector.length -1);
+        var id = id_selector.replace("carousel-selector-", "");
 	  id = parseInt(id);
 	  $('.home #myCarousel .galerie').carousel(id);
 	  $('.home [id^=carousel-selector-]').removeClass('selected');
@@ -461,7 +547,8 @@ function youtubePage(){
         
 	$('.no-home [id^=carousel-selector-]').click( function(){
 	  var id_selector = $(this).attr("id");
-	  var id = id_selector.substr(id_selector.length -1);
+	  //var id = id_selector.substr(id_selector.length -1);
+	  var id = id_selector.replace("carousel-selector-", "");
 	  id = parseInt(id);
 	  $('.no-home #myCarouselthumb .galerie').carousel(id);
 	  $('.no-home [id^=carousel-selector-]').removeClass('selected');
@@ -482,7 +569,8 @@ function youtubePage(){
 
 	$('.no-home [id^=carousel-selector-]').click( function(){
 	  var id_selector = $(this).attr("id");
-	  var id = id_selector.substr(id_selector.length -1);
+	  //var id = id_selector.substr(id_selector.length -1);
+	  var id = id_selector.replace("carousel-selector-", "");
 	  id = parseInt(id);
 	  $('.no-home #myCarousel .galerie').carousel(id);
 	  $('.no-home [id^=carousel-selector-]').removeClass('selected');
@@ -620,7 +708,7 @@ function PromotionPro(){
         }else{ 
            $(".bloc-promo-bottom .btn-plus").hide(); 
         }
-        
+     
 }
 
 function changeTexte() {
@@ -723,6 +811,34 @@ function valideSearch(idUser) {
     })
 }
 //FIn envoie article user
+
+function calculPrixCom(){
+    var prixTotal =0;
+    $('form tr').each(function(){
+        var idProd = $(this).attr('class');
+        if ((typeof idProd !== "undefined") && ($('#radio-'+idProd ).attr('checked') == 'checked')) {            
+            var qt = $(this).find("#nbCom-"+idProd).val();            
+            var prix = $(this).find(".prixCom").val();            
+            var cout = qt * prix;            
+            prixTotal = parseFloat(prixTotal) + parseFloat(cout);            
+        }         
+    }); 
+    
+    $('.total .bottom').html(parseFloat(prixTotal).toFixed(2));
+    $('#PrixTotal').val(prixTotal);
+}
+
+function listIdCom(idProd){ 
+            
+    if ($('#radio-'+idProd ).attr('checked') == 'checked'){    
+       $('#radio-'+idProd ).attr('checked', false);
+       $('#radio-'+idProd ).val(0); 
+     }else{ 
+       $('#radio-'+idProd ).attr('checked', true);
+       $('#radio-'+idProd ).val(1);
+     }
+    calculPrixCom();
+}
    
 
 

@@ -336,7 +336,7 @@ $(document).ready(function() {
 			dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
 			dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
 			weekHeader: 'Sem.',
-			dateFormat: 'yy-mm-dd'
+			dateFormat: 'dd-mm-yy'
 		});
 	}
 
@@ -345,18 +345,36 @@ $(document).ready(function() {
 		$('.horaire .time').click( function(){
 		  if ($(this).hasClass('selected')) {
 		  	$(this).removeClass('selected');
+                        $("#horaireRes").val('');
 		  }else {
-		  	$(this).parents('.horaire').find('.selected').removeClass('selected');
+		  	$('.horaire').find('.selected').removeClass('selected');
 		  	$(this).addClass('selected');
+                        $("#horaireRes").val($(this).find('span').html());
 		  }
 		});
 		$('.nb-personne .nombre').click( function(){
 		  if ($(this).hasClass('selected')) {
 		  	$(this).removeClass('selected');
+                        $("#nombreRes").val('');
 		  }else {
 		  	$(this).parents('.nb-personne').find('.selected').removeClass('selected');
 		  	$(this).addClass('selected');
+                        $("#nombreRes").val($(this).find('span').html());
 		  }
+		});
+	}
+        
+        //avis
+	if ($('.bloc-temoigne').length) {
+		$('.bloc-temoigne .temoigne-page-1 .avis').click( function(){
+			$(this).parent('.temoigne-page-1').hide();
+			$(this).parents('.bloc-temoigne').children('.temoigne-page-2').show();
+			return false;
+		});
+		$('.bloc-temoigne .temoigne-page-2 .close-avis').click( function(){
+			$(this).parent('.temoigne-page-2').hide();
+			$(this).parents('.bloc-temoigne').children('.temoigne-page-1').show();
+			return false;
 		});
 	}
 	
