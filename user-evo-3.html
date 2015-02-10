@@ -1,0 +1,1528 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="no-home la-une user user-evolution">
+
+  <div class="bg-wrap-top"></div>
+  
+  <!-- Debut header -->
+  <header id="header" class="big-header">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <div class="bg-gradient-greey float-left clearfix left-bloc">
+              <div class="div-bloc img-profil-user">
+                <img src="assets/images/image-user.jpg" alt="image de l'utilisateur">
+              </div>
+              <div class="div-bloc webnote-user">
+                <div class="webnote-user-nombre">Nombre de bulletin publié<span>180</span></div>
+                <div class="webnote-user-pub">Publier un bulletin</div>
+                <a href="#" class="webnote-user-action">Consulter</a>
+              </div>
+              <div class="div-bloc webnote-user">
+                <div class="webnote-user-nombre">Nombre de bulletin publié<span>180</span></div>
+                <div class="webnote-user-pub">Publier un bulletin</div>
+                <a href="#" class="webnote-user-action">Consulter</a>
+              </div>
+              <div class="div-bloc webnote-user">
+                <div class="webnote-user-pub without-webnote-user-nombre">Webnote room <span>(42)</span></div>
+                <a href="#" class="webnote-user-action">Consulter</a>
+              </div>
+            </div>
+            <div class="bg-gradient-green float-left clearfix">
+              <div class="bloc-msg with-notification">
+                <div class="notification-msg">3</div>
+                <div class="msg">Messages</div>
+              </div>
+            </div>
+            <div class="bloc-tchin float-left clearfix">
+              <div class="bloc-tchin-header clearfix">
+                <img class="img-tchin" src="assets/images/bloc-tchin-logo.png" alt="logo tchin">
+                <div class="title-tchin clearfix">
+                  <div class="title-tchin-top">tchin</div>
+                  <div class="title-tchin-bottom">112</div>
+                </div>
+              </div>
+              <div class="bloc-tchin-body">
+                <p>Vous débutez le 26-12-2014 à<span>0 TCHIN</span></p>
+                <p>Augmentez votre sphère d’influence en insitant le<span>TCHIN</span>par des Webnotes qui vous ressemble</p>
+                <div class="remarks">>Avec<span>TCHIN</span>vous ne perdez plus les contenus pour les quel vous souhaitez rédiger une Webnote correcte.</div>
+                <div class="remarks">>D’un<span>TCHIN</span>vous enregistrez votre sélection et vous la lirez quand vous en aurez le temps.</div>
+                <div class="remarks">>Capacité de 20 contenus</div>
+                <form class="add-tchin" action="#" method="GET">
+                  <div class="add-tchin-form clearfix">
+                    <label>Ajouter un<span>TCHIN</span></label>
+                    <input type="text" class="url" placeholder="http://....">
+                    <a class="add-url" href="#">+</a>
+                  </div>
+                  <ul class="add-tchin-lists">
+                    <li class="tchin-list-bui">Mailing Bui<a class="remove" href="#"></a></li>
+                    <li class="tchin-list-youtube">Manil youtube<a class="remove" href="#"></a></li>
+                    <li class="tchin-list-accuweather">www.accuweather.com<a class="remove" href="#"></a></li>
+                    <li class="tchin-list-google">mail.google.com<a class="remove" href="#"></a></li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+            <div class="bg-gradient-greey float-left clearfix right-bloc">
+              <div class="div-bloc bloc-search">
+                <form class="bloc-search-form" action="#" method="GET">
+                  <input class="input-search" type="text" placeholder="ville, nom, téléphone, mail, pseudo...">
+                  <input class="btn-search" type="submit">
+                  <input class="btn-search-google" type="submit">
+                </form>
+              </div>
+              <div class="div-bloc bloc-winesnote">
+                
+              </div>
+
+            </div>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+	  <div class="bg-fixed-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <h1 class="title">Patrick Abbas</h1>
+            <img class="flag" src="assets/images/flag-profil.png" alt="image de drapeau" />
+            <div class="region">Suisse</div>
+            <div class="profil">Bonjour,<span class="sexe">Mr.</span><span class="name">Patrick</span><span class="deconnexion">/Déconnexion</span></div>
+            <div class="bloc-favoris">
+              <a class="favoris" href="#">Ajouter à mes préférences</a>
+              <p class="nb-favoris" data-toggle="modal" data-target="#myModal"><span>2380</span> personnes préfèrent cette page</p>
+            </div>
+            <div class="share">
+              <div class="open-to-share">
+              <ul class="share-list">
+                <li><a href="#" class="email" title="e-mail"></a></li>
+                <li><a href="#" class="google" title="google+"></a></li>
+                <li><a href="#" class="tw" title="twitter"></a></li>
+                <li><a href="#" class="fb" title="facebook"></a></li>
+              </ul>
+              </div>
+            </div>
+
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-4 col-sm-12 pdlr-0">
+            <div class="bloc-photo clearfix">
+              <a href="#" class="title-photo">photos</a>
+              <div class="body-photo clearfix">
+                <!-- carousel-left -->
+                <div class="carousel-left clearfix" id="slider1">
+                  <!-- galerie-->
+                  <div id="myCarouselphotoleft" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active" data-slide-number="0">
+                            <img src="assets/images/slide-profil/img-photoleft.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="1">
+                            <img src="assets/images/slide-profil/img-photoleft.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="2">
+                            <img src="assets/images/slide-profil/img-photoleft.jpg" alt="image de profil" />
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarouselphotoleft" data-slide="prev"></a>
+                    <a class="carousel-control right" href="#myCarouselphotoleft" data-slide="next"></a>
+                  </div>
+                  <!-- /.galerie-->
+                </div>
+                <!-- /.carousel-left -->
+                <!-- carousel-right -->
+                <div class="carousel-right clearfix" id="slider3">
+                  <!-- galerie-->
+                  <div id="myCarouselphotoright" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active" data-slide-number="0">
+                            <img src="assets/images/slide-profil/img-photoright.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="1">
+                            <img src="assets/images/slide-profil/img-photoright.jpg" alt="image de profil" />
+                        </div>
+                        <div class="item" data-slide-number="2">
+                            <img src="assets/images/slide-profil/img-photoright.jpg" alt="image de profil" />
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarouselphotoright" data-slide="prev"></a>
+                    <a class="carousel-control right" href="#myCarouselphotoright" data-slide="next"></a>
+                  </div>
+                  <!-- /.galerie-->
+                </div>
+                <!-- /.carousel-right -->
+              </div>
+            </div>
+            <div class="bloc-favoris clearfix">
+              <a href="#" class="title-favoris">mes préférences</a>
+              <div class="body-favoris">
+                <div class="mod-tab"><div class="mod-tab-wrap">
+                  <ol class="tab-list">
+                    <li class="active"><a class="tab-link" href="#tab-00001" data-idtab="tab-00001">Mes préférences Peoplewine</a></li>
+                    <li><a class="tab-link" href="#tab-00002" data-idtab="tab-00002">Mes préférences Winesnote</a></li>
+                  </ol>
+                  <ol class="tab-content">
+                    <li id="tab-00001" class="mCustomScrollbar">
+                      <div class="fav clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/img-tab.jpg" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav clearfix">
+                        <div class="img-fav right">
+                          <img src="assets/images/img-tab.jpg" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav left">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav right" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav left">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav last clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/img-tab.jpg" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="fav-user" id="tab-00002">
+                      <div class="fav clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/perso-pic.png" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav clearfix">
+                        <div class="img-fav right">
+                          <img src="assets/images/perso-pic.png" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav left">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav right" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav left">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                      <div class="fav last clearfix">
+                        <div class="img-fav left">
+                          <img src="assets/images/perso-pic.png" alt="image favoris" />
+                        </div>
+                        <div class="txt-fav right">
+                          <div class="fav-top clearfix">
+                            <img class="flag-fav left" src="assets/images/flag-tab.jpg" alt="image drapeau" />
+                            <span class="date-fav right">29 juil.2014</span>
+                          </div>
+                          <p class="fav-middle">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                          <a class="fav-bottom" href="#">2380 personnes préfèrent</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ol>
+                </div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+          <div class="clearfix">
+            <div class="list-bloc with-add">
+                <a class="add-bloc" href="#"></a>
+                <div class="conversation">
+                  <a class="edit" href="#"></a>
+                  <a class="delete" href="#"></a>
+                  <div class="perso-picture">
+                    <img src="assets/images/perso-pic.png" alt="perso"/>
+                      <p>Par <span>Soso</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li>
+                          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send"></a>
+                          <div class="tooltip bottom" role="tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                            <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                            </div>
+                          </div>
+                        </li>
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+                <div class="conversation">
+                  <a class="edit" href="#"></a>
+                  <a class="delete" href="#"></a>
+                  <div class="perso-picture">
+                    <img src="assets/images/perso-pic.png" alt="perso"/>
+                      <p>Par <span>Soso</span></p>
+                  </div>
+                  <div class="perso-txt">
+                    <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                      <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                      <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                  </div>
+                  <div class="clearfix">
+                    <div class="view-comment">
+                      <ul class="clearfix">
+                        <li>
+                          <a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send"></a>
+                          <div class="tooltip bottom" role="tooltip">
+                            <div class="tooltip-arrow"></div>
+                            <div class="tooltip-inner">
+                            <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                            </div>
+                          </div>
+                        </li>
+                        <li><a href="#" class="msg" title="message"></a></li>
+                        <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- add-comment -->
+                  <div class="add-comment clearfix">
+                    <div class="img-profil">
+                      <img src="assets/images/img-profil.png" alt="image de profil" />
+                      <span>Patrick</span>
+                    </div>
+                    <div class="form-groupe">
+                      <textarea placeholder="Ajouter commentaire"></textarea>
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                  <!-- /.add-comment -->
+                </div>
+                <ul class="pagination">
+                  <li><a href="#">&lt;</a></li>
+                  <li><a class="active" href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">&gt;</a></li>
+                </ul>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-3 col-sm-12 user-left pdlr-0">
+            <div class="right-top clearfix">
+                <a href="#" class="title-video">videos</a>
+                <!-- carousel -->
+                <div class="carrousel-videos" id="slider">
+              <!-- galerie-->
+              <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner galerie">
+                    <div class="item active" data-slide-number="0" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 1</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="1" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 2</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="2" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 3</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="3" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 4</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="4" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 5</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="5" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 6</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="6" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 7</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="7" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 8</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="8" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 9</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="9" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 10</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- thumbnail-->
+                  <div class="well thumbs clearfix">
+                    <div id="myCarouselthumb" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item clearfix active" data-slide-number="0">
+                              <a id="carousel-selector-0" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-1">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-2">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-3">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="1">
+                              <a id="carousel-selector-4" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-5">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-6">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-7">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="2">
+                              <a id="carousel-selector-8" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-9">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> 
+                        <a class="left carousel-control" href="#myCarouselthumb" data-slide="prev"></a>
+                        <a class="right carousel-control" href="#myCarouselthumb" data-slide="next"></a>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarouselthumb" data-slide-to="0" class="active">1</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="1">2</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="2">3</li>
+                        </ol>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+                <!--/well-->
+                <!-- /.thumbnail-->
+              </div>
+              <!-- /.galerie-->
+            </div>
+                <!-- /.carousel -->
+                <a href="#" class="title-degustations">Mes dégustations</a>
+                <form method="post" id="degustation_form">
+            <table>
+                <tbody><tr class="head">
+                    <td colspan="2">Lieu de l’achat ou de la dégustation</td>
+                    <td class="last">Ambiance</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="lieu">
+                        <span class="erreur"></span>
+                    </td>
+                    <td class="last">
+                        <select class="ambiance" name="ambiance" style="width: 100%;">
+                            <option>Je ne sais pas</option>
+                            <option>Simple</option>
+                            <option>Amicale</option>
+                            <option>Familliale</option>
+                            <option>Classique</option>
+                            <option>Branché</option>
+                            <option>People</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table>
+                <tbody><tr class="head">
+                    <td class="w-25">Pays</td>
+                    <td class="w-25">Ville</td>
+                    <td class="w-25">Date</td>
+                    <td class="last w-25">Occasion</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="pays">
+                            <option class="red">Suisse</option>
+                            <option class="red-dark">France</option>
+                            <option class="green">Espagne</option>
+                            <option class="green-dark">Allemagne</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="ville">
+                            <option>Berne</option>
+                            <option>Paris</option>
+                            <option>Madrid</option>
+                            <option>Berlin</option>
+                        </select>
+                    </td>
+                    <td><select name="date">
+                            <option>08-12-2014</option>
+                            <option>07-12-2014</option>
+                            <option>06-12-2014</option>
+                            <option>05-12-2014</option>
+                            <option>04-12-2014</option>
+                            <option>03-12-2014</option>
+                            <option>02-12-2014</option>
+                            <option>01-12-2014</option>
+                        </select></td>
+                    <td class="last">
+                        <select name="occasion">
+                            <option>Seul</option>
+                            <option>En couple</option>
+                            <option>Entre ami</option>
+                            <option>En famille</option>
+                            <option>Evenement</option>
+                            <option>Buisness</option>
+                            <option>Rencontre</option>
+                            <option>Dégustation</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="dif">
+                <tbody><tr class="head">
+                    <td class="w-50" colspan="2">Menu / Plat</td>
+                    <td colspan="2" class="last w-50">Vins/Champagne/Spiritueux</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="nom_du_menu_ou_du_plat">
+                        <span class="erreur"></span>
+                    </td>
+                    <td>
+                        <input type="text" name="vin_champagne_spiritueux" style="width: 100%">
+                        <span class="erreur"></span>
+                    </td>
+                    <td class="last">
+                        <select name="date_vin">
+                                                    <option>2014</option>
+                                                    <option>2013</option>
+                                                    <option>2012</option>
+                                                    <option>2011</option>
+                                                    <option>2010</option>
+                                                    <option>2009</option>
+                                                    <option>2008</option>
+                                                    <option>2007</option>
+                                                    <option>2006</option>
+                                                    <option>2005</option>
+                                                    <option>2004</option>
+                                                    <option>2003</option>
+                                                    <option>2002</option>
+                                                    <option>2001</option>
+                                                    <option>2000</option>
+                                                    <option>1999</option>
+                                                    <option>1998</option>
+                                                    <option>1997</option>
+                                                    <option>1996</option>
+                                                    <option>1995</option>
+                                                    <option>1994</option>
+                                                    <option>1993</option>
+                                                    <option>1992</option>
+                                                    <option>1991</option>
+                                                    <option>1990</option>
+                                                    <option>1989</option>
+                                                    <option>1988</option>
+                                                    <option>1987</option>
+                                                    <option>1986</option>
+                                                    <option>1985</option>
+                                                    <option>1984</option>
+                                                    <option>1983</option>
+                                                    <option>1982</option>
+                                                    <option>1981</option>
+                                                    <option>1980</option>
+                                                    <option>1979</option>
+                                                    <option>1978</option>
+                                                    <option>1977</option>
+                                                    <option>1976</option>
+                                                    <option>1975</option>
+                                                    <option>1974</option>
+                                                    <option>1973</option>
+                                                    <option>1972</option>
+                                                    <option>1971</option>
+                                                    <option>1970</option>
+                                                    <option>1969</option>
+                                                    <option>1968</option>
+                                                    <option>1967</option>
+                                                    <option>1966</option>
+                                                    <option>1965</option>
+                                                    <option>1964</option>
+                                                    <option>1963</option>
+                                                    <option>1962</option>
+                                                    <option>1961</option>
+                                                    <option>1960</option>
+                                                    <option>1959</option>
+                                                    <option>1958</option>
+                                                    <option>1957</option>
+                                                    <option>1956</option>
+                                                    <option>1955</option>
+                                                    <option>1954</option>
+                                                    <option>1953</option>
+                                                    <option>1952</option>
+                                                    <option>1951</option>
+                                                    <option>1950</option>
+                                                    <option>1949</option>
+                                                    <option>1948</option>
+                                                    <option>1947</option>
+                                                    <option>1946</option>
+                                                    <option>1945</option>
+                                                    <option>1944</option>
+                                                    <option>1943</option>
+                                                    <option>1942</option>
+                                                    <option>1941</option>
+                                                    <option>1940</option>
+                                                    <option>1939</option>
+                                                    <option>1938</option>
+                                                    <option>1937</option>
+                                                    <option>1936</option>
+                                                    <option>1935</option>
+                                                    <option>1934</option>
+                                                    <option>1933</option>
+                                                    <option>1932</option>
+                                                    <option>1931</option>
+                                                    <option>1930</option>
+                                                    <option>1929</option>
+                                                    <option>1928</option>
+                                                    <option>1927</option>
+                                                    <option>1926</option>
+                                                    <option>1925</option>
+                                                    <option>1924</option>
+                                                    <option>1923</option>
+                                                    <option>1922</option>
+                                                    <option>1921</option>
+                                                    <option>1920</option>
+                                                    <option>1919</option>
+                                                    <option>1918</option>
+                                                    <option>1917</option>
+                                                    <option>1916</option>
+                                                    <option>1915</option>
+                                                    <option>1914</option>
+                                                    <option>1913</option>
+                                                    <option>1912</option>
+                                                    <option>1911</option>
+                                                    <option>1910</option>
+                                                    <option>1909</option>
+                                                    <option>1908</option>
+                                                    <option>1907</option>
+                                                    <option>1906</option>
+                                                    <option>1905</option>
+                                                    <option>1904</option>
+                                                    <option>1903</option>
+                                                    <option>1902</option>
+                                                    <option>1901</option>
+                                            </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table>
+                <tbody><tr class="diff">
+                    <td class="w-25"><select name="satisfaction_plat">
+                            <option>Satisfaisant</option>
+                            <option>Satisfaisant*</option>
+                            <option>Bon</option>
+                            <option>Bon*</option>
+                            <option>Très bon</option>
+                            <option>Très bon**</option>
+                            <option>Excellent</option>
+                            <option>Excellent***</option>
+                        </select></td>
+                    <td class="w-25"><select name="note_plat">
+                            <option class="red">1</option>
+                            <option class="red">2</option>
+                            <option class="red">3</option>
+                            <option class="red">4</option>
+                            <option class="red">5</option>
+                            <option class="red-dark">6</option>
+                            <option class="red-dark">7</option>
+                            <option class="red-dark">8</option>
+                            <option class="red-dark">9</option>
+                            <option class="red-dark">10</option>
+                            <option class="green">11</option>
+                            <option class="green">12</option>
+                            <option class="green">13</option>
+                            <option class="green">14</option>
+                            <option class="green">15</option>
+                            <option class="green-dark">16</option>
+                            <option class="green-dark">17</option>
+                            <option class="green-dark">18</option>
+                            <option class="green-dark">19</option>
+                            <option class="green-dark">20</option>
+                        </select></td>
+                    <td class="w-16 satisfaction_champagne">
+                        <select name="satisfaction_champagne">
+                            <option>Satisfaisant</option>
+                            <option>Bon</option>
+                            <option>Très bon</option>
+                            <option>Excellent</option>
+                            <option>Bouchoné</option>
+                            <option>Madérisé</option>
+                            <option>Structuré</option>
+                            <option>Charpanté</option>
+                            <option>Massif</option>
+                            <option>Creux</option>
+                            <option>Retenu</option>
+                            <option>Timide</option>
+                            <option>Volubile</option>
+                            <option>Poétique</option>
+                            <option>Disert</option>
+                            <option>Envahissant</option>
+                        </select>
+                    </td>
+                    <td class="w-14">
+                        <select name="note_champagne">
+                            <option class="red">1</option>
+                            <option class="red">2</option>
+                            <option class="red">3</option>
+                            <option class="red">4</option>
+                            <option class="red">5</option>
+                            <option class="red-dark">6</option>
+                            <option class="red-dark">7</option>
+                            <option class="red-dark">8</option>
+                            <option class="red-dark">9</option>
+                            <option class="red-dark">10</option>
+                            <option class="green">11</option>
+                            <option class="green">12</option>
+                            <option class="green">13</option>
+                            <option class="green">14</option>
+                            <option class="green">15</option>
+                            <option class="green-dark">16</option>
+                            <option class="green-dark">17</option>
+                            <option class="green-dark">18</option>
+                            <option class="green-dark">19</option>
+                            <option class="green-dark">20</option>
+                        </select>
+                    </td>
+                    <td class="last w-16">
+                        <select name="type_champagne">
+                            <option>Blanc</option>
+                            <option>Rosé</option>
+                            <option>Rouge</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody></table>
+            <table class="di">
+                <tbody><tr class="head">
+                    <td class="w-50" colspan="2">Sensations</td>
+                    <td colspan="2" class="last w-50">
+                        <div class="sensations">Sensations</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="big"><textarea rows="7" placeholder="écrire ici" name="description_plat"></textarea>
+                            <span class="erreur"></span>
+                        </div>
+                    </td>
+                    <td colspan="2" class="last">
+                        <div class="big"><textarea rows="7" placeholder="écrire ici" name="description_champagne"></textarea>
+                            <span class="erreur"></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody></table>
+            </form>
+				<div class="validation">
+					<form>
+						<div class="approuvation"><INPUT type="checkbox" name="choix1" value="1">Je certifie que <span>ce bulletin</span> reflète ma réalité</div>
+						<div class="validation-input clearfix">
+							<p>bulletin <span>non modifiable</span></p>
+							<input type="submit" class="btn btn-green" value="VALIDER">
+						</div>
+						<a href="#" class="link-degustation">Voir mes dégustations</a>
+					</form>
+				</div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-md-12 col-sm-12 pdlr-0 clearfix">
+            <div class="bloc-promo-top">
+              <span class="title-promo">Des offres en exclusivité toute l’année</span>
+              <div class="body-promo">
+                <div class="prods-slider desktop-only">
+                  <div class="mobile-wrapper">
+                    <ul class="slider">
+                      <li>
+                        <table><tbody>
+                          <tr><td>
+                            <div class="left clearfix">
+                              <img class="img-top" src="assets/images/promo/logo-restau.png" alt="image restaurant">
+                              <div class="contact-bottom">
+                                <img class="flag" src="assets/images/promo/flag.png" alt="image de drapeau">
+                                <span class="title">Restaurant Bonifade page1</span>
+                                <p>12 rue nouvelle</p>
+                                <p>Paris, 75004</p>
+                                <p>E-mail: kaled.masmoudi.pro@gmail.com</p>
+                                <p>Tél: 01-45-78-78-78</p>
+                              </div>
+                            </div>
+                            <div class="middle page clearfix">
+                              <div class="page-1 epuise">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>0</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                            <div class="right page clearfix">
+                              <div class="page-1">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>20</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit-2.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                          </td></tr>
+                        </tbody></table>
+                      </li>
+                      <li>
+                        <table><tbody>
+                          <tr><td>
+                            <div class="left clearfix">
+                              <img class="img-top" src="assets/images/promo/logo-restau.png" alt="image restaurant">
+                              <div class="contact-bottom">
+                                <img class="flag" src="assets/images/promo/flag.png" alt="image de drapeau">
+                                <span class="title">Restaurant Bonifade page 2</span>
+                                <p>12 rue nouvelle</p>
+                                <p>Paris, 75004</p>
+                                <p>E-mail: kaled.masmoudi.pro@gmail.com</p>
+                                <p>Tél: 01-45-78-78-78</p>
+                              </div>
+                            </div>
+                            <div class="middle page clearfix">
+                              <div class="page-1 epuise">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>0</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                            <div class="right page clearfix">
+                              <div class="page-1">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>20</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit-2.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                          </td></tr>
+                        </tbody></table>
+                      </li>
+                      <li>
+                        <table><tbody>
+                          <tr><td>
+                            <div class="left clearfix">
+                              <img class="img-top" src="assets/images/promo/logo-restau.png" alt="image restaurant">
+                              <div class="contact-bottom">
+                                <img class="flag" src="assets/images/promo/flag.png" alt="image de drapeau">
+                                <span class="title">Restaurant Bonifade page3</span>
+                                <p>12 rue nouvelle</p>
+                                <p>Paris, 75004</p>
+                                <p>E-mail: kaled.masmoudi.pro@gmail.com</p>
+                                <p>Tél: 01-45-78-78-78</p>
+                              </div>
+                            </div>
+                            <div class="middle page clearfix">
+                              <div class="page-1 epuise">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>0</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                            <div class="right page clearfix">
+                              <div class="page-1">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>20</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit-2.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                          </td></tr>
+                        </tbody></table>
+                      </li>
+                      <li>
+                        <table><tbody>
+                          <tr><td>
+                            <div class="left clearfix">
+                              <img class="img-top" src="assets/images/promo/logo-restau.png" alt="image restaurant">
+                              <div class="contact-bottom">
+                                <img class="flag" src="assets/images/promo/flag.png" alt="image de drapeau">
+                                <span class="title">Restaurant Bonifade page4</span>
+                                <p>12 rue nouvelle</p>
+                                <p>Paris, 75004</p>
+                                <p>E-mail: kaled.masmoudi.pro@gmail.com</p>
+                                <p>Tél: 01-45-78-78-78</p>
+                              </div>
+                            </div>
+                            <div class="middle page clearfix">
+                              <div class="page-1 epuise">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>0</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                            <div class="right page clearfix">
+                              <div class="page-1">
+                                <div class="offre-top clearfix">
+                                  <div class="nb-clique">Offre limitée aux <br><span>20</span> premier clics</div>
+                                  <a href="#" class="btn-profite btn-next-1">J’en profite</a>
+                                </div>
+                                <div class="product clearfix">
+                                  <img class="img-product" src="assets/images/promo/produit-2.png" alt="image de produit">
+                                  <img class="img-epuise" src="assets/images/promo/produit-epuise.png" alt="image de produit epuisé">
+                                  <div class="sales">-15%</div>
+                                  <div class="product-epuise">Epuisé</div>
+                                </div>
+                                <div class="product-name clearfix">CHÂTEAU D'YQUEM 1997 <br> MAGNUM</div>
+                                <div class="product-description clearfix">Sauternes - Moelleux - Magnum 1,5 l</div>
+                                <div class="product-prices clearfix">
+                                  <div class="new">550,00 €</div>
+                                  <div class="old">650,00 €</div>
+                                </div>
+                                <div class="offre-code clearfix">Code de l’offre 646</div>
+                                <div class="disabled"></div>
+                              </div>
+                              <div class="page-2">
+                                <form action="#" class="form-horizontal" role="form">
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Nom *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Prénom *"></div>
+                                  <div class="form-group"><select class="form-control"><option>Choisissez un pays...</option><option>Tunisie</option><option>France</option></select></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Ville *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="Tél. *"></div>
+                                  <div class="form-group"><input type="text" class="form-control" placeholder="E-mail *"></div>
+                                  <div class="code">Code de l'offre 646</div>
+                                  <div class="form-group last"><select class="form-control"><option>Je souhaite être contacté *</option><option>Oui</option><option>Non</option></select></div>
+                                  <img class="form-img" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">
+                                  <div class="form-action clearfix"><input class="btn btn-blue btn-next-2" type="submit" value="Envoyer"></div>
+                                  <span class="oblig">* Champs obligatoires</span>
+                                </form>            
+                              </div>
+                              <div class="page-3">
+                                <div class="merci">Merci</div>
+                                <img class="img-restau-merci" src="assets/images/promo/img-restau-small.png" alt="image de restaurant">            
+                              </div>
+                            </div>
+                          </td></tr>
+                        </tbody></table>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!-- /.body-promo -->
+            </div>
+            <div class="bloc-promo-bottom clearfix">
+              <a href="#" class="btn-moins">-10</a>
+              <a href="#" class="btn-plus">+10</a>
+              <p>Nous regroupons instantanément les offres en cours. Pour être certain de ne pas se tromper, chaque offre est étudiée à la quantité par clic et pas un de plus !</p>
+              <p>Ces offres sont bien sur honorées par l’annonceur. Voir toutes les conditions des offres uniquement avec l’annonceur</p>
+            </div>
+            </div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer" class="white">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+			<div class="col-md-4 col-sm-4 pdlr-0">
+				<img src="assets/images/footer-world.png" alt="world" />
+			</div>
+			<div class="col-md-8 col-sm-8 pdl-0">
+				<p><span>Aoc world </span>vous permet de découvrir des winesnote étonnant qui aime vivre profondément leur passion nous proposant des endroits de dégustation à visiter et à découvrir,  publiant articles ,préférences et coup de cœur.</p>
+				<p>Etant détenteur de cette espace vous êtes un winesnote, à chacun son niveau et sa vision le maitre mot  est l'objectivité de vos expériences  vis à vis de votre niveau. Car vous serez lu , suivi et probablement un guide pour des internautes (clients) sensible à votre message.</p>
+				<p>L’esprit Winesnote, c’est avant tout le gout du partage, de l’échange couronné d'Un esprit gourmet où l’on parle de ses dégustations , où l’on discute, du vin du champagne enfin tout ce qui est à base de raisin ; des restaurant , des personnages et  région que l'on aime qui sublime ce fruit divin  et aussi du reste pour quelque fois se rencontrer ici et au bout du monde.</p>
+				<p>Sans oublier ses magnifiques personnage capable de nous faire partir à 1000 mille lieux dans les airs   au simple énoncer  d'un gout, d'une vision . Nous   les nommons : viticulteurs restaurateurs sommeliers œnologues caviste artisan barman et parfois winesnote les poète du raisin rien de plus...</p>
+				<p>Vous l'aurez compris dans vos échanges chat/forum et visite de profils assez rapidement vous saurez si vous avez à faire à un véritable winesnote confirmé ou à un débutant qui méritera quoi qu'il arrive votre vision afin de s'améliorer ensemble.</p>
+				<p>A votre disposition cet espace multimédia</p>
+				<p class="last">Evoluons ensemble</p>
+				<p class="signature clearfix">Aoc world</p>
+			</div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+
+  <!-- Modal -->
+  <div class="modal fade popup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Personnes qui préfèrent cette page</h4>
+      <input class="search" type="text"/>
+        </div>
+        <div class="modal-body">
+          <ul class="mCustomScrollbar">
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Modal -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/bxslider.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>
