@@ -377,6 +377,20 @@ $(document).ready(function() {
 			return false;
 		});
 	}
+
+	//btn webnote
+	if ($('.select-btn').length) {
+		$('.select-btn span').click( function(){
+			  if ($(this).hasClass('active')) {
+			  	$(this).addClass('active');
+			  	return false;
+			  }else {
+			  	$(".select-btn span").removeClass('active');
+			  	$(this).addClass('active');
+			  	return false;
+			  }
+		});
+	}
 	
 }); //ready
 

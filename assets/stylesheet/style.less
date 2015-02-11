@@ -3782,6 +3782,289 @@ body {
                         }
                         .bloc-winesnote {
                             min-width: 168px;
+                            padding: 5px 0;
+                            .bloc-winesnote-left {
+                                width: 50%;
+                                height: 100%;
+                                float: left;
+                                text-align: center;
+                                .bloc-winesnote-left-img {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin: 0 auto 2px auto;
+                                }
+                                .bloc-winesnote-left-title-green {
+                                    color: #006d35;
+                                    font-family: "Roboto Condensed";
+                                    font-size: 16px;
+                                    margin: 0 0 -7px 0;
+                                }
+                                .bloc-winesnote-left-title-bleu {
+                                    color: #0a217b;
+                                    font-family: "Roboto Condensed";
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .bloc-winesnote-middle {
+                                width: 30%;
+                                height: 100%;
+                                float: left;
+                                text-align: center;
+                                border: 1px solid #006d35;
+                                -moz-border-radius: 3px;
+                                -webkit-border-radius: 3px;
+                                border-radius: 3px;
+                                -moz-background-clip: padding;
+                                -webkit-background-clip: padding-box;
+                                background-clip: padding-box;
+                                background-color: #e7e7e7;
+                                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FmYjFiOSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UyZTRlOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+                                background-image: -moz-linear-gradient(bottom, #afb1b9 0%, #e2e4e9 100%);
+                                background-image: -o-linear-gradient(bottom, #afb1b9 0%, #e2e4e9 100%);
+                                background-image: -webkit-linear-gradient(bottom, #afb1b9 0%, #e2e4e9 100%);
+                                background-image: linear-gradient(bottom, #afb1b9 0%, #e2e4e9 100%);
+                                .bloc-winesnote-middle-month {
+                                    color: #63697f;
+                                    font-family: "Roboto";
+                                    font-size: 12px;
+                                    font-weight: 300;
+                                    margin: 5px 0 0 0;
+                                }
+                                .bloc-winesnote-middle-day {
+                                    color: #62687f;
+                                    font-family: "Roboto";
+                                    font-size: 15px;
+                                }
+                                .bloc-winesnote-middle-year {
+                                    color: #63697f;
+                                    font-family: "Roboto";
+                                    font-size: 10px;
+                                }
+                            }
+                            .bloc-winesnote-right {
+                                width: 20%;
+                                height: 100%;
+                                float: left;
+                                position: relative;
+                                &.active, &:hover {
+                                    .bloc-winesnote-right-header:before {
+                                        background: url(../images/winesnote-arrow-over.png) no-repeat 50% 50%;
+                                    }
+                                    .bloc-winesnote-right-body {
+                                        display: block;
+                                    }
+                                }
+                                .bloc-winesnote-right-header {
+                                    width: 100%;
+                                    height: 100%;
+                                    position: relative;
+                                    background-image: url(../images/winesnote-tools.png);
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 15px;
+                                    cursor: pointer;
+                                    &.with-notification {
+                                        .winesnote-notification {
+                                            position: absolute;
+                                            top: 5px;
+                                            right: 0px;
+                                            cursor: pointer;
+                                            border: 1px solid #dbdde1;
+                                            -moz-border-radius: 7px;
+                                            -webkit-border-radius: 7px;
+                                            border-radius: 7px;
+                                            -moz-background-clip: padding;
+                                            -webkit-background-clip: padding-box;
+                                            background-clip: padding-box;
+                                            background-color: #01b53f;
+                                            color: #fff;
+                                            font-family: "Roboto Condensed";
+                                            font-size: 9px;
+                                            font-weight: bold;
+                                            padding: 2px 6px;
+                                        }
+                                    }
+                                    &:before {
+                                        display: inline-block;
+                                        content: "";
+                                        position: absolute;
+                                        bottom: 15px;
+                                        left: 40%;
+                                        width: 12px;
+                                        height: 7px;
+                                        background: url(../images/winesnote-arrow.png) no-repeat 50% 50%;
+                                    }
+                                }
+                                .bloc-winesnote-right-body {
+                                    display: none;
+                                    position: absolute;
+                                    top: 65px;
+                                    right: -1px;
+                                    min-width: 300px;
+                                    min-height: 340px;
+                                    padding: 10px 15px;
+                                    background-color: #f2f2f2;
+                                    -moz-box-shadow: 0 2px 3px rgba(0,0,0,.5);
+                                    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.5);
+                                    box-shadow: 0 2px 3px rgba(0,0,0,.5);
+                                    z-index: 1000;
+                                    .bloc-winesnote-right-body-top {
+                                        border-bottom: 1px solid #888e9e;
+                                        padding: 0 0 10px 0;
+                                        .my-account {
+                                            display: inline-block;
+                                            color: #898d97;
+                                            font-family: "Roboto Condensed";
+                                            font-size: 14px;
+                                            float: left;
+                                            padding-left: 35px;
+                                            background: url(../images/ico-webnote-1.png) no-repeat 10px 50%;
+                                            margin: 10px 0 0 0;
+                                        }
+                                        .btn-download-webcard {
+                                            float: right;
+                                            color: #5f6473;
+                                            font-family: "Roboto Condensed";
+                                            font-size: 12px;
+                                            line-height: 12px;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            padding: 5px 20px;
+                                            border: 1px solid #cccdd1;
+                                            -moz-border-radius: 3px;
+                                            -webkit-border-radius: 3px;
+                                            border-radius: 3px;
+                                            -moz-background-clip: padding;
+                                            -webkit-background-clip: padding-box;
+                                            background-clip: padding-box;
+                                            background-color: #e7e7e7;
+                                            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+);
+                                            background-image: -moz-linear-gradient(bottom, #eee 0%, #fbfbfb 100%);
+                                            background-image: -o-linear-gradient(bottom, #eee 0%, #fbfbfb 100%);
+                                            background-image: -webkit-linear-gradient(bottom, #eee 0%, #fbfbfb 100%);
+                                            background-image: linear-gradient(bottom, #eee 0%, #fbfbfb 100%);
+                                            &:hover {
+                                                background-image: -moz-linear-gradient(bottom, #fbfbfb 0%, #eee 100%);
+                                                background-image: -o-linear-gradient(bottom, #fbfbfb 0%, #eee 100%);
+                                                background-image: -webkit-linear-gradient(bottom, #fbfbfb 0%, #eee 100%);
+                                                background-image: linear-gradient(bottom, #fbfbfb 0%, #eee 100%);
+                                            }
+                                        }
+                                    }
+                                    .bloc-winesnote-right-body-list {
+                                        display: block;
+                                        width: 100%;
+                                        list-style: none;
+                                        li {
+                                            display: block;
+                                            width: 100%;
+                                            padding: 10px 0;
+                                            color: #898d97;
+                                            font-family: "Roboto Condensed";
+                                            font-size: 14px;
+                                            cursor: pointer;
+                                            border-bottom: 1px solid #d9dade;
+                                            &:last-child {
+                                                border-bottom: 0;
+                                            }
+                                            &:hover, &.active {
+                                                background-color: #fbfbfb;
+                                            }
+                                            a {
+                                                display: block;
+                                                position: relative;
+                                                width: 100%;
+                                                color: #898d97;
+                                                font-family: "Roboto Condensed";
+                                                font-size: 14px;
+                                                text-decoration: none;
+                                                padding: 0 0 0 35px;
+                                                min-height: 23px;
+                                                &.with-go:before {
+                                                    display: inline-block;
+                                                    content: "";
+                                                    position: absolute;
+                                                    width: 23px;
+                                                    height: 23px;
+                                                    top: 0;
+                                                    right: 0;
+                                                    background: url(../images/ico-webnote-go.png) no-repeat 50% 50%;
+                                                }
+                                                .select-btn {
+                                                    border: 1px solid #01b53f;
+                                                    background-color: #fff;
+                                                    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.15);
+                                                    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.15);
+                                                    box-shadow: inset 0 1px 2px rgba(0,0,0,.15);
+                                                    span {
+                                                        display: inline-block;
+                                                        padding: 2px 5px;
+                                                        color: #9a9ca3;
+                                                        font-family: "Roboto Condensed";
+                                                        font-size: 12px;
+                                                        font-weight: bold;
+                                                        min-width: 40px;
+                                                        text-align: center;
+                                                        &.active {
+                                                            background-color: #00b540;
+                                                            color: #fff;
+                                                        }
+                                                    }
+                                                }
+                                                span {
+                                                    &.with-marge {
+                                                        margin: 0 5px;
+                                                    }
+                                                }
+                                                .green-color {
+                                                    color: #009137;
+                                                }
+                                                .red-color {
+                                                    color: #ee0303;
+                                                }
+                                                .bleu-color {
+                                                    color: #0b237d;
+                                                }
+                                                &.ico-webnote-2 {
+                                                    background: url(../images/ico-webnote-2.png) no-repeat 10px 50%;
+                                                }
+                                                &.ico-webnote-3 {
+                                                    background: url(../images/ico-webnote-3.png) no-repeat 10px 50%;
+                                                }
+                                                &.ico-webnote-4 {
+                                                    background: url(../images/ico-webnote-4.png) no-repeat 10px 50%;
+                                                }
+                                                &.ico-webnote-5 {
+                                                    background: url(../images/ico-webnote-5.png) no-repeat 10px 50%;
+                                                }
+                                                &.ico-webnote-6 {
+                                                    background: url(../images/ico-webnote-6.png) no-repeat 10px 50%;
+                                                }
+                                                &.ico-webnote-7 {
+                                                    background: url(../images/ico-webnote-7.png) no-repeat 10px 50%;
+                                                }
+                                                &.ico-webnote-8 {
+                                                    background: url(../images/ico-webnote-8.png) no-repeat 10px 50%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .bloc-winesnote-right-body-bottom {
+                                        border-top: 1px solid #888e9e;
+                                        padding: 10px 0 0 0;
+                                        .log-out {
+                                            display: inline-block;
+                                            color: #898d97;
+                                            font-family: "Roboto Condensed";
+                                            font-size: 14px;
+                                            padding-left: 35px;
+                                            background: url(../images/ico-webnote-9.png) no-repeat 10px 50%;
+                                            cursor: pointer;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     .bg-fixed-header-bottom {
@@ -3925,6 +4208,187 @@ body {
                             right: 30px;
                         }
                     }
+                }
+                .bloc-favoris {
+                    margin: 0 0 10px 0;
+                }
+                .bloc-boisson {
+                    width: 49%;
+                    border: 2px solid #4288dd;
+                    margin: 0 1% 0 0;
+                    display: inline-block;
+                    float: left;
+                    .title-boisson {
+                        display: block;
+                        width: 100%;
+                        min-height: 50px;
+                        color: #fff;
+                        font-family: "Roboto Condensed";
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 0 30px;
+                        background: #4288dd url(../images/ico-boisson.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .body-boisson {
+                        padding: 30px 15px 10px 15px;
+                        background: #fff;
+                        min-height: 170px;
+                        color: #55575d;
+                        font-family: "Roboto";
+                        font-size: 13px;
+                        font-weight: 300;
+                        span {
+                            display: block;
+                            margin: 0 0 15px 0;
+                            &.last {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .bloc-plat {
+                    width: 49%;
+                    border: 2px solid #00bf79;
+                    margin: 0 0 0 1%;
+                    display: inline-block;
+                    float: left;
+                    .title-plat {
+                        display: block;
+                        width: 100%;
+                        min-height: 50px;
+                        color: #fff;
+                        font-family: "Roboto Condensed";
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 0 30px;
+                        background: #00bf79 url(../images/ico-plat.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .body-plat {
+                        padding: 30px 15px 10px 15px;
+                        background: #fff;
+                        min-height: 170px;
+                        color: #55575d;
+                        font-family: "Roboto";
+                        font-size: 13px;
+                        font-weight: 300;
+                        span {
+                            display: block;
+                            margin: 0 0 15px 0;
+                            &.last {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .bloc-propose {
+                    width: 49%;
+                    border: 2px solid #547dad;
+                    margin: 0 1% 0 0;
+                    display: inline-block;
+                    float: left;
+                    .title-propose {
+                        display: block;
+                        width: 100%;
+                        min-height: 50px;
+                        line-height: 50px;
+                        color: #fff;
+                        font-family: "Roboto Condensed";
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 0 30px;
+                        background: #547dad url(../images/ico-propose.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .body-propose {
+                        padding: 30px 15px 10px 15px;
+                        background: #fff;
+                        min-height: 170px;
+                        color: #55575d;
+                        font-family: "Roboto";
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+                .bloc-recherche {
+                    width: 49%;
+                    border: 2px solid #6c7993;
+                    margin: 0 0 0 1%;
+                    display: inline-block;
+                    float: left;
+                    .title-recherche {
+                        display: block;
+                        width: 100%;
+                        min-height: 50px;
+                        line-height: 50px;
+                        color: #fff;
+                        font-family: "Roboto Condensed";
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 0 30px;
+                        background: #6c7993 url(../images/ico-recherche.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    .body-recherche {
+                        padding: 30px 15px 10px 15px;
+                        background: #fff;
+                        min-height: 170px;
+                        color: #55575d;
+                        font-family: "Roboto";
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+                .bloc-actualite {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                    .title-actualite {
+                        display: block;
+                        width: 100%;
+                        min-height: 70px;
+                        line-height: 18px;
+                        color: #fff;
+                        font-family: "Roboto";
+                        font-size: 20px;
+                        font-weight: 300;
+                        padding: 15px 30px 0 30px;
+                        margin: 0 0 3px 0;
+                        background: #4288dd url(../images/ico-actualite.png) no-repeat 90% 50%;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        .subtitle-actualite {
+                            display: inline-block;
+                            font-size: 16px;
+                            margin: 0 0 0 5px;
+                            text-transform: none;
+                        }
+                        .title-actualite-date {
+                            display: inline-block;
+                            color: #1d213b;
+                            font-family: "Roboto Condensed";
+                            font-size: 14px;
+                        }
+                    }
+                    .body-actualite-1 {
+                        .body-actualite-show-more {
+                            display: block;
+                            width: 100%;
+                            min-height: 27px;
+                            line-height: 27px;
+                            text-align: center;
+                            color: #fff;
+                            font-family: "Roboto Condensed";
+                            font-size: 14px;
+                            text-decoration: none;
+                            background: #4288dd;
+                        }
+                    }
+                    .body-actualite-2 {}
                 }
             }
         }
