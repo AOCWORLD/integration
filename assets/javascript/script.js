@@ -391,6 +391,21 @@ $(document).ready(function() {
 			  }
 		});
 	}
+
+	//winesnote actualité
+	if ( $( ".bloc-actualite" ).length ) {
+		//clique body-actualite-1
+		$( ".bloc-actualite .body-actualite-1 .bloc-actualite-forum-action .green-btn" ).click( function(){
+			$(this).parents('.bloc-actualite').children('.body-actualite-1').css ('display','none');
+			$(this).parents('.bloc-actualite').children('.body-actualite-2').css ('display','block');
+			return false;
+		});
+		// click body to reset
+		$('body').click(function(){
+		   $('.bloc-actualite .body-actualite-2').fadeOut();
+		   $('.bloc-actualite .body-actualite-1').css ('display','block');
+		});
+	}
 	
 }); //ready
 
