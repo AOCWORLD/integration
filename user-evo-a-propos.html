@@ -1,0 +1,743 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>AOCWORLD</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+  <!--<link rel="stylesheet" href="assets/stylesheet/jquery.mCustomScrollbar.css">-->
+  <link rel="stylesheet" href="assets/stylesheet/style.css">
+  <!-- START JAVASCRIPT SECTION - Load only modernizr script here -->
+  <script type="text/javascript" src="components/modernizr/modernizr.js"></script>
+  <!--/ END JAVASCRIPT SECTION -->
+</head>
+
+<body class="no-home la-une user user-evolution user-propos">
+
+  <div class="bg-wrap-top"></div>
+  
+  <!-- Debut header -->
+  <header id="header" class="big-header">
+    <div class="bg-fixed-wrap-top">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="nav-menu">
+              <ul class="menu-left">
+                <li><a class="ico-acc" href="#" title="Accueil"></a></li>
+              </ul>
+              <div class="dropdown">
+                <div class="dropdown-toggle">
+                  <span class="flag"></span>
+                </div>
+                <ul class="menu-right dropdown-body">
+                  <li class="title">Sélectionnez le site d’un pays</li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch1" type="checkbox" name="choix1" checked="" value="1"><label for="ch1">français</label></li>
+                      <li><input id="ch2" type="checkbox" name="choix2" checked="" value="2"><label for="ch2">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch3" type="checkbox" name="choix3" checked="" value="3"><label for="ch3">français</label></li>
+                      <li><input id="ch4" type="checkbox" name="choix4" checked="" value="4"><label for="ch4">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch5" type="checkbox" name="choix5" checked="" value="5"><label for="ch5">français</label></li>
+                      <li><input id="ch6" type="checkbox" name="choix6" checked="" value="6"><label for="ch6">anglais</label></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="clearfix">
+                      <li class="title">Europe</li>
+                      <li><input id="ch7" type="checkbox" name="choix7" checked="" value="7"><label for="ch7">français</label></li>
+                      <li><input id="ch8" type="checkbox" name="choix8" checked="" value="8"><label for="ch8">anglais</label></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+    <div class="bg-fixed-wrap-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <div class="bg-gradient-greey float-left clearfix left-bloc">
+              <div class="div-bloc img-profil-user">
+                <img src="assets/images/image-user.jpg" alt="image de l'utilisateur">
+              </div>
+              <div class="div-bloc webnote-user">
+                <div class="webnote-user-nombre">Nombre de bulletin publié<span>180</span></div>
+                <div class="webnote-user-pub">Publier un bulletin</div>
+                <a href="#" class="webnote-user-action">Consulter</a>
+              </div>
+              <div class="div-bloc webnote-user">
+                <div class="webnote-user-nombre">Nombre de bulletin publié<span>180</span></div>
+                <div class="webnote-user-pub">Publier un bulletin</div>
+                <a href="#" class="webnote-user-action">Consulter</a>
+              </div>
+              <div class="div-bloc webnote-user">
+                <div class="webnote-user-pub without-webnote-user-nombre">Webnote room <span>(42)</span></div>
+                <a href="#" class="webnote-user-action">Consulter</a>
+              </div>
+            </div>
+            <div class="bg-gradient-green float-left clearfix">
+              <div class="bloc-msg with-notification">
+                <div class="notification-msg">3</div>
+                <div class="msg">Messages</div>
+              </div>
+            </div>
+            <div class="bloc-tchin float-left clearfix">
+              <div class="bloc-tchin-header clearfix">
+                <img class="img-tchin" src="assets/images/bloc-tchin-logo.png" alt="logo tchin">
+                <div class="title-tchin clearfix">
+                  <div class="title-tchin-top">tchin</div>
+                  <div class="title-tchin-bottom">112</div>
+                </div>
+              </div>
+              <div class="bloc-tchin-body">
+                <p>Vous débutez le 26-12-2014 à<span>0 TCHIN</span></p>
+                <p>Augmentez votre sphère d’influence en insitant le<span>TCHIN</span>par des Webnotes qui vous ressemble</p>
+                <div class="remarks">>Avec<span>TCHIN</span>vous ne perdez plus les contenus pour les quel vous souhaitez rédiger une Webnote correcte.</div>
+                <div class="remarks">>D’un<span>TCHIN</span>vous enregistrez votre sélection et vous la lirez quand vous en aurez le temps.</div>
+                <div class="remarks">>Capacité de 20 contenus</div>
+                <form class="add-tchin" action="#" method="GET">
+                  <div class="add-tchin-form clearfix">
+                    <label>Ajouter un<span>TCHIN</span></label>
+                    <input type="text" class="url" placeholder="http://....">
+                    <a class="add-url" href="#">+</a>
+                  </div>
+                  <ul class="add-tchin-lists">
+                    <li class="tchin-list-bui">Mailing Bui<a class="remove" href="#"></a></li>
+                    <li class="tchin-list-youtube">Manil youtube<a class="remove" href="#"></a></li>
+                    <li class="tchin-list-accuweather">www.accuweather.com<a class="remove" href="#"></a></li>
+                    <li class="tchin-list-google">mail.google.com<a class="remove" href="#"></a></li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+            <div class="bg-gradient-greey float-left clearfix right-bloc">
+              <div class="div-bloc bloc-search">
+                <form class="bloc-search-form" action="#" method="GET">
+                  <input class="input-search" type="text" placeholder="ville, nom, téléphone, mail, pseudo...">
+                  <input class="btn-search" type="submit">
+                  <input class="btn-search-google" type="submit">
+                </form>
+              </div>
+              <div class="div-bloc bloc-winesnote clearfix">
+                <div class="bloc-winesnote-left">
+                  <img class="bloc-winesnote-left-img" src="assets/images/logo-winesnote.png" alt="logo winesnote">
+                  <div class="bloc-winesnote-left-title-green">Winesnote</div>
+                  <div class="bloc-winesnote-left-title-bleu">W205</div>
+                </div>
+                <div class="bloc-winesnote-middle">
+                  <div class="bloc-winesnote-middle-month">Janv.</div>
+                  <div class="bloc-winesnote-middle-day">25</div>
+                  <div class="bloc-winesnote-middle-year">2015</div>
+                </div>
+                <div class="bloc-winesnote-right">
+                  <div class="bloc-winesnote-right-header with-notification">
+                    <span class="winesnote-notification">5</span>
+                  </div>
+                  <div class="bloc-winesnote-right-body">
+                    <div class="bloc-winesnote-right-body-top clearfix">
+                      <span class="my-account">My Account</span>
+                      <a class="btn-download-webcard" href="card.html" target="_blank">Download my<br>webcard</a>
+                    </div>
+                    <ul class="bloc-winesnote-right-body-list">
+                      <li>
+                        <a class="ico-webnote-2" href="#">
+                          <span class="green-color">My webnote room</span>
+                          <span class="float-right select-btn">
+                            <span>Public</span>
+                            <span class="active">Privé</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li><a class="ico-webnote-3" href="#">Notification webnote<span class="green-color with-marge">(5)</span><span class="bleu-color with-marge float-right">Consulter</span></a></li>
+                      <li class="active"><a class="ico-webnote-4" href="#">Webnote room<span class="red-color with-marge">(42)</span><span class="bleu-color with-marge float-right">Visiter</span></a></li>
+                      <li><a class="ico-webnote-5 with-go" href="#">Message</a></li>
+                      <li><a class="ico-webnote-6 with-go" href="#">Message reçu<span class="green-color with-marge">(4)</span></a></li>
+                      <li><a class="ico-webnote-7 with-go" href="#">Message envoyé</a></li>
+                      <li><a class="ico-webnote-8 with-go" href="#">Ecrire un article</span></a></li>
+                    </ul>
+                    <div class="bloc-winesnote-right-body-bottom">
+                      <a class="log-out" href="#">Log Out</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+	  <div class="bg-fixed-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid">
+            <h1 class="title">Patrick Abbas</h1>
+            <img class="flag" src="assets/images/flag-profil.png" alt="image de drapeau" />
+            <div class="region">Suisse</div>
+            <div class="profil">Bonjour,<span class="sexe">Mr.</span><span class="name">Patrick</span><span class="deconnexion">/Déconnexion</span></div>
+            <div class="bloc-favoris">
+              <a class="favoris" href="#">Ajouter à mes préférences</a>
+              <p class="nb-favoris" data-toggle="modal" data-target="#myModal"><span>2380</span> personnes préfèrent cette page</p>
+            </div>
+            <div class="share">
+              <div class="open-to-share">
+              <ul class="share-list">
+                <li><a href="#" class="email" title="e-mail"></a></li>
+                <li><a href="#" class="google" title="google+"></a></li>
+                <li><a href="#" class="tw" title="twitter"></a></li>
+                <li><a href="#" class="fb" title="facebook"></a></li>
+              </ul>
+              </div>
+            </div>
+
+          </div><!-- /.container-fluid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
+  </header>
+  <!-- Fin header -->
+  
+  <!-- Debut wrap -->
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="col-md-7 col-sm-12 pdl-0">
+            <div class="bloc-infos clearfix">
+              <a href="#" class="title-infos">à propos</a>
+              <div class="body-infos clearfix">
+                <form action="#" method="GET">
+                  <div class="col-md-6 col-sm-12 pdl-0">
+                    <div class="infos-top">
+                      <span class="title">Coordonnées</span>
+                      <div class="form-groupe">
+                        <input placeholder="Téléphone :" type="text">
+                      </div>
+                      <div class="form-groupe">
+                        <input class="with-marge" placeholder="Adresse électronique :" type="text">
+                      </div>
+                      <div class="form-groupe">
+                        <input placeholder="+ Ajoutez d’autres téléphones :" type="text">
+                      </div>
+                      <div class="form-groupe">
+                        <input class="big-height" placeholder="+ Ajoutez votre adresse :" type="text">
+                      </div>
+                      <div class="form-groupe">
+                        <input placeholder="+ Ajoutez un site web :" type="text">
+                      </div>
+                    </div>
+                    <div class="infos-middle">
+                      <span class="title">Informations générales</span>
+                      <div class="form-groupe">
+                        <input placeholder="Date de naissance :" type="text">
+                      </div>
+                      <div class="form-groupe">
+                        <input placeholder="Lieu de naissance :" type="text">
+                      </div>
+                      <div class="form-groupe last">
+                        <input placeholder="Sujet :" type="text">
+                      </div>
+                    </div>
+                    <div class="infos-bottom">
+                      <span class="title ico-propose">je propose</span>
+                      <div class="form-groupe">
+                        <textarea></textarea>
+                      </div>
+                    </div>
+                    <div class="form-action">
+                      <a class="btn-desable-compte" href="#">Désactiver le compte</a>
+                    </div>
+                  </div>
+                  <div class="col-md-5 col-sm-12 pdlr-0">
+                    ***
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 pdlr-0">
+            <div class="right-top clearfix">
+              <a href="#" class="title-video">videos</a>
+                <!-- carousel -->
+                <div class="carrousel-videos" id="slider">
+              <!-- galerie-->
+              <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner galerie">
+                    <div class="item active" data-slide-number="0" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 1</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="1" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 2</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="2" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 3</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="3" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 4</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="4" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 5</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="5" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 6</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="6" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 7</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="7" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 8</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="8" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 9</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="item" data-slide-number="9" data-interval="false">
+                        <img src="assets/images/carousel/video.jpg" alt="video" />
+                        <div class="carousel-caption">
+                          <span class="video-title">Titre de la sécance vidéo 10</span>
+                          <div class="info">
+                            <p class="date">10 Juil.2014</p>
+                            <span class="comment">04</span>
+                            <span class="view">82</span>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- thumbnail-->
+                  <div class="well thumbs clearfix">
+                    <div id="myCarouselthumb" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item clearfix active" data-slide-number="0">
+                              <a id="carousel-selector-0" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-1">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-2">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-3">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="1">
+                              <a id="carousel-selector-4" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-5">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-6">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-7">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                            <div class="item clearfix" data-slide-number="2">
+                              <a id="carousel-selector-8" class="selected">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                              <a id="carousel-selector-9">
+                                <img src="assets/images/carousel/video-thumb-small.jpg" alt="video small" />
+                                <div class="captions">
+                                  <div class="top clearfix">
+                                    <p class="name">Léa</p>
+                                    <img src="assets/images/flag-small.png" alt="pays" />
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <!--/item-->
+                        </div>
+                        <!--/carousel-inner--> 
+                        <a class="left carousel-control" href="#myCarouselthumb" data-slide="prev"></a>
+                        <a class="right carousel-control" href="#myCarouselthumb" data-slide="next"></a>
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarouselthumb" data-slide-to="0" class="active">1</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="1">2</li>
+                            <li data-target="#myCarouselthumb" data-slide-to="2">3</li>
+                        </ol>
+                    </div>
+                    <!--/myCarousel-->
+                </div>
+                <!--/well-->
+                <!-- /.thumbnail-->
+              </div>
+              <!-- /.galerie-->
+            </div>
+                <!-- /.carousel -->
+            </div>
+            <div class="clearfix">
+              <div class="list-bloc with-add">
+                  <a class="add-bloc" href="#"></a>
+                  <div class="conversation">
+                    <a class="edit" href="#"></a>
+                    <a class="delete" href="#"></a>
+                    <div class="perso-picture">
+                      <img src="assets/images/perso-pic.png" alt="perso"/>
+                        <p>Par <span>Soso</span></p>
+                    </div>
+                    <div class="perso-txt">
+                      <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                        <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                    </div>
+                    <div class="clearfix">
+                      <div class="view-comment">
+                        <ul class="clearfix">
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send"></a>
+                            <div class="tooltip bottom" role="tooltip">
+                              <div class="tooltip-arrow"></div>
+                              <div class="tooltip-inner">
+                              <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#" class="msg" title="message"></a></li>
+                          <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- add-comment -->
+                    <div class="add-comment clearfix">
+                      <div class="img-profil">
+                        <img src="assets/images/img-profil.png" alt="image de profil" />
+                        <span>Patrick</span>
+                      </div>
+                      <div class="form-groupe">
+                        <textarea placeholder="Ajouter commentaire"></textarea>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                      </div>
+                    </div>
+                    <!-- /.add-comment -->
+                  </div>
+                  <div class="conversation">
+                    <a class="edit" href="#"></a>
+                    <a class="delete" href="#"></a>
+                    <div class="perso-picture">
+                      <img src="assets/images/perso-pic.png" alt="perso"/>
+                        <p>Par <span>Soso</span></p>
+                    </div>
+                    <div class="perso-txt">
+                      <h3>Bienvenue à la communauté AOCWORLD !</h3>
+                        <p class="date-txt">10 Juil.2014 - 04: 34 PM</p>
+                        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500. </p>
+                    </div>
+                    <div class="clearfix">
+                      <div class="view-comment">
+                        <ul class="clearfix">
+                          <li>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Envoyer l'article à l'administrateur" class="send"></a>
+                            <div class="tooltip bottom" role="tooltip">
+                              <div class="tooltip-arrow"></div>
+                              <div class="tooltip-inner">
+                              <span>Envoyer l'article à l'administrateur</span>écrire quelque chose
+                              </div>
+                            </div>
+                          </li>
+                          <li><a href="#" class="msg" title="message"></a></li>
+                          <li><a href="#" class="discu" title="commentaires"><span class="vu">04 commentaire (s)</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- add-comment -->
+                    <div class="add-comment clearfix">
+                      <div class="img-profil">
+                        <img src="assets/images/img-profil.png" alt="image de profil" />
+                        <span>Patrick</span>
+                      </div>
+                      <div class="form-groupe">
+                        <textarea placeholder="Ajouter commentaire"></textarea>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
+                      </div>
+                    </div>
+                    <!-- /.add-comment -->
+                  </div>
+                  <ul class="pagination">
+                    <li><a href="#">&lt;</a></li>
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">&gt;</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div>
+  <!-- Fin wrap -->
+  
+  <!-- Debut Footer -->
+  <footer id="footer" class="small">
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <!-- footer top -->
+          <div class="top-footer">
+            <div class="container">
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/globe.png" alt="globe"/>
+                  </div>
+                  <div class="col-md-6 col-sm-6 pdlr-0">
+                      <img src="assets/images/video.png" alt="video"/>
+                  </div>
+                  <div class="col-md-3 col-sm-3 pdlr-0">
+                      <img src="assets/images/vin.png" alt="vin"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.footer top-->
+          <!-- footer bottom-->
+          <div class="bottom-footer clearfix">
+            <ul>
+              <li><a href="#">Nous contacter</a></li>
+              <li><a href="#">Annonceur pro</a></li>
+              <li><a href="#">Conditions générales</a></li>
+            </ul>
+          </div>
+          <!-- /.footer bottom-->
+        </div><!-- /.container-fluid -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </footer>
+  <!-- Fin Footer -->
+
+  <!-- Modal -->
+  <div class="modal fade popup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel">Personnes qui préfèrent cette page</h4>
+      <input class="search" type="text"/>
+        </div>
+        <div class="modal-body">
+          <ul class="mCustomScrollbar">
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      <li>
+        <img class="profil" src="assets/images/avatar-pdf.png" alt="profil"/>
+        <img class="flag" src="assets/images/flag-fr.png" alt="drapeau"/>
+        <span class="name">Monsieur Blanc</span>
+        <a class="details" href="#">détails</a>
+      </li>
+      </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Modal -->
+  
+  <script type="text/javascript" src="components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="text/javascript" src="assets/javascript/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/bxslider.js"></script>
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+</body>
+
+</html>

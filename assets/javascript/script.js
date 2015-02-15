@@ -147,17 +147,24 @@ $(document).ready(function() {
 	//mod tab
 	$('.mod-tab').tab();
 
-	//toggle menu
-	$('.bloc-infos .title-infos').click( function(e){
-		if($(this).parent('.bloc-infos').hasClass('info-open')) {
-			$(this).parent('.bloc-infos').removeClass('info-open');
-			$(this).parent('.bloc-infos').find('.body-infos').hide();
+	//toggle menu a propos
+	if ($('body').hasClass('user-propos')) 
+		{
+			$('.bloc-infos .title-infos').click( function(e){
+				return false;
+			});
 		}else {
-			$(this).parent('.bloc-infos').addClass('info-open');
-			$(this).parent('.bloc-infos').find('.body-infos').show();
+			$('.bloc-infos .title-infos').click( function(e){
+				if($(this).parent('.bloc-infos').hasClass('info-open')) {
+					$(this).parent('.bloc-infos').removeClass('info-open');
+					$(this).parent('.bloc-infos').find('.body-infos').hide();
+				}else {
+					$(this).parent('.bloc-infos').addClass('info-open');
+					$(this).parent('.bloc-infos').find('.body-infos').show();
+				}
+				return false;
+			});
 		}
-		return false;
-	});
 	
 	//carousel
 	$('#myCarouseltab').carousel({
