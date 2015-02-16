@@ -413,6 +413,23 @@ $(document).ready(function() {
 		   $('.bloc-actualite .body-actualite-1').css ('display','block');
 		});
 	}
+
+	//filtre webnotecenter
+	if ($('.webnote-center-filter').length) {
+		$('.webnote-center-filter .webnote-filtre').click( function(){
+			if ($(this).hasClass('not-active')) {
+				return false;
+			}else {
+			  if ($(this).hasClass('active')) {
+			  	$(this).removeClass('active');
+			  	return false;
+			  }else {
+			  	$(this).addClass('active');
+			  	return false;
+			  }
+			}
+		});
+	}
 	
 }); //ready
 
