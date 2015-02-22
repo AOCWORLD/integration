@@ -3411,6 +3411,21 @@ body {
                 &.big-header {
                     min-height: 178px !important;
                     background: url(../images/bg-header-user.jpg) no-repeat 0 0 !important;
+                    &.without-bottom {
+                        background: url(../images/bg-header-top-v4.jpg) no-repeat 50% 50% !important;
+                        min-height: 122px !important;
+                        .bg-fixed-wrap-bottom {
+                            .title {
+                                margin: 15px 0 0 0 !important;
+                            }
+                            .webnote-center-header-search {
+                                margin: 14px 0 0 5%;
+                            }
+                            .share {
+                                margin: 17px 0 0 0;
+                            }
+                        }
+                    }
                     .bg-fixed-wrap-top {
                         min-height: 38px;
                     }
@@ -4063,6 +4078,96 @@ body {
                                             cursor: pointer;
                                             text-decoration: none;
                                         }
+                                    }
+                                }
+                            }
+                        }
+                        .webnote-center-header-search {
+                            display: inline-block;
+                            float: left;
+                            margin: 3px 0 0 20%;
+                            border: 1px solid #8d95a5;
+                            background-color: #f3f3f6;
+                            -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.15);
+                            -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.15);
+                            box-shadow: inset 0 0 2px rgba(0,0,0,.15);
+                            min-height: 40px;
+                            min-width: 385px;
+                            padding: 10px 15px;
+                            input[type="text"] {
+                                display: inline-block;
+                                float: left;
+                                width: 90%;
+                                height: 100%;
+                                padding: 0;
+                                margin: 0;
+                                background: transparent;
+                                border: 0;
+                                outline: 0;
+                                border-radius: 0;
+                                color: #9fa1ac;
+                                font-family: "Roboto";
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                            input[type="submit"] {
+                                display: inline-block;
+                                float: left;
+                                width: 10%;
+                                height: 100%;
+                                padding: 0;
+                                margin: 0;
+                                background-image: url(../images/ico-serach-small.png);
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                                border: 0;
+                                background-color: transparent;
+                                outline: 0;
+                                text-indent: -9999px;
+                            }
+                        }
+                        .share {
+                            float: right;
+                            margin: 8px 0 0 0;
+                            .open-to-share {
+                                float: right;
+                                background: url(../images/open-to-share.png) no-repeat 100% 50%;
+                                min-width: 37px;
+                                height: 32px;
+                                .share-list {
+                                    display: none;
+                                    list-style: none;
+                                    margin: 4px 50px 0 0;
+                                    > li {
+                                        float: right;
+                                    }
+                                    .email {
+                                        display: block;
+                                        width: 22px;
+                                        height: 17px;
+                                        background: url(../images/email.png) no-repeat 50% 50%;
+                                    }
+                                    .google {
+                                        display: block;
+                                        width: 19px;
+                                        height: 19px;
+                                        background: url(../images/google.png) no-repeat 50% 50%;
+                                        margin-right: 10px;
+                                    }
+                                    .tw {
+                                        display: block;
+                                        width: 17px;
+                                        height: 15px;
+                                        background: url(../images/tw.png) no-repeat 50% 50%;
+                                        margin-right: 10px;
+                                        margin-top: 2px;
+                                    }
+                                    .fb {
+                                        display: block;
+                                        width: 10px;
+                                        height: 19px;
+                                        background: url(../images/fb.png) no-repeat 50% 50%;
+                                        margin-right: 10px;
                                     }
                                 }
                             }
