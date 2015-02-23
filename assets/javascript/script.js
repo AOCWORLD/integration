@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+	//data affix
+	if ($('.home').length){
+		$(".home .bg-wrap-top").affix({
+			offset: { 
+				top: $('.bg-wrap-top').offset().top
+			}
+		});
+		$(".home #header").affix({
+			offset: { 
+				top: 10 
+			}
+		});
+		$(".home #wrap").affix({
+			offset: { 
+				top: 10 
+			}
+		});
+	}
+
 	//toggle menu
 	$('.dropdown .dropdown-toggle').click( function(e){
 		if($(this).parent('.dropdown').hasClass('open')) {

@@ -581,7 +581,28 @@ body {
     .bg-wrap-top {
         background: url(../images/bg-header-top-v3.jpg) no-repeat 50% 50%;
         min-height: 300px;
+		&.affix {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background: transparent;
+		}
     }
+	#header {
+		&.affix {
+			position: fixed;
+			top: -1px;
+			left: 0;
+			right: 0;
+		}
+	}
+	#wrap {
+		&.affix {
+			position: relative;
+			margin-top: 0;
+		}
+	}
 }
 
 /*ui datepiker*/
