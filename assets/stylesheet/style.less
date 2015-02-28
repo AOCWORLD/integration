@@ -3432,6 +3432,10 @@ body {
                 &.big-header {
                     min-height: 178px !important;
                     background: url(../images/bg-header-user.jpg) no-repeat 0 0 !important;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
                     &.without-bottom {
                         background: url(../images/bg-header-top-v4.jpg) no-repeat 0 0 !important;
                         min-height: 122px !important;
@@ -4231,7 +4235,7 @@ body {
                         .bloc-favoris {
                             float: right;
                             text-align: center;
-                            .favoris {
+                            .favoris, .defavoris {
                                 display: block;
                                 float: none;
                                 margin: 5px 0 2px 0;
@@ -4298,6 +4302,7 @@ body {
             }
             #wrap {
                 padding-top: 10px;
+                margin-top: 178px;
                 .right-top {
                     .carrousel-videos {
                         /*min-height: 450px;

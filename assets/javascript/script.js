@@ -449,6 +449,21 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	//header user
+	/*if ($('.user-evolution').length) {
+		$(window).scroll(function(){
+	        if ($(window).scrollTop() > 1){
+	            $('.no-home.user.user-evolution #header.big-header .bg-fixed-wrap-top').css({'display': 'none'});
+	            $('.no-home.user.user-evolution #header.big-header .bg-fixed-wrap-bottom').css({'display': 'block'});
+	            $('.no-home.user.user-evolution #header.big-header .bg-fixed-header-bottom').css({'display': 'none'});
+	        } else if ($(window).scrollTop() < 1){
+	            $('.no-home.user.user-evolution #header.big-header .bg-fixed-wrap-top').css({'display': 'block'});
+	            $('.no-home.user.user-evolution #header.big-header .bg-fixed-wrap-bottom').css({'display': 'block'});
+	            $('.no-home.user.user-evolution #header.big-header .bg-fixed-header-bottom').css({'display': 'block'});
+	        }
+	    });
+	}*/
 	
 }); //ready
 
