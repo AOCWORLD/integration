@@ -616,14 +616,14 @@ body {
 }
 .ui-datepicker .ui-datepicker-prev {
  	border: 1px solid #fff;
-	background: #fff url("images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
+	background: #fff url("../images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
 	font-weight: normal;
 	color: #212121;
 	left: 2px;
  }
  .ui-datepicker .ui-datepicker-next {
  	border: 1px solid #fff;
-	background: #fff url("images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
+	background: #fff url("../images/ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x;
 	font-weight: normal;
 	color: #212121;
 	right: 2px;
@@ -940,12 +940,16 @@ body {
 }
 .no-home {
     .bg-wrap-top {
-        /*background: url(../images/bg-header-top-v4.jpg) no-repeat 50% 50%;*/
-        min-height: 122px;
+        /*background: url(../images/bg-header-top-v4.jpg) no-repeat 50% 50%;
+        min-height: 122px;*/
     }
     #header {
         background: url(../images/bg-header-top-v4.jpg) no-repeat 50% 50%;
         min-height: 122px;
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        right: inherit;
         .bg-fixed-wrap-top {
             background: none;
             min-height: 37px;
@@ -2173,6 +2177,8 @@ body {
 	&.inscrit {
 		#wrap {
 			padding-top:0;
+            background: url(../images/bg-inscrit.jpg) repeat-y 0 0;
+            background-size: 100% !important;
 		}
 		#footer{
 			&.small {
@@ -2182,9 +2188,9 @@ body {
 		}
 		.contact-bloc {
 			/*background: url(../images/bg-inscrit.jpg) no-repeat 0 25%;*/
-			background: url(../images/bg-inscrit.jpg) repeat-y 0 0;
-			background-size: 100% !important;
-			padding-top:66px;
+			/*background: url(../images/bg-inscrit.jpg) repeat-y 0 0;
+			background-size: 100% !important;*/
+			padding-top:83px;
 			.middle {
 				/*width: 90%;*/
 				width: 100%;
@@ -6182,47 +6188,62 @@ body {
 						list-style: none;
 						li {
 							list-style: none;
+                            background-color: #CCCCCC;
+                            background-image: linear-gradient(top, #EEEEEE 42%, #CCCCCC 71%);
+                            background-image: -o-linear-gradient(top, #EEEEEE 42%, #CCCCCC 71%);
+                            background-image: -moz-linear-gradient(top, #EEEEEE 42%, #CCCCCC 71%);
+                            background-image: -webkit-linear-gradient(top, #EEEEEE 42%, #CCCCCC 71%);
+                            background-image: -ms-linear-gradient(top, #EEEEEE 42%, #CCCCCC 71%);
+                            background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.42, #EEEEEE), color-stop(0.71, #CCCCCC) );
 							table {
 								width:100%;
 								caption {
 									text-align: center;
-									margin: 0 0 10px 0;
+									padding: 0 0 10px 0;
 									font-size: 16px;
 									text-transform: uppercase;
 									color: #00bf79;
+                                    background: #fff;
 								}
 								thead {
 									tr {
 										th {
-											background: #fff;
 											font-family: Myriad Pro;
 											color: #676c7a;
 											font-size: 14px;
 											font-weight: 400;
-											border-width: 0px 1px 1px 0px !important;
-											height: 25px !important;
-											width: 40px !important;
+                                            height: 30px !important;
+                                            width: 40px !important;
+                                            text-align: center !important;
+											/*border-width: 0px 1px 1px 0px !important;
 											border-style: solid;
 											border-color: #888;
-											text-align: center !important;
-											border-left: 10px solid #fff !important;
+                                            border-left: 10px solid #fff !important;*/
+                                            background: transparent;
+                                            border-width: 1px !important;
+                                            border-style: solid;
+                                            border-color: #bcbcbc #bcbcbc #bcbcbc #eee;
+                                            cursor: pointer;
+                                            &:first-child {
+                                                border-left: 1px solid #bcbcbc;
+                                            }
 										}
 									}
 								}
 								tfoot {
 									tr {
 										td {
-											background: #fff;
 											border-width: 0px 1px 1px 0px !important;
 											height: 30px !important;
 											width: 40px !important;
 											border-style: solid;
 											border-color: #888;
 											text-align: center !important;
-											border-left: 10px solid #fff !important;
 											border-top: 2px solid #fff !important;
+                                            cursor: pointer;
 											&.pad {
 												border: 0;
+                                                background: #fff;
 											}
 										}
 										a {
@@ -6237,20 +6258,25 @@ body {
 								tbody {
 									tr {
 										td {
-											background: #fff;
 											font-family: Myriad Pro;
 											color: #676c7a;
 											font-size: 14px;
 											font-weight: 400;
-											border-width: 0px 1px 1px 0px !important;
 											height: 30px !important;
 											width: 40px !important;
+                                            text-align: center !important;
+                                            /*border-width: 0px 1px 1px 0px !important;
 											border-style: solid;
 											border-color: #888;
-											text-align: center !important;
 											border-left: 10px solid #fff !important;
-											border-top: 10px solid #fff !important;
-											&.today {
+											border-top: 10px solid #fff !important;*/
+                                            background: transparent;
+                                            border-width: 1px !important;
+                                            border-style: solid;
+                                            border-color: #fff #bcbcbc #bcbcbc #eee;
+                                            cursor: pointer;
+											&.today,
+                                            &.eo-future-date:hover {
 												background-color: #00bf79;
 												color: #fff;
 												/*border-color: #00bf79;*/
@@ -6263,6 +6289,9 @@ body {
 													color: #fff !important;
 												}
 											}
+                                            &:first-child {
+                                                border-left: 1px solid #bcbcbc;
+                                            }
 										}
 									}
 								}
